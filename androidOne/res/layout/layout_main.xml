@@ -1,0 +1,71 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bottom_line_color" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_bg"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_home"
+                style="@style/MainTabButton"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_menu_home"
+                android:text="@string/menu_home_title" />
+
+            <RadioButton
+                android:id="@+id/radio_category"
+                style="@style/MainTabButton"
+                android:drawableTop="@drawable/selector_menu_category"
+                android:text="@string/menu_category_title" />
+
+            <RadioButton
+                android:id="@+id/radio_collection"
+                style="@style/MainTabButton"
+                android:drawableTop="@drawable/selector_menu_collection"
+                android:text="@string/menu_collection_title" />
+
+            <RadioButton
+                android:id="@+id/radio_cart"
+                style="@style/MainTabButton"
+                android:drawableTop="@drawable/selector_menu_cart"
+                android:text="@string/menu_cart_title" />
+
+            <RadioButton
+                android:id="@+id/radio_member"
+                style="@style/MainTabButton"
+                android:drawableTop="@drawable/selector_menu_member"
+                android:text="@string/menu_member_title" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

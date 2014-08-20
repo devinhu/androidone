@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@android:color/darker_gray">
+
+	<LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:gravity="center"> 
+
+		<TextView 
+			android:id="@+id/tv_title" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textStyle="bold"
+			android:textColor="@android:color/black"
+			android:textSize="16sp"
+			android:text="@string/common_title_tips"/>
+			
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:orientation="vertical">
+
+		<FrameLayout android:id="@+id/fl_content"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:layout_weight="1">
+			
+		</FrameLayout>
+
+		<LinearLayout 
+			android:id="@+id/linearlayout_bottom_btn"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:gravity="center"
+			android:padding="8dip">
+
+			<Button android:id="@+id/btn_confirm"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:textColor="@android:color/white"
+				android:textSize="16sp"
+				android:minWidth="80dip"
+				android:background="@android:color/black" 
+				android:text="@string/common_confirm" />
+
+			<Button android:id="@+id/btn_cancel" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_marginLeft="20dip" 
+				android:minWidth="80dip"
+				android:textColor="@android:color/white"
+				android:textSize="16sp"
+				android:background="@android:color/black"
+				android:text="@string/common_cancel" />
+				
+			<Button android:id="@+id/btn_demo" 
+				android:visibility="gone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_marginLeft="20dip" 
+				android:minWidth="80dip"
+				android:textColor="@android:color/white"
+				android:textSize="16sp"
+				android:background="@android:color/black"
+				android:text="@string/common_cancel" />
+				
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

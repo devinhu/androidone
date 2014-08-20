@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.sd.one.widget.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/pull_refresh_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="4dp"
+        android:fadingEdge="none" >
+
+        <TextView
+            android:id="@+id/tv_context"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        
+    </com.sd.one.widget.pulltorefresh.PullToRefreshScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sd.one"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:name=".activity.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.GuideActivity" />
+        <activity android:name=".activity.MainActivity" android:configChanges="orientation|keyboardHidden|locale" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        
+        <activity android:name=".activity.cart.CartActivity" />
+        <activity android:name=".activity.category.CategoryActivity" />
+        <activity android:name=".activity.collection.CollectionActivity" />
+        <activity android:name=".activity.home.HomeActivity" />
+        <activity android:name=".activity.more.moerActivity" />
+        
+        <activity android:name=".activity.demo.drawermenu.DrawerMenuActivity" />
+        <activity android:name=".activity.demo.drawermenu.DetailActivity" />
+        <activity android:name=".activity.demo.draglistvew.DragListViewActivity" />
+        <activity android:name=".activity.demo.pulltorefresh.PullToRefreshActivity" />
+        <activity android:name=".activity.demo.pulltorefresh.PulltoHeaderGridActivity" />
+        <activity android:name=".activity.demo.wheel.TimeWheelActivity" />
+        <activity android:name=".activity.demo.waterfall.WaterfallActivity" />
+        <activity android:name=".activity.demo.popmenu.PopmenuActivity" />
+        <activity android:name=".activity.demo.download.DownLoadActivity" />
+        <activity android:name=".activity.demo.database.DatabaseActivity" />
+
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.sd.one" />
+
+</manifest>
