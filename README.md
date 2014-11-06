@@ -1,36 +1,41 @@
-AndroidOneæ¡†æ¶èƒ½å¸®æ‚¨å¸¦æ¥ä»€ä¹ˆï¼Ÿ
+One¿ò¼ÜÄÜ°ïÄú´øÀ´Ê²Ã´£¿
  
-AndroidOneæ•´ä¸ªæ¡†æ¶ä¸ºMVCæ¨¡å¼æ­å»ºï¼ŒåŸºäºandroid frameworkä¸ºæ ¸å¿ƒï¼Œé›†æˆAndroidä¸–ç•Œä¸­çš„ä¸»æµæŠ€æœ¯é€‰å‹ï¼Œä»¥Pragmaticé£æ ¼çš„Androidåº”ç”¨å‚è€ƒç¤ºä¾‹ï¼Œæ˜¯androidé¡¹ç›®æœ€ä½³å®è·µçš„æ€»ç»“ä¸æ¼”ç¤ºã€‚
-ä»¥â€œå¤æ‚çš„ä¸–ç•Œé‡Œï¼Œä¸€ä¸ªå°±å¤Ÿäº†â€ä¸ºç†å¿µï¼ŒåŠ±å¿—å¸®åŠ©Androidå¼€å‘äººå‘˜å¿«é€Ÿæ­å»ºä¸€ä¸ªç®€å•é«˜æ•ˆçš„androidå¼€å‘æ¡†æ¶ï¼Œ
+One¿ò¼Ü·ÖÎªÁ½¸öÏîÄ¿£¬OneCoreÎªºËĞÄ¹¤³Ì£¬×÷Îªlib¿âµ¼Èë£»androidOneÎªÑİÊ¾ÏîÄ¿¡£
+
+OneÕû¸ö¿ò¼ÜÎªMVCÄ£Ê½´î½¨£¬»ùÓÚandroid frameworkÎªºËĞÄ£¬¼¯³ÉAndroidÊÀ½çÖĞµÄÖ÷Á÷¼¼ÊõÑ¡ĞÍ£¬
+ÒÔPragmatic·ç¸ñµÄAndroidÓ¦ÓÃ²Î¿¼Ê¾Àı£¬ÊÇandroidÏîÄ¿×î¼ÑÊµ¼ùµÄ×Ü½áÓëÑİÊ¾¡£
+ÒÔ¡°¸´ÔÓµÄÊÀ½çÀï£¬Ò»¸ö¾Í¹»ÁË¡±ÎªÀíÄî£¬ÀøÖ¾°ïÖúAndroid¿ª·¢ÈËÔ±¿ìËÙ´î½¨Ò»¸ö¼òµ¥¸ßĞ§µÄandroid¿ª·¢¿ò¼Ü£¬
 
 
-å¼‚æ­¥æ¨¡å—ï¼š
-å°è£…AsyncTaskç±»ï¼Œå°†å¼‚æ­¥æ¡†æ¶å•ç‹¬æŠ½å‡ºæ¥ã€‚é¡µé¢é€šè¿‡å®ç°å›è°ƒç›‘å¬è·å–æ•°æ®å¹¶ç›´æ¥æ›´æ–°UIæ“ä½œï¼Œå®ç°å¤šçº¿ç¨‹æœºåˆ¶ï¼Œæ”¯æŒå¹¶å‘ï¼Œè¶…è¿‡å¹¶å‘æ•°éœ€ç­‰å¾…ã€‚å»ºè®®ä¸€èˆ¬åœ¨BaseActivityã€BaseFragmentä¸­å®ç°ã€‚
+Òì²½Ä£¿é£º
+·â×°AsyncTaskÀà£¬½«Òì²½¿ò¼Üµ¥¶À³é³öÀ´¡£Ò³ÃæÍ¨¹ıÊµÏÖ»Øµ÷¼àÌı»ñÈ¡Êı¾İ²¢Ö±½Ó¸üĞÂUI²Ù×÷£¬ÊµÏÖ¶àÏß³Ì»úÖÆ£¬Ö§³Ö²¢·¢£¬³¬¹ı²¢·¢ÊıĞèµÈ´ı¡£
+½¨ÒéÒ»°ãÔÚBaseActivity¡¢BaseFragmentÖĞÊµÏÖ¡£
  
-ä½¿ç”¨å¦‚ä¸‹ï¼š
-åœ¨BaseActivityç±»onCreateæ–¹æ³•åˆå§‹åŒ–ï¼š
+ 
+Ê¹ÓÃÈçÏÂ£º
+ÔÚBaseActivityÀàonCreate·½·¨³õÊ¼»¯£º
 mAsyncTaskManager = AsyncTaskManager.getInstance(mContext);
  
-å®ç°å¦‚ä¸‹æ–¹æ³•ï¼š
- /**
- * å‘é€è¯·æ±‚ï¼ˆéœ€è¦æ£€æŸ¥ç½‘ç»œï¼‰
- * @param requsetCode è¯·æ±‚ç 
+ÊµÏÖÈçÏÂ·½·¨£º
+/**
+ * ·¢ËÍÇëÇó£¨ĞèÒª¼ì²éÍøÂç£©
+ * @param requsetCode ÇëÇóÂë
  */
 public void request(int requsetCode){
     mAsyncTaskManager.request(requsetCode, this);
 }
  
 /**
- * å‘é€è¯·æ±‚
- * @param requsetCode è¯·æ±‚ç 
- * @param isCheckNetwork æ˜¯å¦éœ€æ£€æŸ¥ç½‘ç»œï¼Œtrueæ£€æŸ¥ï¼Œfalseä¸æ£€æŸ¥
+ * ·¢ËÍÇëÇó
+ * @param requsetCode ÇëÇóÂë
+ * @param isCheckNetwork ÊÇ·ñĞè¼ì²éÍøÂç£¬true¼ì²é£¬false²»¼ì²é
  */
 public void request(int requsetCode, boolean isCheckNetwork){
     mAsyncTaskManager.request(requsetCode, isCheckNetwork, this);
 }
  
 /**
- * å–æ¶ˆè¯·æ±‚
+ * È¡ÏûÇëÇó
  * @param requsetCode
  */
 public void cancelRequest(int requsetCode){
@@ -38,7 +43,7 @@ public void cancelRequest(int requsetCode){
 }
  
 /**
- * å–æ¶ˆæ‰€æœ‰è¯·æ±‚
+ * È¡ÏûËùÓĞÇëÇó
  */
 public void cancelRequest(){
     mAsyncTaskManager.cancelRequest();
@@ -57,39 +62,39 @@ public void onSuccess(int requestCode, Object result) {
 @Override
 public void onFailure(int requestCode, int state, Object result) {
     switch(state){
-        //ç½‘ç»œä¸å¯ç”¨ç»™å‡ºæç¤º
+        //ÍøÂç²»¿ÉÓÃ¸ø³öÌáÊ¾
         case AsyncTaskManager.HTTP_NULL_CODE:
             break;
  
-        //ç½‘ç»œæœ‰é—®é¢˜ç»™å‡ºæç¤º
+        //ÍøÂçÓĞÎÊÌâ¸ø³öÌáÊ¾
          case AsyncTaskManager.HTTP_ERROR_CODE:
             break;
  
-        //è¯·æ±‚æœ‰é—®é¢˜ç»™å‡ºæç¤º
+        //ÇëÇóÓĞÎÊÌâ¸ø³öÌáÊ¾
         case AsyncTaskManager.REQUEST_ERROR_CODE:
             break;
     }    
 }
 
 
-HTTPè¯·æ±‚æ¨¡å—ï¼š
-é‡‡ç”¨ç¬¬ä¸‰æ–¹AsyncHttpClientæ–¹æ¡ˆï¼Œåœ¨æ­¤åŸºç¡€ä¸Šå¢åŠ åŒæ­¥å‘é€è¯·æ±‚ç®¡ç†ç±»ï¼ˆé…åˆå¼‚æ­¥æ¡†æ¶ä½¿ç”¨ï¼‰ï¼Œæ”¯æŒhttpã€httpsæ–¹å¼ï¼Œæ”¯æŒgetã€postã€putã€deleteæ–¹æ³•ï¼Œæ”¯æŒGZIPã€Fileæ ¼å¼ï¼Œæ”¯æŒRetryã€Cacelç­–ç•¥ï¼Œå ªç§°å®Œç¾ï¼
+HTTPÇëÇóÄ£¿é£º
+²ÉÓÃµÚÈı·½AsyncHttpClient·½°¸£¬ÔÚ´Ë»ù´¡ÉÏÔö¼ÓÍ¬²½·¢ËÍÇëÇó¹ÜÀíÀà£¨ÅäºÏÒì²½¿ò¼ÜÊ¹ÓÃ£©£¬Ö§³Öhttp¡¢https·½Ê½£¬Ö§³Öget¡¢post¡¢put¡¢delete·½·¨£¬Ö§³ÖGZIP¡¢File¸ñÊ½£¬Ö§³ÖRetry¡¢Cacel²ßÂÔ£¬¿°³ÆÍêÃÀ£¡
  
-Commonæ¨¡å—ï¼š
-é¡µé¢å †æ ˆç®¡ç†ï¼Œç¼“å­˜ç®¡ç†ã€ç³»ç»Ÿå¼‚å¸¸å¤„ç†ã€SharedPreferencesç®¡ç†ã€LruCacheç®¡ç†ï¼ˆç”¨äºé¡µé¢ä¼ å¤§æ•°æ®ä¸”ä¸ç”¨æ‹…å¿ƒé‡Šæ”¾é—®é¢˜ï¼‰ã€Jsonè§£æç®¡ç†å¯¹è±¡ã€xmlè§£æç®¡ç†å¯¹è±¡ã€SoapObjectè§£æç®¡ç†å¯¹è±¡ã€‚
+CommonÄ£¿é£º
+Ò³Ãæ¶ÑÕ»¹ÜÀí£¬»º´æ¹ÜÀí¡¢ÏµÍ³Òì³£´¦Àí¡¢SharedPreferences¹ÜÀí¡¢LruCache¹ÜÀí£¨ÓÃÓÚÒ³Ãæ´«´óÊı¾İÇÒ²»ÓÃµ£ĞÄÊÍ·ÅÎÊÌâ£©¡¢Json½âÎö¹ÜÀí¶ÔÏó¡¢xml½âÎö¹ÜÀí¶ÔÏó¡¢SoapObject½âÎö¹ÜÀí¶ÔÏó¡£
  
-DBæ¨¡å—ï¼š
-é‡‡ç”¨GreenDaoæ–¹æ¡ˆï¼Œç›´æ¥å®ç°Java Objectçš„CURDæ–¹æ³•å°±å¯ä»¥æ“ä½œæ•°æ®åº“ã€‚ 
-æ–°å¢javaå·¥ç¨‹è‡ªåŠ¨ç”Ÿæˆmodelã€daoã€sessionå¯¹è±¡ç­‰ä»£ç ï¼Œæ‹·è¿‡æ¥ç›´æ¥ä½¿ç”¨å³å¯ã€‚
-æ–°å¢DBManagerç±»ï¼Œæ‰€æœ‰æ•°æ®æ“ä½œåªéœ€è¦è·å–DBManagerå®ä¾‹æ¥è·å–DaoSessionï¼Œç„¶åé€šè¿‡DaoSessionæ¥è·å–ä½ éœ€è¦çš„æ‰€æœ‰daoå³å¯ã€‚
+DBÄ£¿é£º
+²ÉÓÃGreenDao·½°¸£¬Ö±½ÓÊµÏÖJava ObjectµÄCURD·½·¨¾Í¿ÉÒÔ²Ù×÷Êı¾İ¿â¡£ 
+ĞÂÔöjava¹¤³Ì×Ô¶¯Éú³Émodel¡¢dao¡¢session¶ÔÏóµÈ´úÂë£¬¿½¹ıÀ´Ö±½ÓÊ¹ÓÃ¼´¿É¡£
+ĞÂÔöDBManagerÀà£¬ËùÓĞÊı¾İ²Ù×÷Ö»ĞèÒª»ñÈ¡DBManagerÊµÀıÀ´»ñÈ¡DaoSession£¬È»ºóÍ¨¹ıDaoSessionÀ´»ñÈ¡ÄãĞèÒªµÄËùÓĞdao¼´¿É¡£
 
-ä½¿ç”¨å¦‚ä¸‹ï¼š
+Ê¹ÓÃÈçÏÂ£º
 dao = DBManager.getInstance(mContext).getDaoSession().getNoteDao();
  
-èµ„æºä¸‹è½½æ¨¡å—ï¼š
-åœ¨ç¬¬ä¸‰æ–¹AsyncHttpClientæ–¹æ¡ˆå¢åŠ BreakpointHttpResponseHandlerç±»ï¼Œæ”¯æŒå¤šå¹¶å‘ã€å¤šæ–‡ä»¶ä¸Šä¼ ã€æ–­ç‚¹ç»­ä¼ ã€æš‚åœã€ç»§ç»­ã€åˆ é™¤ä¸‹è½½ä»»åŠ¡ã€‚
+×ÊÔ´ÏÂÔØÄ£¿é£º
+ÔÚµÚÈı·½AsyncHttpClient·½°¸Ôö¼ÓBreakpointHttpResponseHandlerÀà£¬Ö§³Ö¶à²¢·¢¡¢¶àÎÄ¼şÉÏ´«¡¢¶ÏµãĞø´«¡¢ÔİÍ£¡¢¼ÌĞø¡¢É¾³ıÏÂÔØÈÎÎñ¡£
  
-ä½¿ç”¨å¦‚ä¸‹ï¼š
+Ê¹ÓÃÈçÏÂ£º
  downloadMgr = DownloadManager.getInstance();
      downloadMgr.setDownLoadCallback(new DownLoadCallback() {
  
@@ -109,18 +114,18 @@ dao = DBManager.getInstance(mContext).getDaoSession().getNoteDao();
         }
     });
  
-    //æ·»åŠ ä¸‹è½½ä»»åŠ¡
+    //Ìí¼ÓÏÂÔØÈÎÎñ
     for (DownloadInfo bean1 : list) {
         downloadMgr.addHandler(bean1.getUrl());
     }
  
-å›¾ç‰‡ä¸‹è½½æ¨¡å—ï¼š
-é‡‡ç”¨universal-image-loaderè§£å†³æ–¹æ¡ˆï¼Œæœ‰å…³ä½¿ç”¨æƒ…å†µè¯·å‚è§universal-image-loaderå®˜ç½‘ä¿¡æ¯ï¼Œè¿™é‡Œè´´å‡ºgithubåœ°å€ï¼šhttps://github.com/nostra13/Android-Universal-Image-Loader
+Í¼Æ¬ÏÂÔØÄ£¿é£º
+²ÉÓÃuniversal-image-loader½â¾ö·½°¸£¬ÓĞ¹ØÊ¹ÓÃÇé¿öÇë²Î¼ûuniversal-image-loader¹ÙÍøĞÅÏ¢£¬ÕâÀïÌù³ögithubµØÖ·£ºhttps://github.com/nostra13/Android-Universal-Image-Loader
  
-çœ‹åˆ°è¿™é‡Œï¼Œä¼°è®¡æ‚¨å’Œæ‚¨çš„å°ä¼™ä¼´ä»¬éƒ½æƒŠå‘†äº†å§ï¼èµ¶å¿«åŠ¨æ‰‹è¯•è¯•å§ï¼
-å…·ä½“ä½¿ç”¨è¯·å‚è€ƒandroidOneæ¼”ç¤ºå·¥ç¨‹ã€‚
+¿´µ½ÕâÀï£¬¹À¼ÆÄúºÍÄúµÄĞ¡»ï°éÃÇ¶¼¾ª´ôÁË°É£¡¸Ï¿ì¶¯ÊÖÊÔÊÔ°É£¡
+¾ßÌåÊ¹ÓÃÇë²Î¿¼androidOneÑİÊ¾¹¤³Ì¡£
  
-æˆ‘æ”¹å˜ä¸äº†è¿™ä¸ªä¸–ç•Œï¼è¿™ä¸ªä¸–ç•Œä¹Ÿä¼‘æ¯å°†æˆ‘æ”¹å˜ï¼
+ÎÒ¸Ä±ä²»ÁËÕâ¸öÊÀ½ç£¡Õâ¸öÊÀ½çÒ²ĞİÏ¢½«ÎÒ¸Ä±ä£¡
  
-å¦‚æœä»»ä½•é—®é¢˜æˆ–è€…å»ºè®®ï¼Œæ¬¢è¿æ²Ÿé€šã€‚
+Èç¹ûÈÎºÎÎÊÌâ»òÕß½¨Òé£¬»¶Ó­¹µÍ¨¡£
 2891429357@qq.com
