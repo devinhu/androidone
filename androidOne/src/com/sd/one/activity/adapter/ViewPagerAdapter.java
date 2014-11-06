@@ -1,8 +1,7 @@
 /*
-    Launch Android Client, ViewPagerAdapter
-    Copyright (c) 2014 LAUNCH Tech Company Limited
-    http:www.cnlaunch.com
-*/
+    ShengDao Android Client, ViewPagerAdapter
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
 
 package com.sd.one.activity.adapter;
 
@@ -18,7 +17,7 @@ import android.view.View;
  * 
  * @author huxinwu
  * @version 1.0
- * @date 2014-5-15
+ * @date 2014-11-6
  * 
  **/
 public class ViewPagerAdapter extends PagerAdapter {

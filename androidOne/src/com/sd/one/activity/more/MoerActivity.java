@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, MoerActivity
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.activity.more;
 
 import android.os.Bundle;

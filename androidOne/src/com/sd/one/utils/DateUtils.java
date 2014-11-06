@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, DateUtils
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.utils;
 
 import hirondelle.date4j.DateTime;

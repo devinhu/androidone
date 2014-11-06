@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, GuideActivity
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.activity;
 
 import java.util.ArrayList;

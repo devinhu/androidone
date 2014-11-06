@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, HomeActivity
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.activity.home;
 
 import android.content.Intent;
@@ -13,12 +18,14 @@ import com.sd.one.activity.demo.database.DatabaseActivity;
 import com.sd.one.activity.demo.download.DownLoadActivity;
 import com.sd.one.activity.demo.pulltorefresh.PullToRefreshActivity;
 
-/**   
- * [首页]
- * @author: devin.hu
- * @version: 1.0
- * @date:   Nov 28, 2013    
- */
+/**
+ * [A brief description]
+ * 
+ * @author huxinwu
+ * @version 1.0
+ * @date 2014-11-6
+ * 
+ **/
 public class HomeActivity extends BaseActivity implements OnClickListener{
 
 	private Button btn_request;

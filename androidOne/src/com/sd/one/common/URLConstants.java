@@ -1,11 +1,18 @@
+/*
+    ShengDao Android Client, URLConstants
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.common;
 
-/**   
+/**
  * [A brief description]
- * @author: devin.hu
- * @version: 1.0
- * @date:   Nov 13, 2013    
- */
+ * 
+ * @author huxinwu
+ * @version 1.0
+ * @date 2014-11-6
+ * 
+ **/
 public class URLConstants {
 
     /**

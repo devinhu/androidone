@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, BaseFragment
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.activity;
 
 import android.content.Context;
@@ -17,9 +22,9 @@ import com.sd.one.R;
 /**
  * [Fragment基础类，实现异步框架，Activity堆栈的管理，destroy时候销毁所有资源]
  * 
- * @author devin.hu
+ * @author huxinwu
  * @version 1.0
- * @date 2013-9-17
+ * @date 2014-11-6
  * 
  **/
 public abstract class BaseFragment extends Fragment implements OnDataListener{

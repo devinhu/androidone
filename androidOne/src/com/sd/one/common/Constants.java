@@ -1,11 +1,18 @@
+/*
+    ShengDao Android Client, Constants
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.common;
 
-/**   
+/**
  * [A brief description]
- * @author: devin.hu
- * @version: 1.0
- * @date:   Nov 27, 2013    
- */
+ * 
+ * @author huxinwu
+ * @version 1.0
+ * @date 2014-11-6
+ * 
+ **/
 public class Constants {
 
 	/** 是否第一次运行 **/

@@ -1,5 +1,5 @@
 /*
-    ShengDao Android Client, HomePagerAdapter
+    ShengDao Android Client, PagerFragmentAdapter
     Copyright (c) 2014 ShengDao Tech Company Limited
  */
 

@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, BaseActivity
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.activity;
 
 import android.content.Context;

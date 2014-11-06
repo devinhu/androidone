@@ -1,8 +1,7 @@
 /*
-    Launch Android Client, MainActivity
-    Copyright (c) 2014 LAUNCH Tech Company Limited
-    http:www.cnlaunch.com
-*/
+    ShengDao Android Client, MainActivity
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
 
 package com.sd.one.activity;
 

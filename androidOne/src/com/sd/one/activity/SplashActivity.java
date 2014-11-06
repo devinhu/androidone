@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, SplashActivity
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.activity;
 
 import java.util.ArrayList;
@@ -22,7 +27,7 @@ import com.sd.one.service.DemoAction;
  * 
  * @author huxinwu
  * @version 1.0
- * @date 2014-8-7
+ * @date 2014-11-6
  * 
  **/
 public class SplashActivity extends BaseActivity {

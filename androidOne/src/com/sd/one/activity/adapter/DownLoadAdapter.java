@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, DownLoadAdapter
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.activity.adapter;
 
 import java.util.ArrayList;
@@ -21,10 +26,11 @@ import com.sd.one.activity.demo.download.DownloadInfo;
 /**
  * [A brief description]
  * 
- * @author: devin.hu
- * @version: 1.0
- * @date: Nov 25, 2013
- */
+ * @author huxinwu
+ * @version 1.0
+ * @date 2014-11-6
+ * 
+ **/
 public class DownLoadAdapter extends BaseAdapter<DownloadInfo> {
 
     private ViewHolder holder;

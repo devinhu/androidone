@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, DateStyle
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.utils;
 
 /**

@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, StringUtils
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.utils;
 
 import java.util.List;
