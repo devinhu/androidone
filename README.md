@@ -76,6 +76,7 @@ Common模块：
  
 DB模块：
 采用GreenDao方案，直接实现Java Object的CURD方法就可以操作数据库。 新增java工程自动生成model、dao、session对象等代码，拷过来直接使用即可。新增DBManager类，所有数据操作只需要获取DBManager实例来获取DaoSession，然后通过DaoSession来获取你需要的dao即可。
+
 使用如下：
 dao = DBManager.getInstance(mContext).getDaoSession().getNoteDao();
  
@@ -118,4 +119,4 @@ dao = DBManager.getInstance(mContext).getDaoSession().getNoteDao();
 欢迎随时加入我们。
  
 如果任何问题或者建议，欢迎沟通。
-2891429357@qq.com
+295893265@qq.com
