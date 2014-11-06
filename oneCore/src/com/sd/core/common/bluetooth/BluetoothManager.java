@@ -79,8 +79,7 @@ public class BluetoothManager {
 	 * @param requestCode
 	 * @param command
 	 */
-	public void request(int requestCode, String commond) {
-		byte[] command = getCommand(commond);
+	public void request(int requestCode, byte[] command) {
 		if(command == null){
 			NLog.e(tag, "requestCode is error, so command is null");
 			return;
@@ -102,42 +101,4 @@ public class BluetoothManager {
 			mChatService.stop();
 		}
 	}
-	
-	/**
-	 * 发送命令
-	 * @param command
-	 */
-	private byte[] getCommand(String command) {
-		int i = 0;
-		int n = 0;
-		byte[] bos_new = null;
-		
-		try {
-			byte[] bos = command.getBytes();
-			for (i = 0; i < bos.length; i++) {
-				if (bos[i] == 0x0a){
-					n++;
-				}
-			}
-			
-			bos_new = new byte[bos.length + n];
-			n = 0;
-			
-			// 手机中换行为0a,将其改为0d 0a后再发送
-			for (i = 0; i < bos.length; i++) { 
-				if (bos[i] == 0x0a) {
-					bos_new[n] = 0x0d;
-					n++;
-					bos_new[n] = 0x0a;
-				} else {
-					bos_new[n] = bos[i];
-				}
-				n++;
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return bos_new;
-	}
-	
 }
