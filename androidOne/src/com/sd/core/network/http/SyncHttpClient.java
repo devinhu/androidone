@@ -3,6 +3,7 @@ package com.sd.core.network.http;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.lang.ref.WeakReference;
 import java.net.URI;
 import java.util.HashMap;
@@ -40,6 +41,7 @@ import org.apache.http.conn.ssl.SSLSocketFactory;
 import org.apache.http.cookie.Cookie;
 import org.apache.http.entity.BufferedHttpEntity;
 import org.apache.http.entity.HttpEntityWrapper;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.DefaultRedirectHandler;
 import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
@@ -689,6 +691,43 @@ public class SyncHttpClient {
 		return sendRequest(httpClient, httpContext, request, contentType, context);
 	}
 
+	
+	/**
+	 * 支持post提交Restful风格的json字符串
+	 * post
+	 * @param context
+	 * @param url
+	 * @param params
+	 * @param jsonContent
+	 * @return
+	 * @throws HttpException
+	 */
+	public String post(Context context, String url, RequestParams params, String jsonContent) throws HttpException {
+		
+		StringEntity entity = null;
+		StringBuilder urlBilder = new StringBuilder(url);
+		
+		try {
+			//拼装公共参数
+			if(params != null){
+				String paramString = params.getParamString();
+				if(paramString != null && !"".equals(paramString)){
+					urlBilder.append("?").append(paramString);
+					url = urlBilder.toString();
+				}
+			}
+			//post提交的Json内容
+			if(jsonContent != null && !"".equals(jsonContent)){
+				NLog.e(tag, "jsonContent: " + jsonContent);
+				entity = new StringEntity(jsonContent, ENCODE_UTF8);
+			}
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		
+		return post(context, url, entity, "application/json");
+	}
+	
 	/**
 	 * Perform a HTTP POST request and track the Android Context which initiated
 	 * the request. Set headers only for this request
