@@ -4,7 +4,7 @@ One框架分为两个项目，OneCore为核心工程，作为lib库导入；androidOne为演示项目。
 
 One整个框架为MVC模式搭建，基于android framework为核心，集成Android世界中的主流技术选型，
 以Pragmatic风格的Android应用参考示例，是android项目最佳实践的总结与演示。
-以“复杂的世界里，一个就够了”为理念，励志帮助Android开发人员快速搭建一个简单高效的android开发框架，
+以“复杂的世界里，一个就够了”为理念，励志帮助Android开发人员快速搭建一个简单高效的android开发框架!
 
 
 异步模块：<br/>
@@ -19,7 +19,7 @@ mAsyncTaskManager = AsyncTaskManager.getInstance(mContext);
  
 实现如下方法：<br/>
 public void request(int requsetCode){<br/>
-    mAsyncTaskManager.request(requsetCode, this);<br/>
+	mAsyncTaskManager.request(requsetCode, this);<br/>
 }
  
 public void request(int requsetCode, boolean isCheckNetwork){<br/>
