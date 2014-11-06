@@ -53,7 +53,7 @@ public class DownLoadActivity extends BaseActivity {
 		mAdapter = new DownLoadAdapter(mContext, this);
 		listview = (ListView)findViewById(R.id.listview);
 		listview.setAdapter(mAdapter);
-		mAdapter.setList(list);
+		mAdapter.addData(list);
 		mAdapter.notifyDataSetChanged();
 
 		downloadMgr = DownloadManager.getInstance();
@@ -67,7 +67,7 @@ public class DownLoadActivity extends BaseActivity {
 						bean.setProgress((int) ((bytesWritten * 100) / totalSize));
 					}
 				}
-				mAdapter.setList(list);
+				mAdapter.addData(list);
 				mAdapter.notifyDataSetChanged();
 			}
 
@@ -80,7 +80,7 @@ public class DownLoadActivity extends BaseActivity {
 						bean.setState("成功");
 					}
 				}
-				mAdapter.setList(list);
+				mAdapter.addData(list);
 				mAdapter.notifyDataSetChanged();
 			}
 
@@ -92,7 +92,7 @@ public class DownLoadActivity extends BaseActivity {
 						bean.setState("失败");
 					}
 				}
-				mAdapter.setList(list);
+				mAdapter.addData(list);
 				mAdapter.notifyDataSetChanged();
 			}
 		});
@@ -104,7 +104,7 @@ public class DownLoadActivity extends BaseActivity {
 
 	public void refresh(List<DownloadInfo> list) {
 		this.list = list;
-		mAdapter.setList(this.list);
+		mAdapter.addData(this.list);
 		mAdapter.notifyDataSetChanged();
 	}
 

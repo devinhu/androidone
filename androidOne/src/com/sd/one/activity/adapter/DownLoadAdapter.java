@@ -3,13 +3,12 @@ package com.sd.one.activity.adapter;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.text.TextUtils;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -26,25 +25,16 @@ import com.sd.one.activity.demo.download.DownloadInfo;
  * @version: 1.0
  * @date: Nov 25, 2013
  */
-public class DownLoadAdapter extends BaseAdapter {
+public class DownLoadAdapter extends BaseAdapter<DownloadInfo> {
 
-    private Context mContext;
-    private LayoutInflater mInflater;
     private ViewHolder holder;
-    private List<DownloadInfo> list;
     private DownLoadActivity activity; 
     
-    /**
-     * [A brief description]
-     * 
-     * @param context
-     */
     public DownLoadAdapter(Context context, DownLoadActivity activity) {
-        mContext = context;
+    	super(context);
         this.activity = activity;
-        mInflater = LayoutInflater.from(mContext);
     }
-
+    
     class ViewHolder {
         TextView tv_name;
         TextView tv_state;
@@ -55,32 +45,7 @@ public class DownLoadAdapter extends BaseAdapter {
         ProgressBar progressBar;
     }
 
-    public List<DownloadInfo> getList() {
-        return list;
-    }
-
-    public void setList(List<DownloadInfo> list) {
-        this.list = list;
-    }
-
-    @Override
-    public int getCount() {
-        if(list != null){
-            return list.size();
-        }
-        return 0;
-    }
-
-    @Override
-    public Object getItem(int position) {
-        return list.get(position);
-    }
-
-    @Override
-    public long getItemId(int position) {
-        return position;
-    }
-
+    @SuppressLint("InflateParams") 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
@@ -97,7 +62,7 @@ public class DownLoadAdapter extends BaseAdapter {
             holder = (ViewHolder)convertView.getTag();
         }
         
-        DownloadInfo bean = list.get(position);
+        DownloadInfo bean = dataSet.get(position);
         final String url = bean.getUrl();
         holder.tv_name.setText(bean.getName());
         holder.progressBar.setProgress(bean.getProgress());
@@ -125,7 +90,7 @@ public class DownLoadAdapter extends BaseAdapter {
 			@Override
 			public void onClick(View arg0) {
 				List<DownloadInfo> newList = new ArrayList<DownloadInfo>();
-				for(DownloadInfo b : list){
+				for(DownloadInfo b : dataSet){
 					if(!b.getUrl().equals(url)){
 						newList.add(b);
 					}
