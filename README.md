@@ -1,7 +1,9 @@
-One框架能帮您带来什么？
+AndroidOne框架能帮您带来什么？
  
-One整个框架为MVC模式搭建，以android framework为核心框架，在之上集成当前各种流行的技术而形成的一个开源android模板工程，帮助Android开发人员在项目开发的时候只需关注项目本身的业务逻辑，项目中常用的模块以及组件则拾之即可。
- 
+AndroidOne整个框架为MVC模式搭建，基于android framework为核心，集成Android世界中的主流技术选型，以Pragmatic风格的Android应用参考示例，是android项目最佳实践的总结与演示。
+以“复杂的世界里，一个就够了”为理念，励志帮助Android开发人员快速搭建一个简单高效的android开发框架，
+
+
 异步模块：
 封装AsyncTask类，将异步框架单独抽出来。页面通过实现回调监听获取数据并直接更新UI操作，实现多线程机制，支持并发，超过并发数需等待。建议一般在BaseActivity、BaseFragment中实现。
  
@@ -68,6 +70,8 @@ public void onFailure(int requestCode, int state, Object result) {
             break;
     }    
 }
+
+
 HTTP请求模块：
 采用第三方AsyncHttpClient方案，在此基础上增加同步发送请求管理类（配合异步框架使用），支持http、https方式，支持get、post、put、delete方法，支持GZIP、File格式，支持Retry、Cacel策略，堪称完美！
  
@@ -75,7 +79,9 @@ Common模块：
 页面堆栈管理，缓存管理、系统异常处理、SharedPreferences管理、LruCache管理（用于页面传大数据且不用担心释放问题）、Json解析管理对象、xml解析管理对象、SoapObject解析管理对象。
  
 DB模块：
-采用GreenDao方案，直接实现Java Object的CURD方法就可以操作数据库。 新增java工程自动生成model、dao、session对象等代码，拷过来直接使用即可。新增DBManager类，所有数据操作只需要获取DBManager实例来获取DaoSession，然后通过DaoSession来获取你需要的dao即可。
+采用GreenDao方案，直接实现Java Object的CURD方法就可以操作数据库。 
+新增java工程自动生成model、dao、session对象等代码，拷过来直接使用即可。
+新增DBManager类，所有数据操作只需要获取DBManager实例来获取DaoSession，然后通过DaoSession来获取你需要的所有dao即可。
 
 使用如下：
 dao = DBManager.getInstance(mContext).getDaoSession().getNoteDao();
@@ -84,7 +90,6 @@ dao = DBManager.getInstance(mContext).getDaoSession().getNoteDao();
 在第三方AsyncHttpClient方案增加BreakpointHttpResponseHandler类，支持多并发、多文件上传、断点续传、暂停、继续、删除下载任务。
  
 使用如下：
-
  downloadMgr = DownloadManager.getInstance();
      downloadMgr.setDownLoadCallback(new DownLoadCallback() {
  
@@ -113,10 +118,9 @@ dao = DBManager.getInstance(mContext).getDaoSession().getNoteDao();
 采用universal-image-loader解决方案，有关使用情况请参见universal-image-loader官网信息，这里贴出github地址：https://github.com/nostra13/Android-Universal-Image-Loader
  
 看到这里，估计您和您的小伙伴们都惊呆了吧！赶快动手试试吧！
+具体使用请参考androidOne演示工程。
  
-如果你也有改变世界，哪怕一点点的梦想的话，
-如果你也有为Android开发者做出自己的一点点贡献的话，
-欢迎随时加入我们。
+我改变不了这个世界！这个世界也休息将我改变！
  
 如果任何问题或者建议，欢迎沟通。
-295893265@qq.com
+2891429357@qq.com
