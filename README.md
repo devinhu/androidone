@@ -75,7 +75,7 @@ dao = DBManager.getInstance(mContext).getDaoSession().getNoteDao();
 使用如下：<br/>
  downloadMgr = DownloadManager.getInstance();<br/>
      downloadMgr.setDownLoadCallback(new DownLoadCallback() {<br/>
- 	 <br/>
+
         @Override<br/>
         public void onLoading(String url, int bytesWritten, int totalSize) {<br/>
             super.onLoading(url, bytesWritten, totalSize);<br/>
