@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, AsyncTaskManager
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.core.network.async;
 
 import java.lang.ref.WeakReference;

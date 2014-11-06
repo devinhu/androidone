@@ -1,7 +1,7 @@
 /*
-    SUNEEE Android Client, APPOnCrashListener
-    Copyright (c) 2014 SUNEEE Tech Company Limited
-*/
+    ShengDao Android Client, APPOnCrashListener
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
 
 package com.sd.core.common;
 

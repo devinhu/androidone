@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, Base64Utils
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.core.utils.encrypt;
 
 import java.io.ByteArrayOutputStream;

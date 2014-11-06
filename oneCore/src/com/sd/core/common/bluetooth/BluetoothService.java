@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, BluetoothService
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.core.common.bluetooth;
 
 import java.io.IOException;

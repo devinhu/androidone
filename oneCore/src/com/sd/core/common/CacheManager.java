@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, CacheManager
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.core.common;
 
 import java.io.BufferedOutputStream;

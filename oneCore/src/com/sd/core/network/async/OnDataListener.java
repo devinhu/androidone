@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, OnDataListener
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.core.network.async;
 
 import com.sd.core.network.http.HttpException;

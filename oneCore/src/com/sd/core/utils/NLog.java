@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, NLog
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.core.utils;
 
 import android.util.Log;

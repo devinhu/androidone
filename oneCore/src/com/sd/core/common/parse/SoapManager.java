@@ -1,8 +1,7 @@
 /*
-    Launch Android Client, SoapManager
-    Copyright (c) 2014 LAUNCH Tech Company Limited
-    http:www.cnlaunch.com
-*/
+    ShengDao Android Client, SoapManager
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
 
 package com.sd.core.common.parse;
 

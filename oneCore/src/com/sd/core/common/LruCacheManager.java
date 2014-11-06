@@ -1,14 +1,20 @@
+/*
+    ShengDao Android Client, LruCacheManager
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.core.common;
 
 import android.util.LruCache;
 
 /**
- * [LruCacheManager, LruCache is memory cache, its caching strategy is to discard the least recently used items.]
+ * [A brief description]
  * 
- * @author: devin.hu
- * @version: 1.0
- * @date: Oct 29, 2013
- */
+ * @author huxinwu
+ * @version 1.0
+ * @date 2014-11-6
+ * 
+ **/
 public class LruCacheManager {
 
 	/**

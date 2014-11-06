@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, XmlMananger
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.core.common.parse;
 
 import java.io.InputStream;

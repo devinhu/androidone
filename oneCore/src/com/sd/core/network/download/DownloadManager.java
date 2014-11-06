@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, DownloadManager
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.core.network.download;
 
 import java.io.File;

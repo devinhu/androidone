@@ -1,8 +1,21 @@
+/*
+    ShengDao Android Client, DownLoadCallback
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.core.network.download;
 
 import android.os.Handler;
 import android.os.Message;
 
+/**
+ * [A brief description]
+ * 
+ * @author huxinwu
+ * @version 1.0
+ * @date 2014-11-6
+ * 
+ **/
 public class DownLoadCallback extends Handler {
 
 	protected static final int START_MESSAGE = 0;

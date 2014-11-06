@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, NToast
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.core.utils;
 
 import android.content.Context;
