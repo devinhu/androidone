@@ -1,15 +1,12 @@
 package com.sd.one.activity.demo.drawermenu;
 
 import android.os.Bundle;
-import android.text.Html;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.sd.core.network.http.HttpException;
 import com.sd.one.R;
 import com.sd.one.activity.BaseActivity;
-import com.sd.one.model.response.ContentInfoResponse;
-import com.sd.one.service.CmsAction;
 import com.sd.one.widget.pulltorefresh.PullToRefreshBase;
 import com.sd.one.widget.pulltorefresh.PullToRefreshBase.Mode;
 import com.sd.one.widget.pulltorefresh.PullToRefreshBase.OnRefreshListener;
@@ -49,8 +46,9 @@ public class DetailActivity extends BaseActivity implements OnRefreshListener<Sc
     
     @Override
     public Object doInBackground(int requsetCode) throws HttpException {
-        CmsAction action = new CmsAction(mContext);
-        return action.getContentInfo(contentId);
+//      CmsAction action = new CmsAction(mContext);
+//      return action.getContentInfo(contentId);
+    	return null;
     }
 
 
@@ -58,10 +56,10 @@ public class DetailActivity extends BaseActivity implements OnRefreshListener<Sc
     public void onSuccess(int requestCode, Object result) {
         switch(requestCode){
             case REQ_CONTENTINFO_CODE:
-                ContentInfoResponse response = (ContentInfoResponse)result;
-                if(response != null){
-                    tv_context.setText(Html.fromHtml(response.getData().getTxt()));
-                }
+//                ContentInfoResponse response = (ContentInfoResponse)result;
+//                if(response != null){
+//                    tv_context.setText(Html.fromHtml(response.getData().getTxt()));
+//                }
                 mPullRefreshListView.onRefreshComplete();
                 break;
         }

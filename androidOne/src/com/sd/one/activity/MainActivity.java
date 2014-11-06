@@ -24,7 +24,7 @@ import com.sd.one.activity.cart.CartActivity;
 import com.sd.one.activity.category.CategoryActivity;
 import com.sd.one.activity.collection.CollectionActivity;
 import com.sd.one.activity.home.HomeActivity;
-import com.sd.one.activity.more.moerActivity;
+import com.sd.one.activity.more.MoerActivity;
 import com.sd.one.widget.dialog.MessageDialog;
 
 /**
@@ -50,7 +50,7 @@ public class MainActivity extends ActivityGroup implements OnCheckedChangeListen
 		Intent categoryIntent = new Intent(this, CategoryActivity.class);
 		Intent collectionIntent = new Intent(this, CollectionActivity.class);
 		Intent cartIntent = new Intent(this, CartActivity.class);
-		Intent memberIntent = new Intent(this, moerActivity.class);
+		Intent memberIntent = new Intent(this, MoerActivity.class);
 
 		tabHost = (TabHost) findViewById(R.id.tabhost);
 		tabHost.setup(getLocalActivityManager());

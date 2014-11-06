@@ -1,16 +1,20 @@
+/*
+    ShengDao Android Client, UserData
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.model;
 
 import com.sd.one.model.base.BaseModel;
 
-
-
 /**
  * [A brief description]
  * 
- * @author: devin.hu
- * @version: 1.0
- * @date: Nov 25, 2013
- */
+ * @author huxinwu
+ * @version 1.0
+ * @date 2014-11-6
+ * 
+ **/
 public class UserData extends BaseModel {
 
     /**
@@ -18,19 +22,19 @@ public class UserData extends BaseModel {
      */
     private static final long serialVersionUID = -1372855598326843553L;
 
-    private String id;// 12,
+    private String id;
 
-    private String username;// androiside,
+    private String username;
 
-    private String email;// 2958932635@qq.com,
+    private String email;
 
-    private String userImg;// null,
+    private String userImg;
 
-    private String gender;// null,
+    private String gender;
 
-    private String intro;// null,
+    private String intro;
 
-    private String qq;// null
+    private String qq;
 
     public String getId() {
         return id;

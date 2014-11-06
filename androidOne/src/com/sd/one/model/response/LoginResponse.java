@@ -1,15 +1,21 @@
+/*
+    ShengDao Android Client, LoginResponse
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.model.response;
 
 import com.sd.one.model.UserData;
 import com.sd.one.model.base.BaseResponse;
 
 /**
- * [A brief description]
+ * [登陆返回结果演示类]
  * 
- * @author: devin.hu
- * @version: 1.0
- * @date: Nov 25, 2013
- */
+ * @author huxinwu
+ * @version 1.0
+ * @date 2014-11-6
+ * 
+ **/
 public class LoginResponse extends BaseResponse {
 
     /**

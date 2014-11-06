@@ -13,10 +13,6 @@ import android.widget.ListView;
 import com.sd.core.network.http.HttpException;
 import com.sd.one.R;
 import com.sd.one.activity.BaseActivity;
-import com.sd.one.model.Content;
-import com.sd.one.model.ContentData;
-import com.sd.one.model.response.ContentResponse;
-import com.sd.one.service.CmsAction;
 import com.sd.one.widget.dialog.LoadDialog;
 import com.sd.one.widget.pulltorefresh.PullToRefreshBase;
 import com.sd.one.widget.pulltorefresh.PullToRefreshBase.Mode;
@@ -61,8 +57,8 @@ public class PullToRefreshActivity extends BaseActivity implements OnItemClickLi
     public Object doInBackground(int requestCode) throws HttpException {
         switch(requestCode){
             case REQUEST_CODE:
-            	CmsAction action = new CmsAction(mContext);
-                return action.getContentList("40", pageno);
+//            	CmsAction action = new CmsAction(mContext);
+//                return action.getContentList("40", pageno);
         }
         return super.doInBackground(requestCode);
     }
@@ -78,13 +74,13 @@ public class PullToRefreshActivity extends BaseActivity implements OnItemClickLi
                         mAdapter.clear();
                     }
             		
-            		ContentResponse res = (ContentResponse)result;
-            		if(res.getSucces()){
-            			ContentData data = res.getData();
-            			for(Content bean : data.getDataList()){
-            				list.add(bean.getTitle());
-            			}
-            		}
+//            		ContentResponse res = (ContentResponse)result;
+//            		if(res.getSucces()){
+//            			ContentData data = res.getData();
+//            			for(Content bean : data.getDataList()){
+//            				list.add(bean.getTitle());
+//            			}
+//            		}
             		
                     mAdapter.addAll(list);
                     mAdapter.notifyDataSetChanged();

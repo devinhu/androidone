@@ -1,7 +1,15 @@
+/*
+    ShengDao Android Client, BaseAction
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
 
 package com.sd.one.service;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
+
+import org.codehaus.jackson.type.TypeReference;
 
 import android.content.Context;
 
@@ -93,6 +101,18 @@ public abstract class BaseAction {
 	}
 	
 	/**
+	 * JSON转JAVA对象数组方法
+	 * @param obj
+	 * @param reference
+	 * @return
+	 * @throws HttpException
+	 * @throws IOException
+	 */
+	public <T> List<T> jsonToList(String obj, TypeReference<List<T>> reference) throws HttpException, IOException {
+		return JsonMananger.getInstance().getJsonMapper().readValue(obj, reference);
+	}
+	
+	/**
 	 * JAVA对象转JSON方法
 	 * @param obj
 	 * @return
@@ -101,6 +121,7 @@ public abstract class BaseAction {
 	public String BeanTojson(Object obj) throws HttpException {
        return JsonMananger.getInstance().beanToJson(obj);
 	}
+	
 	
     /**
      * 获取完整URL方法

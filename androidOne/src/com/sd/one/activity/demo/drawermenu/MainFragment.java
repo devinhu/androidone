@@ -1,9 +1,5 @@
 package com.sd.one.activity.demo.drawermenu;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,9 +11,6 @@ import android.widget.ListView;
 import com.sd.core.network.http.HttpException;
 import com.sd.one.R;
 import com.sd.one.activity.BaseFragment;
-import com.sd.one.model.Content;
-import com.sd.one.model.response.ContentResponse;
-import com.sd.one.service.CmsAction;
 import com.sd.one.widget.pulltorefresh.PullToRefreshBase;
 import com.sd.one.widget.pulltorefresh.PullToRefreshBase.Mode;
 import com.sd.one.widget.pulltorefresh.PullToRefreshBase.OnRefreshListener2;
@@ -40,7 +33,7 @@ public class MainFragment extends BaseFragment implements OnItemClickListener, O
     private int pageNo = 1;
     private String channelId = "12";
     private PullToRefreshListView mPullRefreshListView;
-    private List<Content> list = new ArrayList<Content>();
+    //private List<Content> list = new ArrayList<Content>();
     
     public MainFragment() {
         Bundle args = getArguments();
@@ -76,8 +69,10 @@ public class MainFragment extends BaseFragment implements OnItemClickListener, O
     
     @Override
     public Object doInBackground(int requsetCode) throws HttpException {
-        CmsAction action = new CmsAction(mContext);
-        return action.getContentList(channelId, pageNo);
+//        CmsAction action = new CmsAction(mContext);
+//        return action.getContentList(channelId, pageNo);
+        
+        return null;
     }
 
 
@@ -85,16 +80,16 @@ public class MainFragment extends BaseFragment implements OnItemClickListener, O
     public void onSuccess(int requestCode, Object result) {
         switch(requestCode){
             case REQ_CONTENT_LIST_CODE:
-                if(pageNo ==1)list.clear();
-                ContentResponse response = (ContentResponse)result;
-                if(response != null){
-                    List<Content> dataList = response.getData().getDataList();
-                    if(dataList != null){
+//                if(pageNo ==1)list.clear();
+//                ContentResponse response = (ContentResponse)result;
+//                if(response != null){
+//                    List<Content> dataList = response.getData().getDataList();
+//                    if(dataList != null){
 //                        list.addAll(dataList);
 //                        mAdapter.setList(list);
 //                        mAdapter.notifyDataSetChanged();
-                    }
-                }
+//                    }
+//                }
                 mPullRefreshListView.onRefreshComplete();
                 break;
         }
@@ -115,8 +110,8 @@ public class MainFragment extends BaseFragment implements OnItemClickListener, O
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Intent intent = new Intent(mContext, DetailActivity.class);
-        intent.putExtra(DetailActivity.PARAM_CONTENTID_KEY, list.get(position-1).getId());
-        startActivity(intent);
+//        Intent intent = new Intent(mContext, DetailActivity.class);
+//        intent.putExtra(DetailActivity.PARAM_CONTENTID_KEY, list.get(position-1).getId());
+//        startActivity(intent);
     }
 }

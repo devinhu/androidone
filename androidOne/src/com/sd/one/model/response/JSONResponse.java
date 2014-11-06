@@ -1,13 +1,20 @@
+/*
+    ShengDao Android Client, JSONResponse
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.model.response;
 
 import com.sd.one.model.base.BaseModel;
 
 /**
- * [一句简单描述]
+ * [JSON返回结果演示类]
  * 
- * @author Devin.Hu
- * @version [2013-11-4]
- */
+ * @author huxinwu
+ * @version 1.0
+ * @date 2014-11-6
+ * 
+ **/
 public class JSONResponse extends BaseModel {
 
 	/**

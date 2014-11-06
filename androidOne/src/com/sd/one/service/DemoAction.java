@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, DemoAction
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.service;
 
 import java.io.IOException;
@@ -9,18 +14,20 @@ import android.content.Context;
 import android.text.TextUtils;
 
 import com.sd.core.common.CacheManager;
-import com.sd.core.common.parse.JsonMananger;
 import com.sd.core.network.http.HttpException;
+import com.sd.core.network.http.RequestParams;
+import com.sd.one.common.URLConstants;
 import com.sd.one.model.response.JSONResponse;
+import com.sd.one.model.response.LoginResponse;
 import com.sd.one.model.response.XMLResponse;
 
 /**
  * [本地数据接口测试类]
- *	
- * @author devin.hu
+ * 
+ * @author huxinwu
  * @version 1.0
- * @date 2013-9-30
- *
+ * @date 2014-11-6
+ * 
  **/
 public class DemoAction extends BaseAction {
 
@@ -33,7 +40,7 @@ public class DemoAction extends BaseAction {
 	}
 
 	/**
-	 * 获取xml内容
+	 * 获取xml内容（带缓存）
 	 * @param url
 	 * @return
 	 * @throws HttpException
@@ -60,11 +67,10 @@ public class DemoAction extends BaseAction {
 		}
 		
 		return response;
-		
 	}
 	
 	/**
-	 * 获取json内容
+	 * 获取json内容（单个对象）
 	 * @param url
 	 * @return
 	 * @throws HttpException
@@ -95,7 +101,7 @@ public class DemoAction extends BaseAction {
 	
 	
 	/**
-	 * 获取json带数组内容
+	 * 获取json内容（数组）
 	 * @param url
 	 * @return
 	 * @throws HttpException
@@ -115,7 +121,7 @@ public class DemoAction extends BaseAction {
 		try {
 			String result = httpManager.get(mContext, url);
 			if(!TextUtils.isEmpty(result)){
-			   response = JsonMananger.getInstance().getJsonMapper().readValue(result, new TypeReference<List<JSONResponse>>(){});
+			   response = jsonToList(result, new TypeReference<List<JSONResponse>>(){});
 			   if(response != null){
 			       CacheManager.writeObject(response, key);
 			   }
@@ -126,4 +132,24 @@ public class DemoAction extends BaseAction {
 		
 		return response;
 	}
+	
+	 /**
+     * [用户登陆] 
+     * @param username
+     * @param password
+     * @throws HttpException
+     */
+    public LoginResponse login(String username, String password) throws HttpException {
+        String url = getURL(URLConstants.API_LOGIN);
+        RequestParams params = new RequestParams();
+        params.put("username", username);
+        params.put("password", password);
+
+        LoginResponse response = null;
+        String result = httpManager.post(mContext, url, params);
+        if(!TextUtils.isEmpty(result)){
+            response = jsonToBean(result, LoginResponse.class);
+        }
+        return response;
+    }
 }

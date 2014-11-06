@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, XMLResponse
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.model.response;
 
 import com.sd.one.model.Question;
@@ -6,12 +11,12 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
 /**
- * [A brief description]
- *	
- * @author devin.hu
+ * [XML返回结果演示类]
+ * 
+ * @author huxinwu
  * @version 1.0
- * @date 2013-9-30
- *
+ * @date 2014-11-6
+ * 
  **/
 @XStreamAlias("TXN_XML")
 public class XMLResponse extends BaseModel {

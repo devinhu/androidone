@@ -1,13 +1,17 @@
+/*
+    ShengDao Android Client, BaseResponse
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
 
 package com.sd.one.model.base;
 
-
 /**
- * [A brief description]
+ * [返回结果基类，返回结果公共字段本类实现]
  * 
- * @author devin.hu
+ * @author huxinwu
  * @version 1.0
- * @date 2013-9-30
+ * @date 2014-11-6
+ * 
  **/
 public class BaseResponse extends BaseModel {
 

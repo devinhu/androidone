@@ -45,7 +45,7 @@
         <activity android:name=".activity.category.CategoryActivity" />
         <activity android:name=".activity.collection.CollectionActivity" />
         <activity android:name=".activity.home.HomeActivity" />
-        <activity android:name=".activity.more.moerActivity" />
+        <activity android:name=".activity.more.MoerActivity" />
         
         <activity android:name=".activity.demo.drawermenu.DrawerMenuActivity" />
         <activity android:name=".activity.demo.drawermenu.DetailActivity" />

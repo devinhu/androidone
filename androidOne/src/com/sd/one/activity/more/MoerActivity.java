@@ -6,13 +6,15 @@ import android.view.KeyEvent;
 import com.sd.one.R;
 import com.sd.one.activity.BaseActivity;
 
-/**   
- * [A brief description]
- * @author: devin.hu
- * @version: 1.0
- * @date:   Nov 28, 2013    
- */
-public class moerActivity extends BaseActivity {
+/**
+ * [更多页面]
+ * 
+ * @author huxinwu
+ * @version 1.0
+ * @date 2014-11-6
+ * 
+ **/
+public class MoerActivity extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

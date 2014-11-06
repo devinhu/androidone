@@ -1,3 +1,8 @@
+/*
+    ShengDao Android Client, Question
+    Copyright (c) 2014 ShengDao Tech Company Limited
+ */
+
 package com.sd.one.model;
 
 import com.sd.one.model.base.BaseModel;
@@ -7,9 +12,9 @@ import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 /**
  * [A brief description]
  * 
- * @author devin.hu
+ * @author huxinwu
  * @version 1.0
- * @date 2013-9-22
+ * @date 2014-11-6
  * 
  **/
 @XStreamAlias("Question")
