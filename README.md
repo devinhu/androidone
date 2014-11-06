@@ -7,106 +7,94 @@ One整个框架为MVC模式搭建，基于android framework为核心，集成Android世界中的主流技
 以“复杂的世界里，一个就够了”为理念，励志帮助Android开发人员快速搭建一个简单高效的android开发框架，
 
 
-异步模块：
+异步模块：<br/>
 封装AsyncTask类，将异步框架单独抽出来。页面通过实现回调监听获取数据并直接更新UI操作，实现多线程机制，支持并发，超过并发数需等待。
 建议一般在BaseActivity、BaseFragment中实现。
  
  
-使用如下：
+使用如下：<br/>
 在BaseActivity类onCreate方法初始化：
 mAsyncTaskManager = AsyncTaskManager.getInstance(mContext);
  
  
-实现如下方法：
-public void request(int requsetCode){
-    mAsyncTaskManager.request(requsetCode, this);
+实现如下方法：<br/>
+public void request(int requsetCode){<br/>
+    mAsyncTaskManager.request(requsetCode, this);<br/>
 }
  
-public void request(int requsetCode, boolean isCheckNetwork){
-    mAsyncTaskManager.request(requsetCode, isCheckNetwork, this);
+public void request(int requsetCode, boolean isCheckNetwork){<br/>
+    mAsyncTaskManager.request(requsetCode, isCheckNetwork, this);<br/>
 }
  
-public void cancelRequest(int requsetCode){
-    mAsyncTaskManager.cancelRequest(requsetCode);
+public void cancelRequest(int requsetCode){<br/>
+    mAsyncTaskManager.cancelRequest(requsetCode);<br/>
 }
  
-public void cancelRequest(){
-    mAsyncTaskManager.cancelRequest();
-}
- 
-@Override
-public Object doInBackground(int requestCode) throws HttpException{
-    return null;
+public void cancelRequest(){<br/>
+    mAsyncTaskManager.cancelRequest();<br/>
 }
  
 @Override
-public void onSuccess(int requestCode, Object result) {
- 
+public Object doInBackground(int requestCode) throws HttpException{<br/>
+    return null;<br/>
 }
  
 @Override
-public void onFailure(int requestCode, int state, Object result) {
-    switch(state){
-        //网络不可用给出提示
-        case AsyncTaskManager.HTTP_NULL_CODE:
-            break;
+public void onSuccess(int requestCode, Object result) {<br/>
+ <br/>
+}
  
-        //网络有问题给出提示
-         case AsyncTaskManager.HTTP_ERROR_CODE:
-            break;
- 
-        //请求有问题给出提示
-        case AsyncTaskManager.REQUEST_ERROR_CODE:
-            break;
-    }    
+@Override
+public void onFailure(int requestCode, int state, Object result) {<br/>
+<br/>
 }
 
 
-HTTP请求模块：
+HTTP请求模块：<br/>
 采用第三方AsyncHttpClient方案，在此基础上增加同步发送请求管理类（配合异步框架使用），支持http、https方式，支持get、post、put、delete方法，支持GZIP、File格式，支持Retry、Cacel策略，堪称完美！
  
  
-Common模块：
+Common模块：<br/>
 页面堆栈管理，缓存管理、系统异常处理、SharedPreferences管理、LruCache管理（用于页面传大数据且不用担心释放问题）、Json解析管理对象、xml解析管理对象、SoapObject解析管理对象。
  
  
-DB模块：
+DB模块：<br/>
 采用GreenDao方案，直接实现Java Object的CURD方法就可以操作数据库。 
 新增java工程自动生成model、dao、session对象等代码，拷过来直接使用即可。
 新增DBManager类，所有数据操作只需要获取DBManager实例来获取DaoSession，然后通过DaoSession来获取你需要的所有dao即可。
 
 
-使用如下：
+使用如下：<br/>
 dao = DBManager.getInstance(mContext).getDaoSession().getNoteDao();
  
  
-资源下载模块：
+资源下载模块：<br/>
 在第三方AsyncHttpClient方案增加BreakpointHttpResponseHandler类，支持多并发、多文件上传、断点续传、暂停、继续、删除下载任务。
  
  
-使用如下：
- downloadMgr = DownloadManager.getInstance();
-     downloadMgr.setDownLoadCallback(new DownLoadCallback() {
+使用如下：<br/>
+ downloadMgr = DownloadManager.getInstance();<br/>
+     downloadMgr.setDownLoadCallback(new DownLoadCallback() {<br/>
+ 	 <br/>
+        @Override<br/>
+        public void onLoading(String url, int bytesWritten, int totalSize) {<br/>
+            super.onLoading(url, bytesWritten, totalSize);<br/>
+        }<br/>
  
-        @Override
-        public void onLoading(String url, int bytesWritten, int totalSize) {
-            super.onLoading(url, bytesWritten, totalSize);
-        }
+        @Override<br/>
+        public void onSuccess(String url, String filePath) {<br/>
+            super.onSuccess(url, filePath);<br/>
+        }<br/>
  
-        @Override
-        public void onSuccess(String url, String filePath) {
-            super.onSuccess(url, filePath);
-        }
- 
-        @Override
-        public void onFailure(String url, String strMsg) {
-            super.onFailure(url, strMsg);
-        }
+        @Override<br/>
+        public void onFailure(String url, String strMsg) {<br/>
+            super.onFailure(url, strMsg);<br/>
+        }<br/>
     });
  
-    //添加下载任务
-    for (DownloadInfo bean1 : list) {
-        downloadMgr.addHandler(bean1.getUrl());
+    //添加下载任务<br/>
+    for (DownloadInfo bean1 : list) {<br/>
+        downloadMgr.addHandler(bean1.getUrl());<br/>
     }
  
  
