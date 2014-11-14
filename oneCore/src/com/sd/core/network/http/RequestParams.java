@@ -463,4 +463,12 @@ public class RequestParams {
             this.contentType = contentType;
         }
     }
+
+	public ConcurrentHashMap<String, String> getUrlParams() {
+		return urlParams;
+	}
+
+	public void setUrlParams(ConcurrentHashMap<String, String> urlParams) {
+		this.urlParams = urlParams;
+	}
 }
