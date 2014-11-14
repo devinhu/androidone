@@ -15,7 +15,7 @@ import org.apache.http.client.HttpResponseException;
 import android.text.TextUtils;
 
 import com.sd.core.utils.NLog;
-import com.sd.core.utils.encrypt.MD5Utils;
+import com.sd.core.utils.encrypt.MD5;
 
 /**
  * [A brief description]
@@ -73,7 +73,7 @@ public class BreakpointHttpResponseHandler extends AsyncHttpResponseHandler {
 	 * @return
 	 */
 	public String getFileName(String url){
-		StringBuilder fileName = new StringBuilder(MD5Utils.encrypt(url));
+		StringBuilder fileName = new StringBuilder(MD5.encrypt(url));
 		if(!TextUtils.isEmpty(url)){
 			if(url.indexOf(".") > 0){
 				int index = url.lastIndexOf(".");
