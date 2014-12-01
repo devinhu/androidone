@@ -57,6 +57,7 @@
         <activity android:name=".activity.demo.popmenu.PopmenuActivity" />
         <activity android:name=".activity.demo.download.DownLoadActivity" />
         <activity android:name=".activity.demo.database.DatabaseActivity" />
+        <activity android:name=".activity.demo.photo.PhotoActivity" />
 
         <uses-library android:name="android.test.runner" />
     </application>

@@ -9,9 +9,11 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import android.net.Uri;
 import android.text.TextUtils;
 
 import com.sd.core.utils.NLog;
+import com.sd.core.utils.encrypt.MD5;
 
 /**
  * [字符串工具类]
@@ -131,4 +133,18 @@ public class StringUtils {
 		return pattern.matcher(str).matches();
 	}
 
+	/**
+	 * 生成图片唯一名字
+	 * 
+	 * @param uri
+	 * @return
+	 */
+	public static String getImageName(Uri uri) {
+		String path = String.valueOf(System.currentTimeMillis());
+		if (uri != null) {
+			path = path + uri.getPath().toString();
+		}
+		path = MD5.encrypt(path) + ".jpg";
+		return path;
+	}
 }
