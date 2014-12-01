@@ -18,7 +18,7 @@ import com.sd.one.utils.photo.CropHelper;
 import com.sd.one.utils.photo.CropParams;
 
 /**
- * [A brief description]
+ * [相册页面]
  * 
  * @author devin.hu
  * @version 1.0
