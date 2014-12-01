@@ -72,9 +72,6 @@ public class BaseActivity extends FragmentActivity implements OnDataListener{
 
 	@Override
     public void setContentView(View view) {
-        if (mContentView.getChildCount() > 1) {
-        	mContentView.removeViewAt(1);
-        }
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT, 1);
         mContentView.addView(view, lp);
     }
