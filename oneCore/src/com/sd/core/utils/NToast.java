@@ -6,6 +6,7 @@
 package com.sd.core.utils;
 
 import android.content.Context;
+import android.text.TextUtils;
 import android.widget.Toast;
 
 /**
@@ -23,7 +24,9 @@ public class NToast {
 	}
 	
 	public static void shortToast(Context context, String text) {
-		showToast(context, text, Toast.LENGTH_SHORT);
+		if(!TextUtils.isEmpty(text) && !"".equals(text.trim())){
+			showToast(context, text, Toast.LENGTH_SHORT);
+		}
 	}
 
 	public static void longToast(Context context, int resId) {
@@ -31,10 +34,14 @@ public class NToast {
 	}
 	
 	public static void longToast(Context context, String text) {
-		showToast(context, text, Toast.LENGTH_LONG);
+		if(!TextUtils.isEmpty(text) && !"".equals(text.trim())){
+			showToast(context, text, Toast.LENGTH_LONG);
+		}
 	}
 	
 	public static void showToast(Context context, String text, int duration) {
-		Toast.makeText(context, text, duration).show();
+		if(!TextUtils.isEmpty(text) && !"".equals(text.trim())){
+			Toast.makeText(context, text, duration).show();
+		}
 	}
 }
