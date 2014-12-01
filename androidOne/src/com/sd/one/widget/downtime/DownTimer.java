@@ -44,7 +44,7 @@ public class DownTimer {
 				if(listener != null){
 					listener.onTick(millisUntilFinished);
 				}else{
-					NLog.e(TAG, "PADownTimerListener 监听不能为空");
+					NLog.e(TAG, "DownTimerListener 监听不能为空");
 				}
 			}
 
@@ -53,7 +53,7 @@ public class DownTimer {
 				if(listener != null){
 					listener.onFinish();
 				}else{
-					NLog.e(TAG, "PADownTimerListener 监听不能为空");
+					NLog.e(TAG, "DownTimerListener 监听不能为空");
 				}
 				if(mCountDownTimer != null)mCountDownTimer.cancel();
 			}
