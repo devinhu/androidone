@@ -59,6 +59,15 @@
         <activity android:name=".activity.demo.database.DatabaseActivity" />
         <activity android:name=".activity.demo.photo.PhotoActivity" />
 
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- alipay sdk end -->
+        
         <uses-library android:name="android.test.runner" />
     </application>
 
