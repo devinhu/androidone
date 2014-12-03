@@ -12,7 +12,6 @@ import android.os.Bundle;
 
 import com.sd.one.activity.BaseActivity;
 import com.sd.one.utils.FileUtils;
-import com.sd.one.utils.StringUtils;
 import com.sd.one.utils.photo.CropHandler;
 import com.sd.one.utils.photo.CropHelper;
 import com.sd.one.utils.photo.CropParams;
@@ -48,9 +47,8 @@ public class PhotoActivity extends BaseActivity implements CropHandler {
 
 	@Override
 	public void onPhotoCropped(Uri uri) {
-		String fileName = StringUtils.getImageName(uri);
-		FileUtils.getInstance().saveFile(CropHelper.decodeUriAsBitmap(this, mCropParams.uri), fileName);
-		String filePath = FileUtils.getInstance().getFilePath(fileName);
+		FileUtils.getInstance().saveFile(CropHelper.decodeUriAsBitmap(this, mCropParams.uri), CropHelper.CROP_CACHE_FILE_NAME);
+		String filePath = FileUtils.getInstance().getFilePath(CropHelper.CROP_CACHE_FILE_NAME);
 	}
 
 	@Override
