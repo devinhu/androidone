@@ -146,7 +146,7 @@ public class DemoAction extends BaseAction {
         params.put("password", password);
 
         LoginResponse response = null;
-        String result = httpManager.post(mContext, url, params);
+        String result = httpManager.post(mContext, url, getParams(params));
         if(!TextUtils.isEmpty(result)){
             response = jsonToBean(result, LoginResponse.class);
         }

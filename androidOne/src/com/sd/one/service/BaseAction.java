@@ -16,6 +16,7 @@ import android.content.Context;
 import com.sd.core.common.parse.JsonMananger;
 import com.sd.core.common.parse.XmlMananger;
 import com.sd.core.network.http.HttpException;
+import com.sd.core.network.http.RequestParams;
 import com.sd.core.network.http.SyncHttpClient;
 import com.sd.one.common.URLConstants;
 
@@ -122,6 +123,15 @@ public abstract class BaseAction {
        return JsonMananger.getInstance().beanToJson(obj);
 	}
 	
+	/**
+	 * 获取处理后的RequestParams对象
+	 * @param params
+	 * @return
+	 */
+	public RequestParams getParams(RequestParams params){
+		//TODO 这里处理公共参数，签名等操作
+		return params;
+	}
 	
     /**
      * 获取完整URL方法
