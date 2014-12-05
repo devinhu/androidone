@@ -6,7 +6,6 @@
 package com.sd.one.activity;
 
 import java.io.File;
-import java.util.Properties;
 
 import android.app.Application;
 import android.content.Context;
