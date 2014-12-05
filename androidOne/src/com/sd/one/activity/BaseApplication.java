@@ -5,6 +5,7 @@
 
 package com.sd.one.activity;
 
+import java.io.File;
 import java.util.Properties;
 
 import android.app.Application;
@@ -77,7 +78,8 @@ public class BaseApplication extends Application implements APPOnCrashListener {
 	}
 
 	@Override
-	public void onCrashPost(Properties crashReport) {
+	public void onCrashPost(String crashReport, File file) {
 		
 	}
+
 }
