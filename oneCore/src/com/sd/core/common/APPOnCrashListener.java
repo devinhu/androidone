@@ -5,7 +5,7 @@
 
 package com.sd.core.common;
 
-import java.util.Properties;
+import java.io.File;
 
 import android.content.Context;
 
@@ -29,5 +29,5 @@ public interface APPOnCrashListener {
 	 * 处理收集错误信息，一般发送于服务器
 	 * @param crashReport 收集错误信息
 	 */
-	public void onCrashPost(Properties crashReport);
+	public void onCrashPost(String crashReport, File file);
 }

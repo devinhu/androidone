@@ -15,7 +15,6 @@ import java.lang.Thread.UncaughtExceptionHandler;
 import java.lang.reflect.Field;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Properties;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -23,8 +22,11 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Build;
+import android.os.Environment;
 import android.os.Looper;
 import android.text.TextUtils;
+
+import com.sd.core.utils.NLog;
  
 /**
  * [系统未捕获异常默认处理类，将完成当系统出现异常（未处理）时，弹出友好提示框，收集错误日记，发送错误日志于服务器]
@@ -36,23 +38,21 @@ import android.text.TextUtils;
  **/
 public class AppCrashHandler implements UncaughtExceptionHandler {
 
-	@SuppressWarnings("unused")
 	private final String tag = AppCrashHandler.class.getSimpleName();
 	
 	private Context mContext;
 	private static AppCrashHandler instance;
 	private UncaughtExceptionHandler mDefaultHandler;
 	private APPOnCrashListener onCrashListener;
-	private Properties crashReport = new Properties();
+	private StringBuilder crashReport = new StringBuilder();
 	
-	private final String TRACE = "trace"; 
-	private final String EXCEPTION = "exception"; 
 	private final String VERSIONNAME = "versionName"; 
 	private final String VERSIONCODE = "versionCode"; 
 	
 	private final String PREFIX = "crash_";
 	private final String PATTERN = "yyyy-MM-dd hh:mm:ss";
-	private final String SUFFIX = ".cr";
+	private final String SUFFIX = ".txt";
+	private String path;
 	
 	
 	/**
@@ -72,6 +72,11 @@ public class AppCrashHandler implements UncaughtExceptionHandler {
 	 */
 	private AppCrashHandler(Context context) {
 		mContext = context;
+		if(checkSDCard()){
+			path = Environment.getExternalStorageDirectory().getPath() + File.separator + mContext.getPackageName();
+		}else{
+			path = mContext.getFilesDir().getParent();
+		}
 	    mDefaultHandler = Thread.getDefaultUncaughtExceptionHandler();
         Thread.setDefaultUncaughtExceptionHandler(this);
 	}
@@ -142,9 +147,9 @@ public class AppCrashHandler implements UncaughtExceptionHandler {
 			PackageManager pm = context.getPackageManager();
 			PackageInfo pi = pm.getPackageInfo(context.getPackageName(), PackageManager.GET_ACTIVITIES);
 			if(pi != null){
-				crashReport.put(VERSIONNAME, String.valueOf(pi.versionName));
-				crashReport.put(VERSIONCODE, String.valueOf(pi.versionCode));
-				
+				crashReport.append("\n\t");
+				crashReport.append(VERSIONNAME +" = "+ String.valueOf(pi.versionName)).append("\n\t");
+				crashReport.append(VERSIONCODE +" = "+ String.valueOf(pi.versionCode)).append("\n\t");
 			}
 			
 			//根据反射获取Build的所有信息
@@ -152,7 +157,7 @@ public class AppCrashHandler implements UncaughtExceptionHandler {
 			if(fieldList != null){
 				for(Field device : fieldList){
 					device.setAccessible(true);
-					crashReport.put(device.getName(), String.valueOf(device.get(null)));
+					crashReport.append(device.getName() +" = "+ String.valueOf(device.get(null))).append("\n\t");
 				}
 			}
 		} catch (NameNotFoundException e) {
@@ -183,12 +188,20 @@ public class AppCrashHandler implements UncaughtExceptionHandler {
 			String result = writer.toString();
 			printWriter.close();
 			
-			crashReport.put(EXCEPTION, ex.getLocalizedMessage());
-			crashReport.put(TRACE, result);
+			crashReport.append("\n\t");
+			crashReport.append(ex.getMessage()).append("\n\t");
+			crashReport.append(result).append("\n\t");
 			
 			String fileName = getCrashFileName();
-			FileOutputStream fos = mContext.openFileOutput(fileName, Context.MODE_PRIVATE);
-			crashReport.store(fos, mContext.getPackageName());
+			File file = new File(path);  
+			if(!file.exists()){
+				file.mkdirs();
+			}
+			file = new File(path, fileName); 
+			NLog.e(tag, file.getPath());
+			
+			FileOutputStream fos = new FileOutputStream(file);  
+			fos.write(crashReport.toString().getBytes());
 			fos.flush();
 			fos.close();
 			
@@ -197,6 +210,18 @@ public class AppCrashHandler implements UncaughtExceptionHandler {
 		}
 	}
 
+	/**
+	 * 判断SDCard是否存在,并可写
+	 * @return
+	 */
+	public boolean checkSDCard(){
+		String flag = Environment.getExternalStorageState();
+		if(android.os.Environment.MEDIA_MOUNTED.equals(flag)){
+			return true;
+		}
+		return false;
+	}
+	
 	/**
 	 * 获取错误报告文件名称
 	 * @return
@@ -228,12 +253,11 @@ public class AppCrashHandler implements UncaughtExceptionHandler {
 		String[] list = filesDir.list(filter);
 		if(list != null && list.length > 0){
 			for(String fileName : list){
-				File file = new File(mContext.getFilesDir(), fileName);
+				File file = new File(path, fileName);
 				if(file.exists()){
 					if(onCrashListener != null){
-						onCrashListener.onCrashPost(crashReport);
+						onCrashListener.onCrashPost(String.valueOf(crashReport), file);
 					}
-					file.delete();
 				}
 			}
 		}
