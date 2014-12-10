@@ -59,7 +59,6 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.sd.core.common.CacheManager;
 import com.sd.core.utils.NLog;
 
 public class SyncHttpClient {
@@ -809,10 +808,10 @@ public class SyncHttpClient {
 			if(entity != null){
 				bufferEntity = new BufferedHttpEntity(entity);
 			    responseBody = EntityUtils.toString(bufferEntity, ENCODE_UTF8);
-			    if(NLog.isDebug()){
-			        String key = uriRequest.getURI().toString().replace("/", "");
-			        CacheManager.saveTestData(responseBody, key);
-			    }
+//			    if(NLog.isDebug()){
+//			        String key = uriRequest.getURI().toString().replace("/", "");
+//			        CacheManager.saveTestData(responseBody, key);
+//			    }
 			    NLog.e(tag, "responseBody : " + responseBody);
 			}
 			
