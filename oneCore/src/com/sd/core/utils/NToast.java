@@ -40,7 +40,7 @@ public class NToast {
 	}
 	
 	public static void showToast(Context context, String text, int duration) {
-		if(!TextUtils.isEmpty(text) && !"".equals(text.trim())){
+		if(context != null && !TextUtils.isEmpty(text) && !"".equals(text.trim())){
 			Toast.makeText(context, text, duration).show();
 		}
 	}
