@@ -17,9 +17,7 @@ package gentest;
 
 import de.greenrobot.daogenerator.DaoGenerator;
 import de.greenrobot.daogenerator.Entity;
-import de.greenrobot.daogenerator.Property;
 import de.greenrobot.daogenerator.Schema;
-import de.greenrobot.daogenerator.ToMany;
 
 /**
  * Generates entities and DAOs for the example project DaoExample.
@@ -32,7 +30,7 @@ public class O2MallDaoGenerator {
 
     public static void main(String[] args) throws Exception {
     	//com.shengdao.demo.utils.db是生成的类package的值
-        Schema schema = new Schema(3, "com.shengdao.demo.utils.db");
+        Schema schema = new Schema(3, "com.suneee.o2mall.utils.db");
 
         //添加Note对象的Schema，会生成针对Note的数据库相关代码
         addNote(schema);
@@ -45,60 +43,27 @@ public class O2MallDaoGenerator {
      * @param schema
      */
     private static void addNote(Schema schema) {
-    	Entity note = schema.addEntity("Friend");
-    	note.addStringProperty("userId").notNull().primaryKey();
-    	note.addStringProperty("name");
-    	note.addStringProperty("portraitUri");
+    	Entity note = schema.addEntity("ImageInfo");
+    	note.addStringProperty("id").notNull();
+    	note.addStringProperty("url");
+    	
+    	note = schema.addEntity("GoodsInfo");
+    	note.addStringProperty("spec_id");
+    	note.addStringProperty("is_faved");
+    	note.addStringProperty("goods_id");
+    	note.addStringProperty("goods_serial");
+    	note.addStringProperty("goods_name");
+    	note.addStringProperty("brand_name");
+    	note.addStringProperty("spec_goods_storage");
+    	note.addStringProperty("goods_store_price");
+    	note.addStringProperty("goods_store_saleprice");
+    	note.addStringProperty("goods_state");
+    	note.addStringProperty("item_score");
+    	
+    	note.addStringProperty("buynum");
+    	note.addStringProperty("spec_sel_id");
+    	note.addStringProperty("spec_sel_goods_price");
+    	note.addStringProperty("spec_sel_goods_storage");
     }
     
-    /**
-     * @param schema
-     */
-    private static void addChannel(Schema schema) {
-    	Entity note = schema.addEntity("Channel");
-    	note.addStringProperty("id").notNull().primaryKey();
-    	note.addStringProperty("title");
-    	note.addStringProperty("image");
-    	note.addStringProperty("is_show");
-    	note.addStringProperty("chan_seq");
-    	note.addStringProperty("link");
-    	note.addStringProperty("type");
-    }
-    
-    /**
-     * @param schema
-     */
-    private static void addChannelItem(Schema schema) {
-    	Entity note = schema.addEntity("ChannelItem");
-    	note.addLongProperty("id").notNull().primaryKey();
-    	note.addStringProperty("name");
-    	note.addIntProperty("channel");
-    	note.addIntProperty("orderId");
-    	note.addIntProperty("selected");
-    	note.addStringProperty("type");
-    	note.addStringProperty("link");
-    	note.addStringProperty("imgSource");
-    	note.addBooleanProperty("downloadCnt");
-    	note.addBooleanProperty("isSelected");
-    	note.addBooleanProperty("isAttention");
-    }
-
-    @SuppressWarnings("unused")
-	private static void addCustomerOrder(Schema schema) {
-        Entity customer = schema.addEntity("Customer");
-        customer.addIdProperty();
-        customer.addStringProperty("name").notNull();
-
-        Entity order = schema.addEntity("Order");
-        order.setTableName("ORDERS"); // "ORDER" is a reserved keyword
-        order.addIdProperty();
-        Property orderDate = order.addDateProperty("date").getProperty();
-        Property customerId = order.addLongProperty("customerId").notNull().getProperty();
-        order.addToOne(customer, customerId);
-
-        ToMany customerToOrders = customer.addToMany(order, customerId);
-        customerToOrders.setName("orders");
-        customerToOrders.orderAsc(orderDate);
-    }
-
 }
