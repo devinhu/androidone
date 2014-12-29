@@ -48,22 +48,18 @@ public class O2MallDaoGenerator {
     	note.addStringProperty("url");
     	
     	note = schema.addEntity("GoodsInfo");
-    	note.addStringProperty("spec_id");
     	note.addStringProperty("is_faved");
     	note.addStringProperty("goods_id");
     	note.addStringProperty("goods_serial");
     	note.addStringProperty("goods_name");
     	note.addStringProperty("brand_name");
+    	note.addStringProperty("spec_id");
     	note.addStringProperty("spec_goods_storage");
     	note.addStringProperty("goods_store_price");
     	note.addStringProperty("goods_store_saleprice");
     	note.addStringProperty("goods_state");
     	note.addStringProperty("item_score");
-    	
     	note.addStringProperty("buynum");
-    	note.addStringProperty("spec_sel_id");
-    	note.addStringProperty("spec_sel_goods_price");
-    	note.addStringProperty("spec_sel_goods_storage");
     }
     
 }
