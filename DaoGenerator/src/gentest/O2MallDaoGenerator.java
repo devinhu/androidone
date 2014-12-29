@@ -48,7 +48,8 @@ public class O2MallDaoGenerator {
     	note.addStringProperty("url");
     	
     	note = schema.addEntity("GoodsInfo");
-    	note.addStringProperty("is_faved");
+    	note.addIdProperty().autoincrement().primaryKey();
+    	note.addStringProperty("goods_image");
     	note.addStringProperty("goods_id");
     	note.addStringProperty("goods_serial");
     	note.addStringProperty("goods_name");
