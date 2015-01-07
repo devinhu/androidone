@@ -5,16 +5,21 @@
 
 package com.sd.one.activity.demo.photo;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ImageView;
 
+import com.sd.one.R;
 import com.sd.one.activity.BaseActivity;
 import com.sd.one.utils.FileUtils;
-import com.sd.one.utils.photo.CropHandler;
-import com.sd.one.utils.photo.CropHelper;
-import com.sd.one.utils.photo.CropParams;
+import com.sd.one.utils.photo.PhotoParams;
+import com.sd.one.utils.photo.PhotoUtils;
+import com.sd.one.utils.photo.PhotoUtils.OnPhotoResultListener;
 
 /**
  * [相册页面]
@@ -24,58 +29,62 @@ import com.sd.one.utils.photo.CropParams;
  * @date 2014-12-1
  * 
  **/
-public class PhotoActivity extends BaseActivity implements CropHandler {
+public class PhotoActivity extends BaseActivity implements OnClickListener{
 
-	private CropParams mCropParams;
+	private PhotoUtils photoUtils;
+	private PhotoParams photoParams;
+	
+	private Button btn_select;
+	private Button btn_take;
+	private ImageView img_result;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mCropParams = new CropParams();
+		setContentView(R.layout.layout_demo_photo);
+		
+		btn_select = (Button) findViewById(R.id.btn_select);
+		btn_select.setOnClickListener(this);
+		btn_take = (Button) findViewById(R.id.btn_take);
+		btn_take.setOnClickListener(this);
+		img_result = (ImageView) findViewById(R.id.img_result);
+		
+		photoParams = new PhotoParams();
+		photoUtils = PhotoUtils.getInstance(this);
+		photoUtils.setOnPhotoResultListener(new OnPhotoResultListener() {
+			@Override
+			public void onPhotoResult(Uri uri) {
+				Log.e("onPhotoResult", uri.getPath().toString());
+			}
+
+			@Override
+			public void onPhotoCancel() {
+				
+			}
+		});
 	}
 
 	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		switch (requestCode) {
-		case CropHelper.REQUEST_CROP:
-		case CropHelper.REQUEST_CAMERA:
-			CropHelper.handleResult(this, requestCode, resultCode, data);
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.btn_select:
+			//此处photoParams必须为新构建的实例对象，你可修改参数, 如：photoParams.crop = String.valueOf(false);等
+			photoParams = new PhotoParams();
+			photoUtils.selectPicture(this, photoParams);
 			break;
-
+			
+		case R.id.btn_take:
+			photoParams = new PhotoParams();
+			//此处photoParams必须为新构建的实例对象，你可修改参数, 如：photoParams.crop = String.valueOf(false);等
+			photoUtils.takePicture(this, photoParams);
+			break;
 		}
 	}
 
 	@Override
-	public void onPhotoCropped(Uri uri) {
-		FileUtils.getInstance().saveFile(CropHelper.decodeUriAsBitmap(this, mCropParams.uri), CropHelper.CROP_CACHE_FILE_NAME);
-		String filePath = FileUtils.getInstance().getFilePath(CropHelper.CROP_CACHE_FILE_NAME);
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		photoUtils.onActivityResult(requestCode, resultCode, data);
 	}
-
-	@Override
-	public void onCropCancel() {
-
-	}
-
-	@Override
-	public void onCropFailed(String message) {
-
-	}
-
-	@Override
-	public CropParams getCropParams() {
-		return mCropParams;
-	}
-
-	@Override
-	public Activity getContext() {
-		return this;
-	}
-
-	@Override
-	protected void onDestroy() {
-		if (getCropParams() != null) {
-			CropHelper.clearCachedCropFile(getCropParams().uri);
-		}
-		super.onDestroy();
-	}
+	
 }
