@@ -16,7 +16,6 @@ import android.widget.ImageView;
 
 import com.sd.one.R;
 import com.sd.one.activity.BaseActivity;
-import com.sd.one.utils.FileUtils;
 import com.sd.one.utils.photo.PhotoParams;
 import com.sd.one.utils.photo.PhotoUtils;
 import com.sd.one.utils.photo.PhotoUtils.OnPhotoResultListener;
@@ -50,7 +49,7 @@ public class PhotoActivity extends BaseActivity implements OnClickListener{
 		img_result = (ImageView) findViewById(R.id.img_result);
 		
 		photoParams = new PhotoParams();
-		photoUtils = PhotoUtils.getInstance(this);
+		photoUtils = new PhotoUtils(this);
 		photoUtils.setOnPhotoResultListener(new OnPhotoResultListener() {
 			@Override
 			public void onPhotoResult(Uri uri) {

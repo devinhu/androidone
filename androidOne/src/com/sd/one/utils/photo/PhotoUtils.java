@@ -38,7 +38,6 @@ public class PhotoUtils {
 	public static final int INTENT_TAKE = 3;
 	
 	/** PhotoUtils对象 **/ 
-	private static PhotoUtils instance;
 	private Activity mActivity;
 	private PhotoParams photoParams;
 	private OnPhotoResultListener onPhotoResultListener;
@@ -46,19 +45,8 @@ public class PhotoUtils {
 	/**
 	 * 构造方法
 	 */
-	private PhotoUtils(Activity activity) {
+	public PhotoUtils(Activity activity) {
 		mActivity = activity;
-	}
-	
-	/**
-	 * 单例模式获取PhotoUtils实例对象
-	 * @return
-	 */
-	public static PhotoUtils getInstance(Activity activity) {
-		if (instance == null) {
-			instance = new PhotoUtils(activity);
-		}
-		return instance;
 	}
 	
 	/**
