@@ -44,7 +44,7 @@ public class O2MallDaoGenerator {
      */
     private static void addNote(Schema schema) {
     	Entity note = schema.addEntity("ImageInfo");
-    	note.addStringProperty("id").notNull();
+    	note.addStringProperty("id").primaryKey().notNull();
     	note.addStringProperty("url");
     	
     	note = schema.addEntity("GoodsInfo");
