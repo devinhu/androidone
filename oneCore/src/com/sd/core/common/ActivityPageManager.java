@@ -210,17 +210,29 @@ public class ActivityPageManager {
 	
 	/**
 	 * exit System
+	 * @param context
+	 */
+	public void exit(Context context) {
+		exit(context, true);
+	}
+	
+	/**
+	 * exit System
+	 * @param context
+	 * @param isClearCache
 	 */
 	@SuppressWarnings("deprecation")
-	public void exit(Context context) {
+	public void exit(Context context, boolean isClearCache) {
 		try {
 			finishAllActivity();
 			if(context != null){
 				ActivityManager activityMgr = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
 				activityMgr.restartPackage(context.getPackageName());
 			}
-			LruCacheManager.getInstance().evictAll();
-			CacheManager.clearAll();
+			if(isClearCache){
+				LruCacheManager.getInstance().evictAll();
+				CacheManager.clearAll();
+			}
 			System.exit(0);
 			android.os.Process.killProcess(android.os.Process.myPid());
 		} catch (Exception e) {
