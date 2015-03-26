@@ -5,6 +5,7 @@
 
 package com.sd.core.utils;
 
+import android.app.Activity;
 import android.content.Context;
 import android.text.TextUtils;
 import android.widget.Toast;
@@ -40,7 +41,15 @@ public class NToast {
 	}
 	
 	public static void showToast(Context context, String text, int duration) {
-		if(context != null && !TextUtils.isEmpty(text) && !"".equals(text.trim())){
+		if (context == null){
+			return;
+		}
+		if (context != null && context instanceof Activity) {
+	        if(((Activity) context).isFinishing()) {
+	            return;
+	        }
+		}
+		if(!TextUtils.isEmpty(text) && !"".equals(text.trim())){
 			Toast.makeText(context, text, duration).show();
 		}
 	}
