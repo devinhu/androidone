@@ -12,13 +12,15 @@ import android.content.Context;
 import android.text.TextUtils;
 
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
-import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import com.sd.core.common.APPOnCrashListener;
 import com.sd.core.common.AppCrashHandler;
 import com.sd.core.common.CacheManager;
 import com.sd.core.utils.NLog;
+import com.sd.one.R;
 import com.sd.one.utils.CommonUtils;
 
 /** 
@@ -32,7 +34,8 @@ import com.sd.one.utils.CommonUtils;
 public class BaseApplication extends Application implements APPOnCrashListener {
 
 	private final String tag = BaseApplication.class.getSimpleName();
-
+	private static DisplayImageOptions options;
+	
 	@Override
 	public void onCreate() {
 		init();
@@ -59,12 +62,24 @@ public class BaseApplication extends Application implements APPOnCrashListener {
 			crashHandler.setOnCrashListener(this);
 		}
 	       
+		options = new DisplayImageOptions.Builder()
+		.showImageForEmptyUri(R.drawable.ic_launcher)
+		.showImageOnFail(R.drawable.ic_launcher)
+		.showImageOnLoading(R.drawable.ic_launcher)
+		.displayer(new FadeInBitmapDisplayer(300)) 
+		//只有配置了这两句话，缓存才起作用
+        .cacheInMemory(true)
+        .cacheOnDisk(true)
+		.build();
+		
 		//初始化图片下载组件
 		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getApplicationContext())
-		.threadPriority(Thread.NORM_PRIORITY - 2)
+		.threadPriority(Thread.NORM_PRIORITY - 2)  
 		.denyCacheImageMultipleSizesInMemory()
-		.discCacheFileNameGenerator(new Md5FileNameGenerator())
-		.tasksProcessingOrder(QueueProcessingType.LIFO)
+        .diskCacheSize(50 * 1024 * 1024)
+        .diskCacheFileCount(200)
+        .diskCacheFileNameGenerator(new Md5FileNameGenerator()) 
+		.defaultDisplayImageOptions(options)
 		.build();
 		
 		//Initialize ImageLoader with configuration.
