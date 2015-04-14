@@ -7,13 +7,12 @@ package com.sd.core.common.parse;
 
 import java.io.IOException;
 
-import org.codehaus.jackson.JsonGenerationException;
-import org.codehaus.jackson.JsonParseException;
-import org.codehaus.jackson.map.DeserializationConfig;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.annotate.JsonSerialize.Inclusion;
-
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sd.core.network.http.HttpException;
 import com.sd.core.utils.NLog;
 
@@ -40,8 +39,8 @@ public class JsonMananger {
 	private JsonMananger() {
 		if (jsonMapper == null) {
 			jsonMapper = new ObjectMapper();
-			jsonMapper.getSerializationConfig().setSerializationInclusion(Inclusion.ALWAYS);  
-			jsonMapper.getDeserializationConfig().set(DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);  
+			jsonMapper.configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true);
+			jsonMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 		}
 	}
 
