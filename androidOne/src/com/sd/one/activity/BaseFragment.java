@@ -82,14 +82,6 @@ public abstract class BaseFragment extends Fragment implements OnDataListener{
 	}
 	
 	/**
-	 * 取消请求
-	 * @param requsetCode
-	 */
-	public void cancelRequest(int requsetCode){
-		mAsyncTaskManager.cancelRequest(requsetCode);
-    }
-	
-	/**
 	 * 取消所有请求
 	 */
 	public void cancelRequest(){

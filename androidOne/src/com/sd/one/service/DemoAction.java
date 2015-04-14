@@ -8,11 +8,10 @@ package com.sd.one.service;
 import java.io.IOException;
 import java.util.List;
 
-import org.codehaus.jackson.type.TypeReference;
-
 import android.content.Context;
 import android.text.TextUtils;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.sd.core.common.CacheManager;
 import com.sd.core.network.http.HttpException;
 import com.sd.core.network.http.RequestParams;

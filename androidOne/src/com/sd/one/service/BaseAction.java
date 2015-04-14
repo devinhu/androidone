@@ -9,10 +9,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-import org.codehaus.jackson.type.TypeReference;
-
 import android.content.Context;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.sd.core.common.parse.JsonMananger;
 import com.sd.core.common.parse.XmlMananger;
 import com.sd.core.network.http.HttpException;
