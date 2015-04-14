@@ -1,5 +1,6 @@
 package com.sd.core.utils.encrypt;
 
+import android.annotation.SuppressLint;
 import java.io.UnsupportedEncodingException;
 import java.security.SecureRandom;
 import javax.crypto.Cipher;
@@ -66,6 +67,7 @@ public class AESUtils {
 	 * @return
 	 * @throws UnsupportedEncodingException
 	 */
+	@SuppressLint("TrulyRandom") 
 	private static SecretKeySpec toKey(String password)
 			throws UnsupportedEncodingException {
 		try {
@@ -134,6 +136,7 @@ public class AESUtils {
 	 * @param buf
 	 * @return
 	 */
+	@SuppressWarnings("unused")
 	private static String parseByte2HexStr(byte buf[]) {
 		StringBuffer sb = new StringBuffer();
 		for (int i = 0; i < buf.length; i++) {
@@ -152,6 +155,7 @@ public class AESUtils {
 	 * @param hexStr
 	 * @return
 	 */
+	@SuppressWarnings("unused")
 	private static byte[] parseHexStr2Byte(String hexStr) {
 		if (hexStr.length() < 1) {
 			return null;

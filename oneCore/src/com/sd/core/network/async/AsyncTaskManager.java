@@ -5,18 +5,14 @@
 
 package com.sd.core.network.async;
 
-import java.lang.ref.WeakReference;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.WeakHashMap;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 import android.content.Context;
-import android.os.Build;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 
+import com.sd.core.network.http.HttpException;
 import com.sd.core.utils.NLog;
+
+import de.greenrobot1.event.EventBus;
 
 /**
  * [A brief description]
@@ -41,8 +37,6 @@ public class AsyncTaskManager {
 	
 	private Context mContext;
 	private static AsyncTaskManager instance;
-	private static ExecutorService mExecutorService;
-	private static Map<Integer, WeakReference<BaseAsyncTask>> requestMap;
 
 	/**
 	 * 构造方法
@@ -50,8 +44,7 @@ public class AsyncTaskManager {
 	 */
 	private AsyncTaskManager(Context context) {
 		mContext = context;
-		mExecutorService = Executors.newFixedThreadPool(5);
-		requestMap = new WeakHashMap<Integer, WeakReference<BaseAsyncTask>>();
+		EventBus.getDefault().register(this);  
 	}
 	
 	/**
@@ -87,53 +80,79 @@ public class AsyncTaskManager {
 	 * @param isCheckNetwork 是否检查网络，true检查，false不检查
 	 * @param listener 回调监听
 	 */
-	public void request(int requestCode, boolean isCheckNetwork, OnDataListener listener){
-		DownLoad bean = new DownLoad(requestCode, isCheckNetwork, listener);
+	public void request(final int requestCode, final boolean isCheckNetwork, final OnDataListener listener){
 		if(requestCode > 0){
-			BaseAsyncTask mAsynctask = new BaseAsyncTask(bean, mContext);
-			//after version 2.3 added executeOnExecutor method. 
-			//before 2.3 only run five asyntask, more than five must wait 
-			if(Build.VERSION.SDK_INT >= 11){
-				mAsynctask.executeOnExecutor(mExecutorService);
-			}else{
-				mAsynctask.execute();
-			}
-			requestMap.put(requestCode, new WeakReference<BaseAsyncTask>(mAsynctask));
+			EventBus.getDefault().post(new AsyncRequest(requestCode, isCheckNetwork, listener));
 		}else{
 			NLog.e(tag, "the error is requestCode < 0");
 		}
 	}
 	
 	/**
-	 * 取消请求
-	 * @param requestCode 请求码
+	 * 异步线程
+	 * @param bean
 	 */
-	public void cancelRequest(int requestCode) {
-		WeakReference<BaseAsyncTask> requestTask = requestMap.get(requestCode);
-    	if(requestTask != null) {
-    		BaseAsyncTask request = requestTask.get();
-            if(request != null) {
-            	request.cancel(true);
-            	request = null;
-            }
-        }
-        requestMap.remove(requestCode);
-	}
+	public void onEventAsync(AsyncRequest bean) {
+		AsyncResult result = new AsyncResult(bean.getRequestCode(), bean.isCheckNetwork(), bean.getListener());
+		try {
+			if(!isNetworkConnected(mContext, bean.isCheckNetwork())){
+				result.setState(HTTP_NULL_CODE);
+			}else{
+				Object object = bean.getListener().doInBackground(bean.getRequestCode());
+				result.setResult(object);
+				result.setState(REQUEST_SUCCESS_CODE);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			result.setResult(e);
+			if(e instanceof HttpException){
+				result.setState(HTTP_ERROR_CODE);
+			}else{
+				result.setState(REQUEST_ERROR_CODE);
+			}
+		}
+		EventBus.getDefault().post(result);
+	}  
 	
+	
+	/**
+	 * 在数据返回到UI线程中处理
+	 * @param bean
+	 */
+	public void onEventMainThread(AsyncResult bean){
+		switch(bean.getState()){
+			case REQUEST_SUCCESS_CODE:
+				bean.getListener().onSuccess(bean.getRequestCode(), bean.getResult());
+				break;
+				
+			case REQUEST_ERROR_CODE:
+			case HTTP_ERROR_CODE:
+			case HTTP_NULL_CODE:
+				bean.getListener().onFailure(bean.getRequestCode(), bean.getState(), bean.getResult());
+				break;
+		}
+	}
 	
 	/**
      * 取消所有请求
      */
     public void cancelRequest() {
-        if(requestMap != null){
-            Iterator<Entry<Integer, WeakReference<BaseAsyncTask>>> it = requestMap.entrySet().iterator();
-            while(it.hasNext()){
-                Entry<Integer, WeakReference<BaseAsyncTask>> entry = (Entry<Integer, WeakReference<BaseAsyncTask>>) it.next();
-                Integer requestCode = entry.getKey();
-                cancelRequest(requestCode);
-            }
-            requestMap.clear();
-        }
+    	EventBus.getDefault().unregister(this);
     }
 	
+    /**
+	 * 判断网络是否可用
+	 * @param context
+	 * @param isCheckNetwork 是否检查网络，true表示检查，false表示不检查
+	 * @return
+	 */
+	public boolean isNetworkConnected(Context context, boolean isCheckNetwork) {
+		if(isCheckNetwork){
+			ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+			NetworkInfo ni = cm.getActiveNetworkInfo();
+			return ni != null && ni.isConnectedOrConnecting();
+		}else{
+			return true;
+		}
+	}
 }
