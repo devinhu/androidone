@@ -30,81 +30,39 @@ import de.greenrobot.daogenerator.ToMany;
  */
 public class LianrenDaoGenerator {
 
-    public static void main(String[] args) throws Exception {
-    	//com.shengdao.demo.utils.db是生成的类package的值
-        Schema schema = new Schema(3, "com.shengdao.demo.utils.db");
+	public static void main(String[] args) throws Exception {
+		// com.shengdao.demo.utils.db是生成的类package的值
+		Schema schema = new Schema(3, "com.shengdao.lianren.utils.db");
 
-        //添加Note对象的Schema，会生成针对Note的数据库相关代码
-        addNote(schema);
-        
-        //添加Channel对象的Schema，会生成针对Channel的数据库相关代码
-        addChannel(schema);
-        
-        //添加ChannelItem对象的Schema，会生成针对ChannelItem的数据库相关代码
-        addChannelItem(schema);
+		// 添加Note对象的Schema，会生成针对Note的数据库相关代码
+		addFriend(schema);
 
-        //C://Users/huxinwu/Desktop/demo 该地址是生成的代码存放地址，相对地址不好写就写绝对地址，生成后直接拷贝到对应的地址（com.shengdao.demo.utils.db）下面
-        new DaoGenerator().generateAll(schema, "C://Users/huxinwu/Desktop/demo");
-    }
+		addNotice(schema);
 
-    /**
-     * @param schema
-     */
-    private static void addNote(Schema schema) {
-    	Entity note = schema.addEntity("Friend");
-    	note.addStringProperty("userId").notNull().primaryKey();
-    	note.addStringProperty("name");
-    	note.addStringProperty("portraitUri");
-    }
-    
-    /**
-     * @param schema
-     */
-    private static void addChannel(Schema schema) {
-    	Entity note = schema.addEntity("Channel");
-    	note.addStringProperty("id").notNull().primaryKey();
-    	note.addStringProperty("title");
-    	note.addStringProperty("image");
-    	note.addStringProperty("is_show");
-    	note.addStringProperty("chan_seq");
-    	note.addStringProperty("link");
-    	note.addStringProperty("type");
-    }
-    
-    /**
-     * @param schema
-     */
-    private static void addChannelItem(Schema schema) {
-    	Entity note = schema.addEntity("ChannelItem");
-    	note.addLongProperty("id").notNull().primaryKey();
-    	note.addStringProperty("name");
-    	note.addIntProperty("channel");
-    	note.addIntProperty("orderId");
-    	note.addIntProperty("selected");
-    	note.addStringProperty("type");
-    	note.addStringProperty("link");
-    	note.addStringProperty("imgSource");
-    	note.addBooleanProperty("downloadCnt");
-    	note.addBooleanProperty("isSelected");
-    	note.addBooleanProperty("isAttention");
-    }
+		// C://Users/huxinwu/Desktop/demo
+		// 该地址是生成的代码存放地址，相对地址不好写就写绝对地址，生成后直接拷贝到对应的地址（com.shengdao.demo.utils.db）下面
+		new DaoGenerator().generateAll(schema, "C://Users/huxinwu/Desktop/demo");
+	}
 
-    @SuppressWarnings("unused")
-	private static void addCustomerOrder(Schema schema) {
-        Entity customer = schema.addEntity("Customer");
-        customer.addIdProperty();
-        customer.addStringProperty("name").notNull();
+	/**
+	 * @param schema
+	 */
+	private static void addFriend(Schema schema) {
+		Entity note = schema.addEntity("Friend");
+		note.addStringProperty("userId").notNull().primaryKey();
+		note.addStringProperty("name");
+		note.addStringProperty("portraitUri");
+	}
 
-        Entity order = schema.addEntity("Order");
-        order.setTableName("ORDERS"); // "ORDER" is a reserved keyword
-        order.addIdProperty();
-        Property orderDate = order.addDateProperty("date").getProperty();
-        Property customerId = order.addLongProperty("customerId").notNull().getProperty();
-        order.addToOne(customer, customerId);
-
-        ToMany customerToOrders = customer.addToMany(order, customerId);
-        customerToOrders.setName("orders");
-        customerToOrders.orderAsc(orderDate);
-    }
+	/**
+	 * @param schema
+	 */
+	private static void addNotice(Schema schema) {
+		Entity note = schema.addEntity("Notice");
+		note.addIdProperty().autoincrement().primaryKey();
+		note.addStringProperty("pushContent");
+		note.addStringProperty("targetid");
+		note.addStringProperty("time");
+	}
 
 }
