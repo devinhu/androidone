@@ -17,9 +17,7 @@ package gentest;
 
 import de.greenrobot.daogenerator.DaoGenerator;
 import de.greenrobot.daogenerator.Entity;
-import de.greenrobot.daogenerator.Property;
 import de.greenrobot.daogenerator.Schema;
-import de.greenrobot.daogenerator.ToMany;
 
 /**
  * Generates entities and DAOs for the example project DaoExample.
