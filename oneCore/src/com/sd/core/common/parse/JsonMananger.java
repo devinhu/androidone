@@ -21,25 +21,7 @@ import com.sd.core.utils.NLog;
  **/
 public class JsonMananger {
 
-	private final String tag = JsonMananger.class.getSimpleName();
-	
-	/** JsonMananger实例对象 **/ 
-	private static JsonMananger instance;
-
-	/**
-	 * 得到单例模式JsonMananger对象
-	 * @return
-	 */
-	public static JsonMananger getInstance() {
-		if (instance == null) {
-			synchronized (JsonMananger.class) {
-				if (instance == null) {
-					instance = new JsonMananger();
-				}
-			}
-		}
-		return instance;
-	}
+	private static final String tag = JsonMananger.class.getSimpleName();
 	
 	/**
 	 * 将json字符串转换成java对象
@@ -48,7 +30,7 @@ public class JsonMananger {
 	 * @return
 	 * @throws HttpException 
 	 */
-	public <T> T jsonToBean(String json, Class<T> cls) throws HttpException {
+	public static <T> T jsonToBean(String json, Class<T> cls) throws HttpException {
         return JSON.parseObject(json, cls);
 	}
 
@@ -59,7 +41,7 @@ public class JsonMananger {
 	 * @return
 	 * @throws HttpException 
 	 */
-	public <T> List<T> jsonToList(String json, Class<T> cls) throws HttpException {
+	public static <T> List<T> jsonToList(String json, Class<T> cls) throws HttpException {
         return JSON.parseArray(json, cls);
 	}
 	
@@ -69,7 +51,7 @@ public class JsonMananger {
 	 * @return
 	 * @throws HttpException 
 	 */
-	public String beanToJson(Object obj) throws HttpException{
+	public static String beanToJson(Object obj) throws HttpException{
 		String result = JSON.toJSONString(obj);
 		NLog.e(tag, "beanToJson: " + result);
 		return result;
