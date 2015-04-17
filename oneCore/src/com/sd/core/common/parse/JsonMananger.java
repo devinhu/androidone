@@ -5,14 +5,9 @@
 
 package com.sd.core.common.parse;
 
-import java.io.IOException;
+import java.util.List;
 
-import com.fasterxml.jackson.core.JsonGenerationException;
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.alibaba.fastjson.JSON;
 import com.sd.core.network.http.HttpException;
 import com.sd.core.utils.NLog;
 
@@ -28,21 +23,8 @@ public class JsonMananger {
 
 	private final String tag = JsonMananger.class.getSimpleName();
 	
-	/** jsonMapper对象，采用jackson解析 **/ 
-	private ObjectMapper jsonMapper;
 	/** JsonMananger实例对象 **/ 
 	private static JsonMananger instance;
-	
-	/**
-	 * 构造方法
-	 */
-	private JsonMananger() {
-		if (jsonMapper == null) {
-			jsonMapper = new ObjectMapper();
-			jsonMapper.configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true);
-			jsonMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
-		}
-	}
 
 	/**
 	 * 得到单例模式JsonMananger对象
@@ -67,20 +49,20 @@ public class JsonMananger {
 	 * @throws HttpException 
 	 */
 	public <T> T jsonToBean(String json, Class<T> cls) throws HttpException {
-        try {
-        	return jsonMapper.readValue(json, cls);
-        } catch (JsonParseException e) {
-            e.printStackTrace();
-            throw new HttpException(e.getMessage());
-        } catch (JsonMappingException e) {
-            e.printStackTrace();
-            throw new HttpException(e.getMessage());
-        } catch (IOException e) {
-            e.printStackTrace();
-            throw new HttpException(e.getMessage());
-        }
+        return JSON.parseObject(json, cls);
 	}
 
+	/**
+	 * 将json字符串转换成java List对象
+	 * @param json
+	 * @param cls
+	 * @return
+	 * @throws HttpException 
+	 */
+	public <T> List<T> jsonToList(String json, Class<T> cls) throws HttpException {
+        return JSON.parseArray(json, cls);
+	}
+	
 	/**
 	 * 将bean对象转化成json字符串
 	 * @param obj
@@ -90,26 +72,12 @@ public class JsonMananger {
 	public String beanToJson(Object obj) throws HttpException{
 		String result = "";
 		try {
-			result = jsonMapper.writeValueAsString(obj);
-		} catch (JsonGenerationException e) {
+			result = JSON.toJSONString(obj);
+		} catch (Exception e) {
 			e.printStackTrace();
-			throw new HttpException(e.getMessage());
-		} catch (JsonMappingException e) {
-			e.printStackTrace();
-			throw new HttpException(e.getMessage());
-		} catch (IOException e) {
-			e.printStackTrace();
-			throw new HttpException(e.getMessage());
 		}
 		NLog.e(tag, "beanToJson: " + result);
 		return result;
 	}
 	
-	/**
-	 * 得到ObjectMapper解析对象
-	 * @return
-	 */
-	public ObjectMapper getJsonMapper() {
-		return jsonMapper;
-	}
 }
