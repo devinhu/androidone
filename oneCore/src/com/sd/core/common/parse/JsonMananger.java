@@ -70,12 +70,7 @@ public class JsonMananger {
 	 * @throws HttpException 
 	 */
 	public String beanToJson(Object obj) throws HttpException{
-		String result = "";
-		try {
-			result = JSON.toJSONString(obj);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		String result = JSON.toJSONString(obj);
 		NLog.e(tag, "beanToJson: " + result);
 		return result;
 	}
