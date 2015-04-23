@@ -8,8 +8,7 @@ One整个框架为MVC模式搭建，基于android framework为核心，集成And
 
 
 异步模块：
-封装EventBus类，将异步框架单独抽出来。页面通过实现回调监听获取数据并直接更新UI操作，实现多线程机制，支持并发，超过并发数需等待。
-建议一般在BaseActivity、BaseFragment中实现。
+封装EventBus类，将异步框架单独抽出来。页面通过实现回调监听获取数据并直接更新UI操作，实现多线程机制，支持并发，超过并发数需等待。建议一般在BaseActivity、BaseFragment中实现。
 
 
 HTTP请求模块：
@@ -19,18 +18,26 @@ HTTP请求模块：
 
 Common模块：
 页面堆栈管理ActivityPageManager：管理页面堆栈，提供完全退出方法。
+
 缓存管理CacheManager：主要用于缓存接口返回结果，返回结果中的对象必须继承baseModel实现序列化接口，提供缓存时长方法、缓存失效方法。
 系统异常处理：发布模式自动开启系统异常处理，提供友好提示，异常处理回调接口。
+
 SharedPreferences管理：支持直接put、get对象。
+
 LruCache管理：用于页面传大数据且不用担心释放问题。
+
 Json解析管理：采用fastjson实现，简单粗暴。
+
 xml解析管理：采用xstream实现，注解解析。
+
 SoapObject解析管理：直接将soap字符串解析为java对象。
 
 
 DB模块：
 采用GreenDao方案，直接实现Java Object的CURD方法就可以操作数据库。 
+
 新增DBManager类，所有数据操作只需要获取DBManager实例来获取DaoSession，然后通过DaoSession来获取你需要的所有dao即可。
+
 新增DaoGenerator工程自动生成model、dao、session对象等代码，拷过来直接使用即可。
 
 
@@ -46,14 +53,19 @@ DB模块：
 
 图片下载模块：
 采用universal-image-loader解决方案，有关使用情况请参见universal-image-loader官网信息，
+
 github地址：https://github.com/nostra13/Android-Universal-Image-Loader
+
 为了提供用户体验，建议在listview或者gridview在滑动的时候不加载图片
 
 
 看到这里，估计您和您的小伙伴们都惊呆了吧！赶快动手试试吧！
+
 具体使用请参考androidOne演示工程。
 
 我改变不了这个世界！这个世界也休想将我改变！
 
+
 如果任何问题或者建议，欢迎沟通。
+
 QQ群：195104825
