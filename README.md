@@ -1,111 +1,59 @@
-One¿ò¼ÜÄÜ°ïÄú´øÀ´Ê²Ã´£¿
- 
-One¿ò¼Ü·ÖÎªÁ½¸öÏîÄ¿£¬OneCoreÎªºËĞÄ¹¤³Ì£¬×÷Îªlib¿âµ¼Èë£»androidOneÎªÑİÊ¾ÏîÄ¿¡£
+ä¸€ä¸ªç‰›é€¼å“„å“„çš„Androidæ¡†æ¶One
 
-OneÕû¸ö¿ò¼ÜÎªMVCÄ£Ê½´î½¨£¬»ùÓÚandroid frameworkÎªºËĞÄ£¬¼¯³ÉAndroidÊÀ½çÖĞµÄÖ÷Á÷¼¼ÊõÑ¡ĞÍ£¬
-ÒÔPragmatic·ç¸ñµÄAndroidÓ¦ÓÃ²Î¿¼Ê¾Àı£¬ÊÇandroidÏîÄ¿×î¼ÑÊµ¼ùµÄ×Ü½áÓëÑİÊ¾¡£
-ÒÔ¡°¸´ÔÓµÄÊÀ½çÀï£¬Ò»¸ö¾Í¹»ÁË¡±ÎªÀíÄî£¬ÀøÖ¾°ïÖúAndroid¿ª·¢ÈËÔ±¿ìËÙ´î½¨Ò»¸ö¼òµ¥¸ßĞ§µÄandroid¿ª·¢¿ò¼Ü!
-
-
-Òì²½Ä£¿é£º<br/>
-·â×°AsyncTaskÀà£¬½«Òì²½¿ò¼Üµ¥¶À³é³öÀ´¡£Ò³ÃæÍ¨¹ıÊµÏÖ»Øµ÷¼àÌı»ñÈ¡Êı¾İ²¢Ö±½Ó¸üĞÂUI²Ù×÷£¬ÊµÏÖ¶àÏß³Ì»úÖÆ£¬Ö§³Ö²¢·¢£¬³¬¹ı²¢·¢ÊıĞèµÈ´ı¡£
-½¨ÒéÒ»°ãÔÚBaseActivity¡¢BaseFragmentÖĞÊµÏÖ¡£
- 
- 
-Ê¹ÓÃÈçÏÂ£º<br/>
-ÔÚBaseActivityÀàonCreate·½·¨³õÊ¼»¯£º
-mAsyncTaskManager = AsyncTaskManager.getInstance(mContext);
- 
- 
-ÊµÏÖÈçÏÂ·½·¨£º<br/>
-public void request(int requsetCode){<br/>
-	mAsyncTaskManager.request(requsetCode, this);<br/>
-}
- 
-public void request(int requsetCode, boolean isCheckNetwork){<br/>
-    mAsyncTaskManager.request(requsetCode, isCheckNetwork, this);<br/>
-}
- 
-public void cancelRequest(int requsetCode){<br/>
-    mAsyncTaskManager.cancelRequest(requsetCode);<br/>
-}
- 
-public void cancelRequest(){<br/>
-    mAsyncTaskManager.cancelRequest();<br/>
-}
- 
-@Override
-public Object doInBackground(int requestCode) throws HttpException{<br/>
-    return null;<br/>
-}
- 
-@Override
-public void onSuccess(int requestCode, Object result) {<br/>
- <br/>
-}
- 
-@Override
-public void onFailure(int requestCode, int state, Object result) {<br/>
-<br/>
-}
+Oneæ¡†æ¶èƒ½å¸®æ‚¨å¸¦æ¥ä»€ä¹ˆï¼Ÿ
+Oneæ¡†æ¶åˆ†ä¸ºä¸¤ä¸ªé¡¹ç›®ï¼ŒOneCoreä¸ºæ ¸å¿ƒå·¥ç¨‹ï¼ŒandroidOneä¸ºæ¼”ç¤ºé¡¹ç›®ï¼Œä¾èµ–oneCoreæ ¸å¿ƒã€‚
+Oneæ•´ä¸ªæ¡†æ¶ä¸ºMVCæ¨¡å¼æ­å»ºï¼ŒåŸºäºandroid frameworkä¸ºæ ¸å¿ƒï¼Œé›†æˆAndroidä¸–ç•Œä¸­çš„ä¸»æµæŠ€æœ¯é€‰å‹ï¼Œ
+ä»¥Pragmaticé£æ ¼çš„Androidåº”ç”¨å‚è€ƒç¤ºä¾‹ï¼Œæ˜¯androidé¡¹ç›®æœ€ä½³å®è·µçš„æ€»ç»“ä¸æ¼”ç¤ºã€‚
+ä»¥â€œå¤æ‚çš„ä¸–ç•Œé‡Œï¼Œä¸€ä¸ªå°±å¤Ÿäº†â€ä¸ºç†å¿µï¼ŒåŠ±å¿—å¸®åŠ©Androidå¼€å‘äººå‘˜å¿«é€Ÿæ­å»ºä¸€ä¸ªç®€å•é«˜æ•ˆçš„androidå¼€å‘æ¡†æ¶!
 
 
-HTTPÇëÇóÄ£¿é£º<br/>
-²ÉÓÃµÚÈı·½AsyncHttpClient·½°¸£¬ÔÚ´Ë»ù´¡ÉÏÔö¼ÓÍ¬²½·¢ËÍÇëÇó¹ÜÀíÀà£¨ÅäºÏÒì²½¿ò¼ÜÊ¹ÓÃ£©£¬Ö§³Öhttp¡¢https·½Ê½£¬Ö§³Öget¡¢post¡¢put¡¢delete·½·¨£¬Ö§³ÖGZIP¡¢File¸ñÊ½£¬Ö§³ÖRetry¡¢Cacel²ßÂÔ£¬¿°³ÆÍêÃÀ£¡
- 
- 
-CommonÄ£¿é£º<br/>
-Ò³Ãæ¶ÑÕ»¹ÜÀí£¬»º´æ¹ÜÀí¡¢ÏµÍ³Òì³£´¦Àí¡¢SharedPreferences¹ÜÀí¡¢LruCache¹ÜÀí£¨ÓÃÓÚÒ³Ãæ´«´óÊı¾İÇÒ²»ÓÃµ£ĞÄÊÍ·ÅÎÊÌâ£©¡¢Json½âÎö¹ÜÀí¶ÔÏó¡¢xml½âÎö¹ÜÀí¶ÔÏó¡¢SoapObject½âÎö¹ÜÀí¶ÔÏó¡£
- 
- 
-DBÄ£¿é£º<br/>
-²ÉÓÃGreenDao·½°¸£¬Ö±½ÓÊµÏÖJava ObjectµÄCURD·½·¨¾Í¿ÉÒÔ²Ù×÷Êı¾İ¿â¡£ 
-ĞÂÔöjava¹¤³Ì×Ô¶¯Éú³Émodel¡¢dao¡¢session¶ÔÏóµÈ´úÂë£¬¿½¹ıÀ´Ö±½ÓÊ¹ÓÃ¼´¿É¡£
-ĞÂÔöDBManagerÀà£¬ËùÓĞÊı¾İ²Ù×÷Ö»ĞèÒª»ñÈ¡DBManagerÊµÀıÀ´»ñÈ¡DaoSession£¬È»ºóÍ¨¹ıDaoSessionÀ´»ñÈ¡ÄãĞèÒªµÄËùÓĞdao¼´¿É¡£
+å¼‚æ­¥æ¨¡å—ï¼š
+å°è£…EventBusç±»ï¼Œå°†å¼‚æ­¥æ¡†æ¶å•ç‹¬æŠ½å‡ºæ¥ã€‚é¡µé¢é€šè¿‡å®ç°å›è°ƒç›‘å¬è·å–æ•°æ®å¹¶ç›´æ¥æ›´æ–°UIæ“ä½œï¼Œå®ç°å¤šçº¿ç¨‹æœºåˆ¶ï¼Œæ”¯æŒå¹¶å‘ï¼Œè¶…è¿‡å¹¶å‘æ•°éœ€ç­‰å¾…ã€‚
+å»ºè®®ä¸€èˆ¬åœ¨BaseActivityã€BaseFragmentä¸­å®ç°ã€‚
 
 
-Ê¹ÓÃÈçÏÂ£º<br/>
-dao = DBManager.getInstance(mContext).getDaoSession().getNoteDao();
- 
- 
-×ÊÔ´ÏÂÔØÄ£¿é£º<br/>
-ÔÚµÚÈı·½AsyncHttpClient·½°¸Ôö¼ÓBreakpointHttpResponseHandlerÀà£¬Ö§³Ö¶à²¢·¢¡¢¶àÎÄ¼şÉÏ´«¡¢¶ÏµãĞø´«¡¢ÔİÍ£¡¢¼ÌĞø¡¢É¾³ıÏÂÔØÈÎÎñ¡£
- 
- 
-Ê¹ÓÃÈçÏÂ£º<br/>
- downloadMgr = DownloadManager.getInstance();<br/>
-     downloadMgr.setDownLoadCallback(new DownLoadCallback() {<br/>
+HTTPè¯·æ±‚æ¨¡å—ï¼š
+é‡‡ç”¨ç¬¬ä¸‰æ–¹AsyncHttpClientæ–¹æ¡ˆï¼Œæ”¯æŒhttpã€httpsæ–¹å¼ï¼Œæ”¯æŒgetã€postã€putã€deleteæ–¹æ³•ï¼Œæ”¯æŒGZIPã€Fileæ ¼å¼ï¼Œæ”¯æŒRetryã€Cacelç­–ç•¥ï¼Œå ªç§°å®Œç¾ï¼
+å¢åŠ SyncHttpClientåŒæ­¥å‘é€è¯·æ±‚ç®¡ç†ç±»ï¼Œé…åˆå¼‚æ­¥æ¨¡å—ä½¿ç”¨ï¼›è¿™æ ·åšçš„å¥½å¤„æ˜¯Actionä¸­çš„æ¥å£æ–¹æ³•éƒ½å¯ä»¥è¿›è¡Œå•å…ƒæµ‹è¯•ã€‚
 
-        @Override<br/>
-        public void onLoading(String url, int bytesWritten, int totalSize) {<br/>
-            super.onLoading(url, bytesWritten, totalSize);<br/>
-        }<br/>
- 
-        @Override<br/>
-        public void onSuccess(String url, String filePath) {<br/>
-            super.onSuccess(url, filePath);<br/>
-        }<br/>
- 
-        @Override<br/>
-        public void onFailure(String url, String strMsg) {<br/>
-            super.onFailure(url, strMsg);<br/>
-        }<br/>
-    });
- 
-    //Ìí¼ÓÏÂÔØÈÎÎñ<br/>
-    for (DownloadInfo bean1 : list) {<br/>
-        downloadMgr.addHandler(bean1.getUrl());<br/>
-    }
- 
- 
-Í¼Æ¬ÏÂÔØÄ£¿é£º<br/>
-²ÉÓÃuniversal-image-loader½â¾ö·½°¸£¬ÓĞ¹ØÊ¹ÓÃÇé¿öÇë²Î¼ûuniversal-image-loader¹ÙÍøĞÅÏ¢£¬
-githubµØÖ·£ºhttps://github.com/nostra13/Android-Universal-Image-Loader
- 
-¿´µ½ÕâÀï£¬¹À¼ÆÄúºÍÄúµÄĞ¡»ï°éÃÇ¶¼¾ª´ôÁË°É£¡¸Ï¿ì¶¯ÊÖÊÔÊÔ°É£¡
-¾ßÌåÊ¹ÓÃÇë²Î¿¼androidOneÑİÊ¾¹¤³Ì¡£
- 
-ÎÒ¸Ä±ä²»ÁËÕâ¸öÊÀ½ç£¡Õâ¸öÊÀ½çÒ²ĞİÏë½«ÎÒ¸Ä±ä£¡
- 
-Èç¹ûÈÎºÎÎÊÌâ»òÕß½¨Òé£¬»¶Ó­¹µÍ¨¡£<br/>
-2891429357@qq.com
+
+Commonæ¨¡å—ï¼š
+é¡µé¢å †æ ˆç®¡ç†ActivityPageManagerï¼šç®¡ç†é¡µé¢å †æ ˆï¼Œæä¾›å®Œå…¨é€€å‡ºæ–¹æ³•ã€‚
+ç¼“å­˜ç®¡ç†CacheManagerï¼šä¸»è¦ç”¨äºç¼“å­˜æ¥å£è¿”å›ç»“æœï¼Œè¿”å›ç»“æœä¸­çš„å¯¹è±¡å¿…é¡»ç»§æ‰¿baseModelå®ç°åºåˆ—åŒ–æ¥å£ï¼Œæä¾›ç¼“å­˜æ—¶é•¿æ–¹æ³•ã€ç¼“å­˜å¤±æ•ˆæ–¹æ³•ã€‚
+ç³»ç»Ÿå¼‚å¸¸å¤„ç†ï¼šå‘å¸ƒæ¨¡å¼è‡ªåŠ¨å¼€å¯ç³»ç»Ÿå¼‚å¸¸å¤„ç†ï¼Œæä¾›å‹å¥½æç¤ºï¼Œå¼‚å¸¸å¤„ç†å›è°ƒæ¥å£ã€‚
+SharedPreferencesç®¡ç†ï¼šæ”¯æŒç›´æ¥putã€getå¯¹è±¡ã€‚
+LruCacheç®¡ç†ï¼šç”¨äºé¡µé¢ä¼ å¤§æ•°æ®ä¸”ä¸ç”¨æ‹…å¿ƒé‡Šæ”¾é—®é¢˜ã€‚
+Jsonè§£æç®¡ç†ï¼šé‡‡ç”¨fastjsonå®ç°ï¼Œç®€å•ç²—æš´ã€‚
+xmlè§£æç®¡ç†ï¼šé‡‡ç”¨xstreamå®ç°ï¼Œæ³¨è§£è§£æã€‚
+SoapObjectè§£æç®¡ç†ï¼šç›´æ¥å°†soapå­—ç¬¦ä¸²è§£æä¸ºjavaå¯¹è±¡ã€‚
+
+
+DBæ¨¡å—ï¼š
+é‡‡ç”¨GreenDaoæ–¹æ¡ˆï¼Œç›´æ¥å®ç°Java Objectçš„CURDæ–¹æ³•å°±å¯ä»¥æ“ä½œæ•°æ®åº“ã€‚Â 
+æ–°å¢DBManagerç±»ï¼Œæ‰€æœ‰æ•°æ®æ“ä½œåªéœ€è¦è·å–DBManagerå®ä¾‹æ¥è·å–DaoSessionï¼Œç„¶åé€šè¿‡DaoSessionæ¥è·å–ä½ éœ€è¦çš„æ‰€æœ‰daoå³å¯ã€‚
+æ–°å¢DaoGeneratorå·¥ç¨‹è‡ªåŠ¨ç”Ÿæˆmodelã€daoã€sessionå¯¹è±¡ç­‰ä»£ç ï¼Œæ‹·è¿‡æ¥ç›´æ¥ä½¿ç”¨å³å¯ã€‚
+
+
+æ³¨è§£æ¨¡å—ï¼šé›†æˆbutterknifeæ³¨è§£æ¡†æ¶
+
+
+æ”¯ä»˜æ¨¡å—ï¼šé›†æˆæ”¯ä»˜å®æ”¯ä»˜
+
+
+èµ„æºä¸‹è½½æ¨¡å—ï¼š
+åœ¨ç¬¬ä¸‰æ–¹AsyncHttpClientæ–¹æ¡ˆå¢åŠ BreakpointHttpResponseHandlerç±»ï¼Œæ”¯æŒå¤šå¹¶å‘ã€å¤šæ–‡ä»¶ä¸Šä¼ ã€æ–­ç‚¹ç»­ä¼ ã€æš‚åœã€ç»§ç»­ã€åˆ é™¤ä¸‹è½½ä»»åŠ¡ã€‚
+
+
+å›¾ç‰‡ä¸‹è½½æ¨¡å—ï¼š
+é‡‡ç”¨universal-image-loaderè§£å†³æ–¹æ¡ˆï¼Œæœ‰å…³ä½¿ç”¨æƒ…å†µè¯·å‚è§universal-image-loaderå®˜ç½‘ä¿¡æ¯ï¼Œ
+githubåœ°å€ï¼šhttps://github.com/nostra13/Android-Universal-Image-Loader
+ä¸ºäº†æä¾›ç”¨æˆ·ä½“éªŒï¼Œå»ºè®®åœ¨listviewæˆ–è€…gridviewåœ¨æ»‘åŠ¨çš„æ—¶å€™ä¸åŠ è½½å›¾ç‰‡
+
+
+çœ‹åˆ°è¿™é‡Œï¼Œä¼°è®¡æ‚¨å’Œæ‚¨çš„å°ä¼™ä¼´ä»¬éƒ½æƒŠå‘†äº†å§ï¼èµ¶å¿«åŠ¨æ‰‹è¯•è¯•å§ï¼
+å…·ä½“ä½¿ç”¨è¯·å‚è€ƒandroidOneæ¼”ç¤ºå·¥ç¨‹ã€‚
+
+æˆ‘æ”¹å˜ä¸äº†è¿™ä¸ªä¸–ç•Œï¼è¿™ä¸ªä¸–ç•Œä¹Ÿä¼‘æƒ³å°†æˆ‘æ”¹å˜ï¼
+
+å¦‚æœä»»ä½•é—®é¢˜æˆ–è€…å»ºè®®ï¼Œæ¬¢è¿æ²Ÿé€šã€‚
+QQç¾¤ï¼š195104825
