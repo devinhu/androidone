@@ -11,7 +11,6 @@ import java.util.List;
 
 import android.content.Context;
 
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.sd.core.common.parse.JsonMananger;
 import com.sd.core.common.parse.XmlMananger;
 import com.sd.core.network.http.HttpException;
@@ -96,7 +95,7 @@ public abstract class BaseAction {
 	 * @throws HttpException 
 	 */
 	public <T> T jsonToBean(String json, Class<T> cls) throws HttpException {
-       T obj = JsonMananger.getInstance().jsonToBean(json, cls);
+       T obj = JsonMananger.jsonToBean(json, cls);
        return obj;
 	}
 	
@@ -108,8 +107,8 @@ public abstract class BaseAction {
 	 * @throws HttpException
 	 * @throws IOException
 	 */
-	public <T> List<T> jsonToList(String obj, TypeReference<List<T>> reference) throws HttpException, IOException {
-		return JsonMananger.getInstance().getJsonMapper().readValue(obj, reference);
+	public <T> List<T> jsonToList(String json, Class<T> cls) throws HttpException, IOException {
+		return JsonMananger.jsonToList(json, cls);
 	}
 	
 	/**
@@ -119,7 +118,7 @@ public abstract class BaseAction {
 	 * @throws HttpException 
 	 */
 	public String BeanTojson(Object obj) throws HttpException {
-       return JsonMananger.getInstance().beanToJson(obj);
+       return JsonMananger.beanToJson(obj);
 	}
 	
 	/**
@@ -127,8 +126,30 @@ public abstract class BaseAction {
 	 * @param params
 	 * @return
 	 */
-	public RequestParams getParams(RequestParams params){
+	public RequestParams getRequestParams(){
+		RequestParams params = new RequestParams();
+		//TODO 这里处理公共参数，如channelType，APPID等
+		return params;
+	}
+	
+	/**
+	 * 获取处理后的RequestParams对象
+	 * @param params
+	 * @return
+	 */
+	public RequestParams getFinalParams(RequestParams params){
 		//TODO 这里处理公共参数，签名等操作
+		return getFinalParams(params, true);
+	}
+	
+	/**
+	 *  获取处理后的RequestParams对象
+	 * @param params
+	 * @param isSign 是否签名
+	 * @return
+	 */
+	public RequestParams getFinalParams(RequestParams params, boolean isSign){
+		//TODO 这里处理公共参数，如签名、加密等操作
 		return params;
 	}
 	

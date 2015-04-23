@@ -11,7 +11,6 @@ import java.util.List;
 import android.content.Context;
 import android.text.TextUtils;
 
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.sd.core.common.CacheManager;
 import com.sd.core.network.http.HttpException;
 import com.sd.core.network.http.RequestParams;
@@ -46,9 +45,9 @@ public class DemoAction extends BaseAction {
 	 */
 	public XMLResponse getXmlDemo(String url) throws HttpException{
 		XMLResponse response = null;
-			
+		RequestParams params = getRequestParams();
+		
 	    String key = String.valueOf(url.hashCode());
-	    //cache valid time 30minute
 	    if(CacheManager.isInvalidCache(key, 30*60)){
 	        response = CacheManager.readObject(key);
 	        if(response != null){
@@ -56,11 +55,10 @@ public class DemoAction extends BaseAction {
 	        }
 	    }
 	    
-		String result = httpManager.get(mContext, url);
+		String result = httpManager.get(mContext, url, getFinalParams(params));
 		if(!TextUtils.isEmpty(result)){
 		     response = xmlToBean(result, XMLResponse.class);
 		     if(response != null){
-		         //add to the local cache
 		         CacheManager.writeObject(response, key);
 		     }
 		}
@@ -76,9 +74,9 @@ public class DemoAction extends BaseAction {
 	 */
 	public JSONResponse getJsonDemo(String url) throws HttpException{
 		JSONResponse response = null;
+		RequestParams params = getRequestParams();
 		
 	    String key = String.valueOf(url.hashCode());
-        //cache valid time 30minute
         if(CacheManager.isInvalidCache(key, 30*60)){
             response = CacheManager.readObject(key);
             if(response != null){
@@ -86,11 +84,10 @@ public class DemoAction extends BaseAction {
             }
         }
         
-		String result = httpManager.get(mContext, url);
+		String result = httpManager.get(mContext, url, getFinalParams(params));
 		if(!TextUtils.isEmpty(result)){
 			 response = jsonToBean(result, JSONResponse.class);
 			 if(response != null){
-                 //add to the local cache
                  CacheManager.writeObject(response, key);
              }
 		}
@@ -107,20 +104,20 @@ public class DemoAction extends BaseAction {
 	 */
 	public List<JSONResponse> getJsonListDemo(String url) throws HttpException{
 		List<JSONResponse> response = null;
-		
+		RequestParams params = getRequestParams();
+		 
 		String key = String.valueOf(url.hashCode());
-	        //cache valid time 30minute
-	        if(CacheManager.isInvalidCache(key, 30*60)){
-	            response = CacheManager.readObject(key);
-	            if(response != null){
-	                return response;
-	            }
-	        }
+        if(CacheManager.isInvalidCache(key, 30*60)){
+            response = CacheManager.readObject(key);
+            if(response != null){
+                return response;
+            }
+        }
 	        
 		try {
-			String result = httpManager.get(mContext, url);
+			String result = httpManager.get(mContext, url, getFinalParams(params));
 			if(!TextUtils.isEmpty(result)){
-			   response = jsonToList(result, new TypeReference<List<JSONResponse>>(){});
+			   response = jsonToList(result, JSONResponse.class);
 			   if(response != null){
 			       CacheManager.writeObject(response, key);
 			   }
@@ -140,12 +137,12 @@ public class DemoAction extends BaseAction {
      */
     public LoginResponse login(String username, String password) throws HttpException {
         String url = getURL(URLConstants.API_LOGIN);
-        RequestParams params = new RequestParams();
+        RequestParams params = getRequestParams();
         params.put("username", username);
         params.put("password", password);
 
         LoginResponse response = null;
-        String result = httpManager.post(mContext, url, getParams(params));
+        String result = httpManager.post(mContext, url, getFinalParams(params));
         if(!TextUtils.isEmpty(result)){
             response = jsonToBean(result, LoginResponse.class);
         }

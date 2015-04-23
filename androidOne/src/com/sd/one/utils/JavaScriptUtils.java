@@ -43,7 +43,7 @@ public class JavaScriptUtils {
 			final StringBuffer sb = new StringBuffer(jsMethod);
 			sb.append("(");
 			if(obj != null){
-				sb.append(JsonMananger.getInstance().beanToJson(obj));
+				sb.append(JsonMananger.beanToJson(obj));
 			}
 			sb.append(")");
 			NLog.e(tag, "sendJavascript : " + sb.toString());
