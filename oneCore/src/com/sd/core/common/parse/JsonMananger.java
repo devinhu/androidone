@@ -8,6 +8,7 @@ package com.sd.core.common.parse;
 import java.util.List;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.util.TypeUtils;
 import com.sd.core.network.http.HttpException;
 import com.sd.core.utils.NLog;
 
@@ -21,6 +22,9 @@ import com.sd.core.utils.NLog;
  **/
 public class JsonMananger {
 
+	static{
+		TypeUtils.compatibleWithJavaBean = true;
+	}
 	private static final String tag = JsonMananger.class.getSimpleName();
 	
 	/**

@@ -639,7 +639,7 @@ public class SyncHttpClient {
 	 * @throws HttpException 
 	 */
 	public String post(Context context, String url, RequestParams params) throws HttpException {
-		return post(context, url, paramsToEntity(params), null);
+		return post(context, url, paramsToEntity(params), "text/html");
 	}
 
 	/**

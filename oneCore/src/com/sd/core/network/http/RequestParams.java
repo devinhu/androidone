@@ -438,6 +438,33 @@ public class RequestParams {
         return params;
     }
 
+    /**
+     * 获取参数字符串
+     * @param isSimple 是否需要最原始的
+     * @return
+     */
+    public String getParamString(boolean isSimple) {
+    	StringBuilder sb = new StringBuilder();
+    	if(isSimple){
+        	//sort
+            List<String> keyList = new ArrayList<String>();
+            for(ConcurrentHashMap.Entry<String, String> entry : urlParams.entrySet()) {
+            	keyList.add(entry.getKey());
+            }
+            Collections.sort(keyList);
+            
+            //order a-z sort add
+            for(String key : keyList){
+            	for(ConcurrentHashMap.Entry<String, String> entry : urlParams.entrySet()) {
+            		if(key.equals(entry.getKey())){
+            			sb.append(entry.getKey()).append(entry.getValue());
+            		}
+            	}
+            }
+    	}
+    	return sb.toString();
+    }
+    
     public String getParamString() {
         return URLEncodedUtils.format(getParamsList(), HTTP.UTF_8);
     }
