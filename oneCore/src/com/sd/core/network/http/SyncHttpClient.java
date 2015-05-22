@@ -639,9 +639,13 @@ public class SyncHttpClient {
 	 * @throws HttpException 
 	 */
 	public String post(Context context, String url, RequestParams params) throws HttpException {
-		return post(context, url, paramsToEntity(params), "text/html");
+		return post(context, url, paramsToEntity(params), null);
 	}
 
+	public String post(Context context, String url, RequestParams params, String contentType) throws HttpException {
+		return post(context, url, paramsToEntity(params), contentType);
+	}
+	
 	/**
 	 * Perform a HTTP POST request and track the Android Context which initiated
 	 * the request.
@@ -701,7 +705,7 @@ public class SyncHttpClient {
 	 * @return
 	 * @throws HttpException
 	 */
-	public String post(Context context, String url, RequestParams params, String jsonContent) throws HttpException {
+	public String postRestful(Context context, String url, RequestParams params, String jsonContent) throws HttpException {
 		
 		StringEntity entity = null;
 		StringBuilder urlBilder = new StringBuilder(url);
