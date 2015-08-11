@@ -93,3 +93,8 @@ github地址：https://github.com/nostra13/Android-Universal-Image-Loader
 如果任何问题或者建议，欢迎沟通。
 
 QQ群：195104825
+
+
+=========================================
+
+招 php 大神4人，ios，android大神各2人
