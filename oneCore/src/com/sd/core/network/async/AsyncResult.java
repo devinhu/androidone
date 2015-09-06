@@ -40,6 +40,19 @@ public class AsyncResult {
 		super();
 	}
 
+	
+	/**
+	 * @param requestCode
+	 * @param result
+	 * @param listener
+	 */
+	public AsyncResult(int requestCode, Object result, OnDataListener listener) {
+		super();
+		this.requestCode = requestCode;
+		this.result = result;
+		this.listener = listener;
+	}
+
 	public AsyncResult(int requestCode, boolean isCheckNetwork, OnDataListener listener) {
 		this.requestCode = requestCode;
 		this.isCheckNetwork = isCheckNetwork;

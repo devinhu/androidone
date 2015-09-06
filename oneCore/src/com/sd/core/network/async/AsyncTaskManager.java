@@ -63,6 +63,7 @@ public class AsyncTaskManager {
 		return instance;
 	}
 
+	
 	/**
 	 * 发送请求（默认检查网络）
 	 * 
@@ -87,6 +88,35 @@ public class AsyncTaskManager {
 			NLog.e(tag, "the error is requestCode < 0");
 		}
 	}
+	
+	/**
+	 * 该方法只用于页面更新等操作
+	 * 发送广播，页面传参数等，不管在哪都可以接受的到
+	 * 
+	 * @param requestCode 请求码
+	 * @param listener 回调监听
+	 */
+	public void broadcast(int requestCode, OnDataListener listener){
+		if(requestCode > 0){
+			broadcast(requestCode, null, listener);
+		}else{
+			NLog.e(tag, "the error is requestCode < 0");
+		}
+	}
+	
+	/**
+	 * 该方法只用于页面更新等操作
+	 * 如发送广播，页面传参数等操作，不管在哪都可以接受的到
+	 * 
+	 * @param requestCode 请求码
+	 * @param params 参数Object
+	 * @param listener 回调监听
+	 */
+	public void broadcast(int requestCode, Object params, OnDataListener listener){
+		AsyncResult result = new AsyncResult(requestCode, params, listener);
+		EventBus.getDefault().post(result);
+	}
+	
 	
 	/**
 	 * 异步线程
