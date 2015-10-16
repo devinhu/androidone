@@ -5,6 +5,9 @@
 
 package com.sd.core.common.broadcast;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -24,8 +27,9 @@ import com.sd.core.network.http.HttpException;
  **/
 public class BroadcastManager {
 
-	private static BroadcastManager instance;
 	private Context mContext;
+	private static BroadcastManager instance;
+	private Map<String, BroadcastReceiver> receiverMap;
 	
 	/**
 	 * 构造方法
@@ -33,6 +37,7 @@ public class BroadcastManager {
 	 */
 	private BroadcastManager(Context context) {
 		this.mContext = context;
+		receiverMap = new HashMap<String, BroadcastReceiver>();
 	}
 	
 	/**
@@ -59,8 +64,8 @@ public class BroadcastManager {
 		try {
 			IntentFilter filter = new IntentFilter();  
 			filter.addAction(action); 
-			mContext.unregisterReceiver(receiver);
 			mContext.registerReceiver(receiver, filter);
+			receiverMap.put(action, receiver);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -68,8 +73,7 @@ public class BroadcastManager {
 	
 	/**
 	 * 发送广播
-	 * @param broadCode
-	 * @param obj
+	 * @param action 唯一码
 	 */
 	public void sendBroadcast(String action){
 		sendBroadcast(action, "");
@@ -77,8 +81,8 @@ public class BroadcastManager {
 	
 	/**
 	 * 发送广播
-	 * @param broadCode
-	 * @param obj
+	 * @param action 唯一码
+	 * @param obj 参数
 	 */
 	public void sendBroadcast(String action, Object obj){
 		try {
@@ -88,6 +92,19 @@ public class BroadcastManager {
 			mContext.sendBroadcast(intent);
 		} catch (HttpException e) {
 			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 销毁广播
+	 * @param action
+	 */
+	public void destroy(String action){
+		if(receiverMap != null){
+			BroadcastReceiver receiver = receiverMap.get(action);
+			if(receiver != null){
+				mContext.unregisterReceiver(receiver);
+			}
 		}
 	}
 }
