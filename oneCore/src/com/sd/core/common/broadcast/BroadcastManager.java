@@ -5,9 +5,14 @@
 
 package com.sd.core.common.broadcast;
 
-import com.sd.core.network.async.AsyncTaskManager;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 
-import de.greenrobot1.event.EventBus;
+import com.sd.core.common.parse.JsonMananger;
+import com.sd.core.network.async.AsyncTaskManager;
+import com.sd.core.network.http.HttpException;
 
 /**
  * [A brief description]
@@ -20,14 +25,14 @@ import de.greenrobot1.event.EventBus;
 public class BroadcastManager {
 
 	private static BroadcastManager instance;
-	private OnBroadCastListener onBroadCastListener;
+	private Context mContext;
 	
 	/**
 	 * 构造方法
 	 * @param context
 	 */
-	private BroadcastManager() {
-		EventBus.getDefault().register(this);  
+	private BroadcastManager(Context context) {
+		this.mContext = context;
 	}
 	
 	/**
@@ -35,11 +40,11 @@ public class BroadcastManager {
 	 * @param context
 	 * @return
 	 */
-	public static BroadcastManager getInstance() {
+	public static BroadcastManager getInstance(Context context) {
 		if (instance == null) {
 			synchronized (AsyncTaskManager.class) {
 				if (instance == null) {
-					instance = new BroadcastManager();
+					instance = new BroadcastManager(context);
 				}
 			}
 		}
@@ -47,12 +52,18 @@ public class BroadcastManager {
 	}
 	
 	/**
-	 * 发送广播
+	 * 添加
 	 * @param broadCode
 	 */
-	public void broadcast(int broadCode){
-		BroadResult result = new BroadResult(broadCode, new Object());
-		EventBus.getDefault().post(result);
+	public void addAction(String action, BroadcastReceiver receiver){
+		try {
+			IntentFilter filter = new IntentFilter();  
+			filter.addAction(action); 
+			mContext.unregisterReceiver(receiver);
+			mContext.registerReceiver(receiver, filter);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/**
@@ -60,28 +71,23 @@ public class BroadcastManager {
 	 * @param broadCode
 	 * @param obj
 	 */
-	public void broadcast(int broadCode, Object obj){
-		BroadResult result = new BroadResult(broadCode, obj);
-		EventBus.getDefault().post(result);
+	public void sendBroadcast(String action){
+		sendBroadcast(action, "");
 	}
 	
 	/**
-	 * 在数据返回到UI线程中处理
-	 * @param bean
+	 * 发送广播
+	 * @param broadCode
+	 * @param obj
 	 */
-	public void onEventMainThread(BroadResult bean){
-		if(onBroadCastListener != null){
-			onBroadCastListener.onBroadCast(bean.getBroadCode(), bean.getResult());
+	public void sendBroadcast(String action, Object obj){
+		try {
+			Intent intent = new Intent();
+			intent.setAction(action);
+			intent.putExtra("result", JsonMananger.beanToJson(obj));
+			mContext.sendBroadcast(intent);
+		} catch (HttpException e) {
+			e.printStackTrace();
 		}
 	}
-
-	public OnBroadCastListener getOnBroadCastListener() {
-		return onBroadCastListener;
-	}
-
-	public void setOnBroadCastListener(OnBroadCastListener onBroadCastListener) {
-		this.onBroadCastListener = onBroadCastListener;
-	}
-	
-	
 }
