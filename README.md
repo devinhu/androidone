@@ -11,16 +11,36 @@
 * 以“复杂的世界里，一个就够了”为理念，励志帮助Android开发人员快速搭建一个简单高效的android开发框架!
 
 ##异步模块： 
-* 封装EventBus类，将异步框架单独抽出来。页面通过实现回调监听获取数据并直接更新UI操作，实现多线程机制，支持并发，超过并发数需等待。建议一般在BaseActivity、BaseFragment中实现。
+
+* 封装EventBus类，将异步框架单独抽出来。
+
+* 支持多并发、取消操作
+
+* 与网络模块分离实现，让接口调试更方便
+
+* 多个请求，一个回调接口处理，让页面代码更简洁
+
+* 建议一般在BaseActivity、BaseFragment中实现
+
+	*  实现参考类 [AsyncTaskManager.java](https://github.com/devinhu/androidone/blob/master/oneCore/src/com/sd/core/network/async/AsyncTaskManager.java)
+
+	*  使用参考类 [BaseActivity.java](https://github.com/devinhu/androidone/blob/master/androidOne/src/com/sd/one/activity/BaseActivity.java)
+
 
 ##HTTP请求模块： 
-* 采用第三方AsyncHttpClient方案，支持http、https方式，支持get、post、put、delete方法，支持GZIP、File格式，支持Retry、Cacel策略，堪称完美！ 增加SyncHttpClient同步发送请求管理类，配合异步模块使用；这样做的好处是Action中的接口方法都可以进行单元测试。
+* 采用第三方AsyncHttpClient方案，支持http、https方式，支持get、post、put、delete方法，支持GZIP、File格式，支持Retry、Cacel策略，堪称完美！ 
+* 改造实现SyncHttpClient，支持同步，调接口时可直接单元测试，并支持RESTFUL风格
+* 改造实现BreakpointHttpResponseHandler支持多并发、多文件上传、断点续传、暂停、继续、删除下载任务
+
+	*  实现参考类 [SyncHttpClient.java](https://github.com/devinhu/androidone/blob/master/oneCore/src/com/sd/core/network/http/SyncHttpClient.java)
+
+	*  使用参考类 [BreakpointHttpResponseHandler.java](https://github.com/devinhu/androidone/blob/master/oneCore/src/com/sd/core/network/http/BreakpointHttpResponseHandler.java)
 
 ##Common模块： 
 * 页面堆栈管理ActivityPageManager：管理页面堆栈，提供完全退出方法。
 
 ##CacheManager缓存管理：
-* 主要用于缓存接口返回结果，返回结果中的对象必须继承baseModel实现序列化接口，提供缓存时长方法、缓存失效方法。 
+* 磁盘缓存，缓存对象需实现序列化接口，提供读取、失效，清除方法。一般用于对接口数据的缓存。
 
 ##系统异常处理：
 * 集成BugTags，支持自动收集错误日志，在线提交测试bug。
@@ -29,19 +49,21 @@
 * 支持直接put、get对象。
 
 ##LruCache管理：
-* 用于页面传大数据且不用担心释放问题。
+* 封装LruCache，构造只缓存CACHE_SIZE大小的数量，超过CACHE_SIZE自动释放最前面的对象，建议页面传参之间使用。
 
-##Json解析管理：
-* 采用fastjson实现，java、json对象太过简单了，简单粗暴。
+##解析管理：
+* 支持XML、JSON、JSOAP解析
 
-##xml解析管理：
-* 采用xstream实现，注解解析。
+* 一行代码轻松转JAVA对象
 
-##SoapObject解析管理：
-* 支持soapObject直接转Java对象
+	*  采用fastjson实现java、json互转
+
+	*  采用xstream实现Java、xml互转，支持注解解析
+
+	*  自主封装，支持soapObject转Java对象
 
 ##BroadcastManager广播管理：
-* 极大的简便了发送广播的流程
+* 为了发送广播更加方便，自主封装了BroadcastManager，方便好用。
 
 ```javascript
 //在任何地方发送广播
@@ -69,7 +91,7 @@ BroadcastManager.getInstance(mContext).destroy(ACTION_RECEIVE_MESSAGE);
 ##DB模块： 
 * 采用GreenDao方案，直接实现Java Object的CURD方法就可以操作数据库。 
 
-* 新增DBManager类，所有数据操作只需要获取DBManager实例来获取DaoSession，然后通过DaoSession来获取你需要的所有dao即可。
+* 实现DBManager，连获取Dao的代码都不用写了，不管通过DaoGenerator生成的对象如何变化，通过DBManager可以让你拿到任何Dao对象，从而实现数据库操作。
 
 * 新增DaoGenerator工程自动生成model、dao、session对象等代码，拷过来直接使用即可。
 
