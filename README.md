@@ -252,62 +252,62 @@
 * 集成支付宝支付和微信支付
 
 	* 支付宝示例：客户端封装参数，调用支付宝
-```javascript
-	String PARTNER = "2088XXXXXXXXXXXX";
-	String SELLER = "demo@yahoo.cn";
-	String RSA_PRIVATE = "私钥";
-	PayUtils payutils = new PayUtils(activity, PARTNER, SELLER, RSA_PRIVATE, "服务器回调订单地址[异步处理]");
-	payutils.setPayListener(new PayListener() {
-		@Override
-		public void onPayResult(int state, String message) {
-			
+	```javascript
+		String PARTNER = "2088XXXXXXXXXXXX";
+		String SELLER = "demo@yahoo.cn";
+		String RSA_PRIVATE = "私钥";
+		PayUtils payutils = new PayUtils(activity, PARTNER, SELLER, RSA_PRIVATE, "服务器回调订单地址[异步处理]");
+		payutils.setPayListener(new PayListener() {
+			@Override
+			public void onPayResult(int state, String message) {
+				
+			}
+		});
+		
+		try {
+			payutils.pay("测试商品", "测试商品详情", "0.01", "唯一订单号，服务器生成");
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-	});
-	
-	try {
-		payutils.pay("测试商品", "测试商品详情", "0.01", "唯一订单号，服务器生成");
-	} catch (Exception e) {
-		e.printStackTrace();
-	}
-```
+	```
 
 	* 支付宝示例：服务器封装所有的参数，返回url直接调用支付宝
-```javascript
-	PayUtils1 payutils= new PayUtils1(BespeakActivity.this, new PayListener() {
-		@Override
-		public void onPayResult(int state, String message) {
-			switch (state) {
-				case PayUtils1.PAY_SUC_CODE:
-					MessageDialog dialog = new MessageDialog(mContext, getString(R.string.bespeak_order_suc));
-					dialog.setConfirmListener(new OnClickListener() {
-						@Override
-						public void onClick(View v) {
-							BespeakActivity.this.finish();
-						}
-					});
-					dialog.show();
-					break;
-					
-				case PayUtils1.PAY_DOING_CODE:
-				case PayUtils1.PAY_GOODS_CODE:
-				case PayUtils1.PAY_INIT_CODE:
-				case PayUtils1.PAY_FAIL_CODE:
-					NToast.shortToast(mContext, message);
-					break;
+	```javascript
+		PayUtils1 payutils= new PayUtils1(BespeakActivity.this, new PayListener() {
+			@Override
+			public void onPayResult(int state, String message) {
+				switch (state) {
+					case PayUtils1.PAY_SUC_CODE:
+						MessageDialog dialog = new MessageDialog(mContext, getString(R.string.bespeak_order_suc));
+						dialog.setConfirmListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								BespeakActivity.this.finish();
+							}
+						});
+						dialog.show();
+						break;
+						
+					case PayUtils1.PAY_DOING_CODE:
+					case PayUtils1.PAY_GOODS_CODE:
+					case PayUtils1.PAY_INIT_CODE:
+					case PayUtils1.PAY_FAIL_CODE:
+						NToast.shortToast(mContext, message);
+						break;
+				}
 			}
-		}
-	});
-	payutils.pay(res.getData().getUrl());
-```
+		});
+		payutils.pay(res.getData().getUrl());
+	```
 
 	* 微信支付示例
-```javascript
-	PayReq payReq = res.getData().getPayReq();
-	payReq.packageValue = "Sign=WXPay";
-	IWXAPI msgApi = WXAPIFactory.createWXAPI(this, null);
-	msgApi.registerApp(Constants.WEIXIN_APP_ID);
-	msgApi.sendReq(payReq);
-```
+	```javascript
+		PayReq payReq = res.getData().getPayReq();
+		payReq.packageValue = "Sign=WXPay";
+		IWXAPI msgApi = WXAPIFactory.createWXAPI(this, null);
+		msgApi.registerApp(Constants.WEIXIN_APP_ID);
+		msgApi.sendReq(payReq);
+	```
 
 ##图片下载模块： 
 
