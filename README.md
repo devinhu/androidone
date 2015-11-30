@@ -26,6 +26,7 @@
 
 	*  使用参考类 [BaseActivity.java](https://github.com/devinhu/androidone/blob/master/androidOne/src/com/sd/one/activity/BaseActivity.java)
 
+	*  使用参考类 [BaseFragment.java](https://github.com/devinhu/androidone/blob/master/androidOne/src/com/sd/one/activity/BaseFragment.java)
 
 ##HTTP请求模块： 
 
@@ -76,6 +77,8 @@
 * 各种自定义dialog
 
 * 支持hybrid开发 
+
+* 各种工具类
 
 * 各种动画效果
 
@@ -241,7 +244,7 @@
 
 ##注解模块：
 
-* 集成[butterknife](http://jakewharton.github.io/butterknife/)注解框架，一个NO Magic的Android注入框架，用过的人都说好，极力推荐。
+* 集成[butterknife](http://jakewharton.github.io/butterknife/)注解框架，一个No Magic的Android注入框架，用过的人都说好，极力推荐。
 
 
 ##支付模块：
@@ -250,36 +253,26 @@
 
 	* 支付宝示例：客户端封装参数，调用支付宝
 ```javascript
-	/**
-	 * [支付宝示例：客户端封装参数，调用支付宝]
-	 * 
-	 * 
-	    String PARTNER = "2088XXXXXXXXXXXX";
-		String SELLER = "demo@yahoo.cn";
-		String RSA_PRIVATE = "私钥";
-		PayUtils payutils = new PayUtils(activity, PARTNER, SELLER, RSA_PRIVATE, "服务器回调订单地址[异步处理]");
-		payutils.setPayListener(new PayListener() {
-			@Override
-			public void onPayResult(int state, String message) {
-				
-			}
-		});
-		
-		try {
-			payutils.pay("测试商品", "测试商品详情", "0.01", "唯一订单号，服务器生成");
-		} catch (Exception e) {
-			e.printStackTrace();
+	String PARTNER = "2088XXXXXXXXXXXX";
+	String SELLER = "demo@yahoo.cn";
+	String RSA_PRIVATE = "私钥";
+	PayUtils payutils = new PayUtils(activity, PARTNER, SELLER, RSA_PRIVATE, "服务器回调订单地址[异步处理]");
+	payutils.setPayListener(new PayListener() {
+		@Override
+		public void onPayResult(int state, String message) {
+			
 		}
-	 * 
-	 **/
+	});
+	
+	try {
+		payutils.pay("测试商品", "测试商品详情", "0.01", "唯一订单号，服务器生成");
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
 ```
 
 	* 支付宝示例：服务器封装所有的参数，返回url直接调用支付宝
 ```javascript
-	/**
-	 * [支付宝示例：服务器封装所有的参数，返回url直接调用支付宝]
-	 * 
-	 *
 	PayUtils1 payutils= new PayUtils1(BespeakActivity.this, new PayListener() {
 		@Override
 		public void onPayResult(int state, String message) {
@@ -305,23 +298,15 @@
 		}
 	});
 	payutils.pay(res.getData().getUrl());
-	* 
-	 **/
 ```
 
 	* 微信支付示例
 ```javascript
-	/**
-	 * [微信支付示例]
-	 * 
-	 *
 	PayReq payReq = res.getData().getPayReq();
 	payReq.packageValue = "Sign=WXPay";
 	IWXAPI msgApi = WXAPIFactory.createWXAPI(this, null);
 	msgApi.registerApp(Constants.WEIXIN_APP_ID);
 	msgApi.sendReq(payReq);
-	* 
-	**/
 ```
 
 ##图片下载模块： 
@@ -329,8 +314,9 @@
 * 采用universal-image-loader解决方案，有关使用情况请参见[@universal-image-loader](https://github.com/nostra13/Android-Universal-Image-Loader)
 
 * 为了提供用户体验，建议在listview或者gridview在滑动的时候不加载图片
-
-
+```javascript
+refreshlistview.setOnScrollListener(new PauseOnScrollListener(ImageLoader.getInstance(), true, true));
+```
 
 ##结语
 
@@ -338,7 +324,9 @@
 
 * 具体使用请参考androidOne演示工程。
 
+
 * 我改变不了这个世界！这个世界也休想将我改变！
+
 
 * 如果任何问题或者建议，欢迎沟通。
 
