@@ -324,9 +324,7 @@ refreshlistview.setOnScrollListener(new PauseOnScrollListener(ImageLoader.getIns
 
 * 具体使用请参考androidOne演示工程。
 
-
 * 我改变不了这个世界！这个世界也休想将我改变！
-
 
 * 如果任何问题或者建议，欢迎沟通。
 
