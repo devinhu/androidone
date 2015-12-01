@@ -2,7 +2,7 @@
 
 ##One框架能帮您带来什么？
 
-* One框架分为两个项目，OneCore为核心工程，androidOne为演示项目，依赖oneCore核心
+* One框架分为两个项目，OneCore为核心工程，androidOne为演示项目，依赖oneCore
 
 * One整个框架为MVC模式搭建，基于android framework为核心，集成Android世界中的主流技术选型
 
@@ -146,7 +146,7 @@
 
 ##LruCache管理：
 
-* 封装LruCache，构造只缓存CACHE_SIZE大小的数量，超过CACHE_SIZE自动释放最前面的对象，建议页面传参之间使用。
+* 封装LruCache，构造只缓存CACHE_SIZE大小的数量，超过CACHE_SIZE自动释放最前面的对象，建议页面间传参使用。
 
 
 ##解析管理：
