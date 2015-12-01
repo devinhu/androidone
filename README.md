@@ -146,7 +146,7 @@
 
 ##LruCache管理：
 
-* 封装LruCache，构造只缓存CACHE_SIZE大小的数量，超过CACHE_SIZE自动释放最前面的对象，建议页面间传参使用。
+* 封装LruCache，只缓存CACHE_SIZE大小的数量，超过CACHE_SIZE自动释放前面的对象，建议页面间传参使用。
 
 
 ##解析管理：
