@@ -10,7 +10,8 @@
 
 * 以“复杂的世界里，一个就够了”为理念，励志帮助Android开发人员快速搭建一个简单高效的android开发框架!
 
-##异步模块： 
+
+##异步模块 
 
 * 封装EventBus类，将异步框架单独抽出来，任何耗时操作（不仅仅是网络请求）都可以放到异步模块里
 
@@ -28,7 +29,8 @@
 
 	*  使用参考类 [BaseFragment.java](https://github.com/devinhu/androidone/blob/master/androidOne/src/com/sd/one/activity/BaseFragment.java)
 
-##HTTP请求模块： 
+
+##HTTP请求模块 
 
 * 采用第三方AsyncHttpClient方案，支持http、https方式，支持get、post、put、delete方法，支持GZIP、File格式，支持Retry、Cacel策略，堪称完美！ 
 
@@ -70,7 +72,7 @@
 	**/
 ```
 
-##Common模块： 
+##Common模块
 
 * 页面堆栈管理ActivityPageManager
 
@@ -81,22 +83,24 @@
 * 各种工具类
 
 * 各种动画效果
-##SharedPreferences管理：
+
+
+##SharedPreferences管理
 
 * 支持直接put、get对象。
 
 
-##LruCache管理：
+##LruCache管理
 
 * 封装LruCache，只缓存CACHE_SIZE大小的数量，超过CACHE_SIZE自动释放前面的对象，建议页面间传参使用。
 
 
-##系统异常处理：
+##系统异常处理
 
 * Bugtags是新一代的、专为移动测试而生的缺陷发现及管理工具。移动App集成Bugtags SDK后，测试人员就可以直接在App里所见即所得的提交 bug，SDK会自动截屏、收集App运行时数据，如：设备信息，控制台数据，用户的操作步骤等，团队人员在Bugtags云端高效的跟踪及管理bug。
 
 
-##解析管理：
+##解析管理
 
 * 支持XML、JSON、JSOAP解析
 
@@ -109,7 +113,7 @@
 	*  自主封装，支持soapObject转Java对象
 
 
-##CacheManager缓存管理：
+##CacheManager缓存管理
 
 * 磁盘缓存，缓存对象需实现序列化接口，提供读取、失效，清除方法。一般用于对接口数据的缓存。
 
@@ -160,7 +164,7 @@
     }
 ```
 
-##BroadcastManager广播管理：
+##BroadcastManager广播管理
 
 * 为了发送广播更加方便，自主封装了BroadcastManager，方便好用。
 
@@ -192,7 +196,7 @@
 	**/
 ```
 
-##DB模块： 
+##DB模块
 
 * 采用[GreenDao](http://greendao-orm.com/)ORM方案，直接实现Java Object的CURD方法就可以操作数据库，非常好用，极力推荐。 
 
@@ -240,12 +244,12 @@
 
 ```
 
-##注解模块：
+##注解模块
 
 * 集成[butterknife](http://jakewharton.github.io/butterknife/)注解框架，一个No Magic的Android注入框架，用过的人都说好，极力推荐。
 
 
-##支付模块：
+##支付模块
 
 * 集成支付宝支付和微信支付
 
@@ -307,7 +311,7 @@
 		msgApi.sendReq(payReq);
 	```
 
-##图片下载模块： 
+##图片下载模块
 
 * 采用universal-image-loader解决方案，有关使用情况请参见[@universal-image-loader](https://github.com/nostra13/Android-Universal-Image-Loader)
 
