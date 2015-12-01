@@ -81,6 +81,32 @@
 * 各种工具类
 
 * 各种动画效果
+##SharedPreferences管理：
+
+* 支持直接put、get对象。
+
+
+##LruCache管理：
+
+* 封装LruCache，只缓存CACHE_SIZE大小的数量，超过CACHE_SIZE自动释放前面的对象，建议页面间传参使用。
+
+
+##系统异常处理：
+
+* Bugtags是新一代的、专为移动测试而生的缺陷发现及管理工具。移动App集成Bugtags SDK后，测试人员就可以直接在App里所见即所得的提交 bug，SDK会自动截屏、收集App运行时数据，如：设备信息，控制台数据，用户的操作步骤等，团队人员在Bugtags云端高效的跟踪及管理bug。
+
+
+##解析管理：
+
+* 支持XML、JSON、JSOAP解析
+
+* 一行代码轻松转JAVA对象
+
+	*  采用fastjson实现java、json互转
+
+	*  采用xstream实现Java、xml互转，支持注解解析
+
+	*  自主封装，支持soapObject转Java对象
 
 
 ##CacheManager缓存管理：
@@ -133,34 +159,6 @@
         return response;
     }
 ```
-
-##系统异常处理：
-
-* 集成BugTags，支持自动收集错误日志，在线提交测试bug。
-
-
-##SharedPreferences管理：
-
-* 支持直接put、get对象。
-
-
-##LruCache管理：
-
-* 封装LruCache，只缓存CACHE_SIZE大小的数量，超过CACHE_SIZE自动释放前面的对象，建议页面间传参使用。
-
-
-##解析管理：
-
-* 支持XML、JSON、JSOAP解析
-
-* 一行代码轻松转JAVA对象
-
-	*  采用fastjson实现java、json互转
-
-	*  采用xstream实现Java、xml互转，支持注解解析
-
-	*  自主封装，支持soapObject转Java对象
-
 
 ##BroadcastManager广播管理：
 
