@@ -321,7 +321,7 @@ refreshlistview.setOnScrollListener(new PauseOnScrollListener(ImageLoader.getIns
 ```
 
 ##视频教程
-* [优酷地址](http://v.youku.com/v_show/id_XMTQwNTU3NjI4NA==.html?qq-pf-to=pcqq.c2c)
+* [优酷地址http://v.youku.com/v_show/id_XMTQwNTU3NjI4NA==.html?qq-pf-to=pcqq.c2c](http://v.youku.com/v_show/id_XMTQwNTU3NjI4NA==.html?qq-pf-to=pcqq.c2c)
 * 非常感谢[融云阿明](https://github.com/devinhu/SeaStar)的辛苦录制！
 
 
