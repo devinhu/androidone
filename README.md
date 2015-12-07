@@ -375,8 +375,8 @@ refreshlistview.setOnScrollListener(new PauseOnScrollListener(ImageLoader.getIns
 
 ##日志
 
-* assets文件夹下config.properties文件配置日志开关
 * NLog日志输出类
+* config.properties文件(assets文件夹下)配置日志开关
 ```javascript
 #is debug mode, if debug is true that log is open, if debug is false that log is close.
 debug=true
