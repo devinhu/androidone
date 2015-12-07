@@ -313,12 +313,17 @@
 
 ##图片下载模块
 
-* 采用universal-image-loader解决方案，有关使用情况请参见[@universal-image-loader](https://github.com/nostra13/Android-Universal-Image-Loader)
+* 采用universal-image-loader解决方案，有关使用情况请参见[universal-image-loader](https://github.com/nostra13/Android-Universal-Image-Loader)
 
 * 为了提供用户体验，建议在listview或者gridview在滑动的时候不加载图片
 ```javascript
 refreshlistview.setOnScrollListener(new PauseOnScrollListener(ImageLoader.getInstance(), true, true));
 ```
+
+##视频教程
+[优酷地址](http://v.youku.com/v_show/id_XMTQwNTU3NjI4NA==.html?qq-pf-to=pcqq.c2c)
+非常感谢[融云阿明](https://github.com/devinhu/SeaStar)的辛苦录制！
+
 
 ##结语
 
