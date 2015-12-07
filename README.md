@@ -72,6 +72,59 @@
 	**/
 ```
 
+##BluetoothManager蓝牙处理模块
+
+```javascript
+	/**
+	 * [蓝牙管理类]
+	 * 
+	 */
+	BluetoothManager bluetoothManager = BluetoothManager.getInstance(new BluetoothCallBack(){
+		@Override
+		public void onStateChange(int bluetoothState, String message) {
+			switch(bluetoothState){
+				//蓝牙不可用
+				case BluetoothService.STATE_UNAVAILABLE:
+					NToast.shortToast(mContext, "蓝牙不可用");
+					break;
+					
+				//蓝牙未连接
+				case BluetoothService.STATE_NONE:
+					NToast.shortToast(mContext, "蓝牙未连接");
+					break;
+					
+				//蓝牙空闲
+				case BluetoothService.STATE_LISTEN:
+					break;
+					
+				//蓝牙正连接
+				case BluetoothService.STATE_CONNECTING:
+					NToast.shortToast(mContext, "蓝牙正连接");
+					break;
+					
+				//蓝牙已连接, 当如果连接上了，message就是蓝牙的名称
+				case BluetoothService.STATE_CONNECTED:
+					NToast.shortToast(mContext, "蓝牙已连接");
+					mBluetoothState = true;
+					break;
+			}
+		}
+
+		@Override
+		public void onResult(int requsetCode, String data) {
+			//回调结果在页面显示
+			
+		}
+	});
+
+	//发送蓝牙请求
+	bluetoothManager.request(SEND_INL_CODE, charStr);
+
+	//断开
+	bluetoothManager.stop();
+
+```
+
 ##Common模块
 
 * 页面堆栈管理ActivityPageManager
@@ -95,12 +148,12 @@
 * 封装LruCache，只缓存CACHE_SIZE大小的数量，超过CACHE_SIZE自动释放前面的对象，建议页面间传参使用。
 
 
-##系统异常处理
+##Exception系统异常处理
 
 * Bugtags是新一代的、专为移动测试而生的缺陷发现及管理工具。移动App集成Bugtags SDK后，测试人员就可以直接在App里所见即所得的提交 bug，SDK会自动截屏、收集App运行时数据，如：设备信息，控制台数据，用户的操作步骤等，团队人员在Bugtags云端高效的跟踪及管理bug。
 
 
-##解析管理
+##Parse解析管理
 
 * 支持XML、JSON、JSOAP解析
 
@@ -319,6 +372,16 @@
 ```javascript
 refreshlistview.setOnScrollListener(new PauseOnScrollListener(ImageLoader.getInstance(), true, true));
 ```
+
+##日志
+
+* assets文件夹下config.properties文件配置日志开关
+* NLog日志输出类
+```javascript
+#is debug mode, if debug is true that log is open, if debug is false that log is close.
+debug=true
+```
+
 
 ##教程
 * [优酷视频教程地址](http://v.youku.com/v_show/id_XMTQwNTU3NjI4NA==.html?qq-pf-to=pcqq.c2c)，非常感谢[融云阿明](https://github.com/devinhu/SeaStar)的辛苦录制！
