@@ -320,8 +320,9 @@
 refreshlistview.setOnScrollListener(new PauseOnScrollListener(ImageLoader.getInstance(), true, true));
 ```
 
-##视频教程
-* [优酷地址http://v.youku.com/v_show/id_XMTQwNTU3NjI4NA==.html?qq-pf-to=pcqq.c2c](http://v.youku.com/v_show/id_XMTQwNTU3NjI4NA==.html?qq-pf-to=pcqq.c2c)
+##教程
+* [优酷地址  http://v.youku.com/v_show/id_XMTQwNTU3NjI4NA==.html?qq-pf-to=pcqq.c2c](http://v.youku.com/v_show/id_XMTQwNTU3NjI4NA==.html?qq-pf-to=pcqq.c2c)
+* [PPT教程  https://github.com/devinhu/androidone/tree/master/androidOne%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6ppt](https://github.com/devinhu/androidone/tree/master/androidOne%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6ppt)
 * 非常感谢[融云阿明](https://github.com/devinhu/SeaStar)的辛苦录制！
 
 
