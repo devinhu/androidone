@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TXN_XML
+    ErrCode="0"
+    ErrMsg=""
+    ID="301"
+    Name="Login"
+    Timestamp="2011-02-25 15:20:10"
+    Version="1.0"
+    BetAccount="4756464"
+    Guid="2342423-2234-23423-232"
+    ServerId="301"
+    SessionId="sdfasw2342342sdfe3234sff"
+    webAccount="Itadtb002" >
+
+    <Question
+        QuestionId="w323423"
+        QuestionLang="tradchi"
+        Text="sadfasdfsad" />
+
+</TXN_XML>
