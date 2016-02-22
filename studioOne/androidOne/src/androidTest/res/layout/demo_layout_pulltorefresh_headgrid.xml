@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pull="http://schemas.android.com/apk/res/com.sd.one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.sd.one.widget.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/pull_refresh_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        pull:ptrAnimationStyle="flip"
+        pull:ptrMode="both" >
+
+        <com.sd.one.widget.stickygridheaders.StickyGridHeadersGridView
+            android:id="@+id/asset_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:columnWidth="100dip"
+            android:numColumns="auto_fit"
+            android:padding="16dp" />
+        
+    </com.sd.one.widget.pulltorefresh.PullToRefreshScrollView>
+
+</RelativeLayout>

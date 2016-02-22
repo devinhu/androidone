@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="item_height">67dp</dimen>
+    
+    <string name="ok">OK</string>
+    <string name="select_remove_mode">Remove modes</string>
+    <string name="select_drag_init_mode">Start-drag modes</string>
+    <string name="select_enables">Enable/Disable</string>
+    <string name="add_header">Add header</string>
+    <string name="add_footer">Add footer</string>
+
+    <string-array name="remove_mode_labels">
+        <item>Click remove</item>
+        <item>Fling remove</item>
+    </string-array>
+    
+    <string-array name="drag_init_mode_labels">
+        <item>On down</item>
+        <item>On drag</item>
+        <item>On long press</item>
+    </string-array>
+    
+    <string-array name="enables_labels">
+        <item>Enable drag</item>
+        <item>Enable sort</item>
+        <item>Enable remove</item>
+    </string-array>
+     
+    <string-array name="jazz_artist_names">
+        <item>PullToRefreshActivity</item>
+        <item>DrawerMenuActivity</item>
+        <item>TimeWheelActivity</item>
+        <item>WaterfallActivity</item>
+        <item>Miles Davis</item>
+        <item>Wayne Shorter</item>
+        <item>Michael Brecker</item>
+        <item>Herbie Hancock</item>
+        <item>Joe Zawinul</item>
+        <item>Brian Blade</item>
+        <item>Jeff Ballard</item>
+        <item>Larry Grenadier</item>
+        <item>Keith Jarrett</item>
+        <item>McCoy Tyner</item>
+        <item>Stephon Harris</item>
+        <item>Mark Turner</item>
+    </string-array>
+
+    <declare-styleable name="DragSortListView">
+        <attr name="collapsed_height" format="dimension" />
+        <attr name="drag_scroll_start" format="float" />
+        <attr name="max_drag_scroll_speed" format="float" />
+        <attr name="float_background_color" format="color" />
+        <attr name="remove_mode">
+            <enum name="clickRemove" value="0" />
+            <enum name="flingRemove" value="1" />
+        </attr>
+        <attr name="track_drag_sort" format="boolean" />
+        <attr name="float_alpha" format="float" />
+        <attr name="slide_shuffle_speed" format="float" />
+        <attr name="remove_animation_duration" format="integer" />
+        <attr name="drop_animation_duration" format="integer" />
+        <attr name="drag_enabled" format="boolean" />
+        <attr name="sort_enabled" format="boolean" />
+        <attr name="remove_enabled" format="boolean" />
+        <attr name="drag_start_mode">
+            <enum name="onDown" value="0" />
+            <enum name="onMove" value="1" />
+            <enum name="onLongPress" value="2" />
+        </attr>
+        <attr name="drag_handle_id" format="integer" />
+        <attr name="fling_handle_id" format="integer" />
+        <attr name="click_remove_id" format="integer" />
+        <attr name="use_default_controller" format="boolean" />
+    </declare-styleable>
+
+    <item name="drag_handle" type="id"/>
+    <item name="click_remove" type="id"/>
+
+</resources>

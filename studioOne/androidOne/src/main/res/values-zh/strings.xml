@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">一个</string>
+    <string name="action_settings">设置</string>
+    <string name="hello_world">你好</string>
+    
+    <string name="common_exit">再按一次退出程序</string>
+    <string name="common_network_unavailable">当前网络不可用</string>
+    <string name="common_network_error">网络有问题，请稍后重试</string>
+    <string name="common_request_error">获取数据异常，请重试</string>
+    <string name="common_app_version">版本：1.0</string>
+    <string name="common_app_copyright">Copyright © 2012 SD, Inc. All Rights Reserved.</string>
+	<string name="common_title_tips">温馨提示</string>
+    <string name="common_loading_tips">正在加载&#8230;</string>
+    <string name="common_confirm">确认</string>
+    <string name="common_cancel">取消</string>
+    
+    <string-array name="main_menu_array">
+        <item>产品列表</item>
+        <item>促销活动</item>
+        <item>公司简介</item>
+        <item>关于我们</item>
+        <item>切换背景</item>
+        <item>切换语言</item>
+    </string-array>
+
+</resources>

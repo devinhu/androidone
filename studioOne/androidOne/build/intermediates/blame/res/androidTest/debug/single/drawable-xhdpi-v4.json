@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_cart.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-xhdpi\\btn_cart.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_home_press.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-xhdpi\\btn_home_press.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_member.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-xhdpi\\btn_member.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_cart_press.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-xhdpi\\btn_cart_press.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\bottom_bg.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-xhdpi\\bottom_bg.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_member_press.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-xhdpi\\btn_member_press.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_collection.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-xhdpi\\btn_collection.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_category_press.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-xhdpi\\btn_category_press.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_collection_press.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-xhdpi\\btn_collection_press.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_category.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-xhdpi\\btn_category.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_home.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-xhdpi\\btn_home.png"
+    }
+]

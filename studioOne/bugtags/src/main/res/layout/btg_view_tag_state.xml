@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginLeft="2dp"
+        android:maxLines="2"
+        android:id="@+id/middleText"
+        style="@style/btg_global_text_content"
+        android:layout_width="@dimen/btg_report_tag_state_text_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <com.bugtags.library.ui.rounded.CircleImageView
+        android:id="@+id/leftImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/middleText"/>
+
+    <ImageView
+        android:scaleType="centerInside"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/rightImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/middleText"/>
+
+
+</RelativeLayout>

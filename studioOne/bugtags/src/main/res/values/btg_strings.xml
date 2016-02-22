@@ -1,0 +1,62 @@
+<resources>
+
+    <!--global-->
+    <string name="btg_global_cancel">Cancel</string>
+    <string name="btg_global_confirm">OK</string>
+    <string name="btg_global_got_it">Got it!</string>
+    <string name="btg_global_error">Error! Try Again!</string>
+
+    <!--report-->
+    <string name="btg_report_tag_hint">issue description</string>
+    <string name="btg_report_tag_improve">Feature</string>
+    <string name="btg_report_tag_bug">Bug</string>
+    <string name="btg_report_start">Start Describe</string>
+
+    <!--tag-->
+    <string name="btg_report_discard_alert">Sure to discard?</string>
+
+    <string-array name="btg_report_tag_priority_name">
+        <item>Trivial</item>
+        <item>Minor</item>
+        <item>Major</item>
+        <item>Blocker</item>
+    </string-array>
+
+    <array name="btg_tag_priority_res">
+        <item>@drawable/btg_icon_priority_0_full</item>
+        <item>@drawable/btg_icon_priority_1_full</item>
+        <item>@drawable/btg_icon_priority_2_full</item>
+        <item>@drawable/btg_icon_priority_3_full</item>
+    </array>
+
+    <string name="btg_tag_menu_info">Tag info</string>
+    <string name="btg_tag_menu_edit">Edit</string>
+    <string name="btg_tag_menu_delete">Delete</string>
+    <string name="btg_tag_num_min">Add one tag at least</string>
+    <string name="btg_tag_num_max">Add three tags at most</string>
+
+    <!--login-->
+    <string name="btg_login_username">Account</string>
+    <string name="btg_login_username_empty">Account should not be empty!</string>
+    <string name="btg_login_password">Password</string>
+    <string name="btg_login_password_empty">Password should not be empty!</string>
+    <string name="btg_login_captcha">Captcha</string>
+    <string name="btg_login_captcha_needed">Captcha needed!</string>
+    <string name="btg_login_do">Sign in</string>
+    <string name="btg_login_progress">Sign in&#8203;</string>
+    <string name="btg_login_failed">Sign in failed!</string>
+    <string name="btg_login_succeed">Sign in succeed!</string>
+
+    <!--logout-->
+    <string name="btg_logout_title">Options</string>
+    <string name="btg_logout_my_issue">My issues</string>
+    <string name="btg_logout_do">Sign out</string>
+    <string name="btg_logout_confirm">Sure to sign out?</string>
+
+    <!--guide-->
+    <string name="btg_guide_sub_0">Tagging tips</string>
+    <string name="btg_guide_sub_1">Tap screen to add a tag</string>
+    <string name="btg_guide_sub_2">Tap tag to flip</string>
+    <string name="btg_guide_sub_3">Long press tag to edit or delete</string>
+
+</resources>

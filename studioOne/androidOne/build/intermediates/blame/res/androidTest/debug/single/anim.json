@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\anim\\slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\anim\\slide_in_from_top.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\anim\\slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\anim\\slide_out_to_top.xml"
+    }
+]

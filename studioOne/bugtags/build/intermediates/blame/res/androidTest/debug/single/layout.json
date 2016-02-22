@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\btg_view_fab_action.xml",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\layout\\btg_view_fab_action.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\btg_view_member.xml",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\layout\\btg_view_member.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\btg_fragment_login.xml",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\layout\\btg_fragment_login.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\btg_view_global_progress.xml",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\layout\\btg_view_global_progress.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\btg_fragment_report.xml",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\layout\\btg_fragment_report.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\btg_fragment_guide.xml",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\layout\\btg_fragment_guide.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\btg_view_tag_state.xml",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\layout\\btg_view_tag_state.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\btg_activity.xml",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\layout\\btg_activity.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\btg_fragment_tag_edit.xml",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\layout\\btg_fragment_tag_edit.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\btg_view_priority_pick.xml",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\layout\\btg_view_priority_pick.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\btg_view_fab_bg.xml",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\layout\\btg_view_fab_bg.xml"
+    }
+]

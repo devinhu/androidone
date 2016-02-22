@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="unspecified$Generated" generated="true"><source path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res"/></dataSet><dataSet config="unspecified$Generated" generated="true"><source path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\oneCore\unspecified\res"/></dataSet><dataSet config="main$Generated" generated="true"><source path="E:\onesapce\androidOne\src\main\res"/><source path="E:\onesapce\androidOne\build\generated\res\rs\debug"/><source path="E:\onesapce\androidOne\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="E:\onesapce\androidOne\src\debug\res"/></dataSet><dataSet config="unspecified" generated-set="unspecified$Generated"><source path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res"><file name="btg_btn_arrow" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_arrow.xml" qualifiers="" type="drawable"/><file name="btg_btn_blue_rect" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_blue_rect.xml" qualifiers="" type="drawable"/><file name="btg_btn_cross" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_cross.xml" qualifiers="" type="drawable"/><file name="btg_btn_exchange" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_exchange.xml" qualifiers="" type="drawable"/><file name="btg_btn_fab" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_fab.xml" qualifiers="" type="drawable"/><file name="btg_btn_priority_0" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_priority_0.xml" qualifiers="" type="drawable"/><file name="btg_btn_priority_1" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_priority_1.xml" qualifiers="" type="drawable"/><file name="btg_btn_priority_2" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_priority_2.xml" qualifiers="" type="drawable"/><file name="btg_btn_priority_3" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_priority_3.xml" qualifiers="" type="drawable"/><file name="btg_btn_publish" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_publish.xml" qualifiers="" type="drawable"/><file name="btg_btn_report" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_report.xml" qualifiers="" type="drawable"/><file name="btg_btn_tick" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_tick.xml" qualifiers="" type="drawable"/><file name="btg_btn_user" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_user.xml" qualifiers="" type="drawable"/><file name="btg_btn_white_rect" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_btn_white_rect.xml" qualifiers="" type="drawable"/><file name="btg_icon_tag_priority" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_icon_tag_priority.xml" qualifiers="" type="drawable"/><file name="btg_text_black" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_text_black.xml" qualifiers="" type="drawable"/><file name="btg_text_white" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable\btg_text_white.xml" qualifiers="" type="drawable"/><file name="btg_bg_dialog" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-nodpi-v4\btg_bg_dialog.9.png" qualifiers="nodpi-v4" type="drawable"/><file name="btg_bg_guide" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-nodpi-v4\btg_bg_guide.9.png" qualifiers="nodpi-v4" type="drawable"/><file name="btg_btn_blue_rect_normal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-nodpi-v4\btg_btn_blue_rect_normal.9.png" qualifiers="nodpi-v4" type="drawable"/><file name="btg_btn_blue_rect_pressed" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-nodpi-v4\btg_btn_blue_rect_pressed.9.png" qualifiers="nodpi-v4" type="drawable"/><file name="btg_btn_white_rect_normal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-nodpi-v4\btg_btn_white_rect_normal.9.png" qualifiers="nodpi-v4" type="drawable"/><file name="btg_btn_white_rect_pressed" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-nodpi-v4\btg_btn_white_rect_pressed.9.png" qualifiers="nodpi-v4" type="drawable"/><file name="btg_line_horizontal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-nodpi-v4\btg_line_horizontal.9.png" qualifiers="nodpi-v4" type="drawable"/><file name="btg_line_vertical" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-nodpi-v4\btg_line_vertical.9.png" qualifiers="nodpi-v4" type="drawable"/><file name="btg_bg_tag_left" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_bg_tag_left.9.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_bg_tag_right" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_bg_tag_right.9.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_account" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_account.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_arrow_normal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_arrow_normal.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_arrow_selected" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_arrow_selected.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_assistivebutton_submit" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_assistivebutton_submit.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_assistivebutton_submit_pressed" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_assistivebutton_submit_pressed.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_captcha" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_captcha.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_checkmark" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_checkmark.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_cross_normal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_cross_normal.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_cross_pressed" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_cross_pressed.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_exchange_normal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_exchange_normal.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_exchange_pressed" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_exchange_pressed.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_invoker_normal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_invoker_normal.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_invoker_pressed" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_invoker_pressed.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_issue_type_bug" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_issue_type_bug.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_issue_type_improve" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_issue_type_improve.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_password" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_password.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_priority_0_full" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_priority_0_full.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_priority_0_normal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_priority_0_normal.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_priority_0_selected" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_priority_0_selected.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_priority_1_full" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_priority_1_full.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_priority_1_normal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_priority_1_normal.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_priority_1_selected" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_priority_1_selected.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_priority_2_full" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_priority_2_full.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_priority_2_normal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_priority_2_normal.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_priority_2_selected" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_priority_2_selected.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_priority_3_full" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_priority_3_full.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_priority_3_normal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_priority_3_normal.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_priority_3_selected" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_priority_3_selected.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_report_normal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_report_normal.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_report_pressed" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_report_pressed.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_tag_pin" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_tag_pin.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_tick_normal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_tick_normal.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_tick_pressed" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_tick_pressed.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_tips_tag_1" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_tips_tag_1.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_tips_tag_2" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_tips_tag_2.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_tips_tag_3" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_tips_tag_3.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_user_normal" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_user_normal.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_icon_user_pressed" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_icon_user_pressed.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_logo" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\btg_logo.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xhdpi-v4\ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btg_bg_tag_left" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xxhdpi-v4\btg_bg_tag_left.9.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="btg_bg_tag_right" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xxhdpi-v4\btg_bg_tag_right.9.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_launcher" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\drawable-xxhdpi-v4\ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="btg_activity" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\layout\btg_activity.xml" qualifiers="" type="layout"/><file name="btg_fragment_guide" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\layout\btg_fragment_guide.xml" qualifiers="" type="layout"/><file name="btg_fragment_login" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\layout\btg_fragment_login.xml" qualifiers="" type="layout"/><file name="btg_fragment_report" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\layout\btg_fragment_report.xml" qualifiers="" type="layout"/><file name="btg_fragment_tag_edit" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\layout\btg_fragment_tag_edit.xml" qualifiers="" type="layout"/><file name="btg_view_fab_action" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\layout\btg_view_fab_action.xml" qualifiers="" type="layout"/><file name="btg_view_fab_bg" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\layout\btg_view_fab_bg.xml" qualifiers="" type="layout"/><file name="btg_view_global_progress" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\layout\btg_view_global_progress.xml" qualifiers="" type="layout"/><file name="btg_view_member" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\layout\btg_view_member.xml" qualifiers="" type="layout"/><file name="btg_view_priority_pick" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\layout\btg_view_priority_pick.xml" qualifiers="" type="layout"/><file name="btg_view_tag_state" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\layout\btg_view_tag_state.xml" qualifiers="" type="layout"/><file path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\values\values.xml" qualifiers=""><dimen name="btg_login_dialog_width">297dp</dimen><dimen name="btg_report_dialog_picker_height">105dp</dimen><dimen name="btg_guide_view_width">240dp</dimen><string name="btg_login_password_empty">Password should not be empty!</string><string name="btg_report_start">Start Describe</string><dimen name="btg_guide_button_height">30dp</dimen><dimen name="btg_login_captcha_width">80dp</dimen><string name="btg_tag_num_max">Add three tags at most</string><dimen name="btg_tag_height_max">50dp</dimen><dimen name="btg_report_member_icon_size">44dp</dimen><string name="btg_login_password">Password</string><dimen name="btg_global_font_large">14sp</dimen><color name="btg_global_light_white">#ccffffff</color><dimen name="btg_login_margin_top">4dp</dimen><string name="btg_tag_num_min">Add one tag at least</string><dimen name="btg_global_margin_standard">10dp</dimen><dimen name="btg_fab_menu_base_size">50dp</dimen><string name="btg_global_got_it">Got it!</string><string-array name="btg_report_tag_priority_name">
+        <item>Trivial</item>
+        <item>Minor</item>
+        <item>Major</item>
+        <item>Blocker</item>
+    </string-array><string name="btg_logout_title">Options</string><string name="btg_report_tag_bug">Bug</string><string name="btg_login_username_empty">Account should not be empty!</string><color name="btg_global_black">#ff333333</color><dimen name="btg_report_member_item_width">67dp</dimen><declare-styleable name="BtgHorizontalListView"><attr format="dimension" name="btg_dividerWidth"/><attr name="android:divider"/><attr name="android:requiresFadingEdge"/><attr name="android:fadingEdgeLength"/></declare-styleable><string name="btg_login_captcha_needed">Captcha needed!</string><dimen name="btg_report_member_item_height">75dp</dimen><string name="btg_login_succeed">Sign in succeed!</string><string name="btg_login_failed">Sign in failed!</string><string name="btg_logout_do">Sign out</string><dimen name="btg_global_font_standard">11sp</dimen><dimen name="btg_report_dialog_width">290dp</dimen><dimen name="btg_fab_menu_item_size">50dp</dimen><dimen name="btg_global_margin_great">20dp</dimen><dimen name="btg_global_font_less_big">12sp</dimen><string name="btg_report_tag_improve">Feature</string><dimen name="btg_login_logo_width">105dp</dimen><string name="btg_tag_menu_info">Tag info</string><string name="btg_logout_my_issue">My issues</string><color name="btg_global_gray">#ff727272</color><string name="btg_global_error">Error! Try Again!</string><dimen name="btg_global_font_grand">20sp</dimen><style name="btg_progress_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style><dimen name="btg_global_font_great">17sp</dimen><style name="btg_global_text_content">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/btg_global_black</item>
+        <item name="android:textSize">@dimen/btg_global_font_standard</item>
+    </style><color name="btg_global_translucent_white">#ccf3f3f3</color><dimen name="btg_report_tag_assignee_size">20dp</dimen><style name="btg_tag_priority_text_light_content" parent="btg_global_text_content">
+        <item name="android:textColor">@color/btg_global_gray</item>
+        <item name="android:padding">@dimen/btg_global_margin_tiny</item>
+        <item name="android:drawablePadding">@dimen/btg_global_margin_tiny</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style><dimen name="btg_global_font_big">13sp</dimen><declare-styleable name="BtgRippleView"><attr format="reference" name="btg_rv_background"/><attr format="reference" name="btg_rv_foreground"/></declare-styleable><dimen name="btg_fab_menu_item_spacing">0dp</dimen><string name="btg_logout_confirm">Sure to sign out?</string><string name="btg_report_discard_alert">Sure to discard?</string><style name="btg_global_text_gray" parent="btg_global_text_content">
+        <item name="android:textColor">@color/btg_global_gray</item>
+    </style><dimen name="btg_tag_ripple_size">20dp</dimen><dimen name="btg_global_margin_tiny">5dp</dimen><dimen name="btg_tag_ripple_foreground_size">15dp</dimen><string name="btg_tag_menu_delete">Delete</string><dimen name="btg_report_dialog_margin_top">70dp</dimen><string name="btg_guide_sub_3">Long press tag to edit or delete</string><string name="btg_guide_sub_2">Tap tag to flip</string><string name="btg_report_tag_hint">issue description</string><dimen name="btg_fab_menu_item_overshoot">15dp</dimen><string name="btg_guide_sub_1">Tap screen to add a tag</string><string name="btg_guide_sub_0">Tagging tips</string><dimen name="btg_global_margin_large">15dp</dimen><dimen name="btg_report_dialog_height">215dp</dimen><string name="btg_login_do">Sign in</string><array name="btg_tag_priority_res">
+        <item>@drawable/btg_icon_priority_0_full</item>
+        <item>@drawable/btg_icon_priority_1_full</item>
+        <item>@drawable/btg_icon_priority_2_full</item>
+        <item>@drawable/btg_icon_priority_3_full</item>
+    </array><dimen name="btg_report_dialog_btn_width">130dp</dimen><string name="btg_login_captcha">Captcha</string><string name="btg_global_confirm">OK</string><dimen name="btg_fab_action_offset">8dp</dimen><dimen name="btg_report_top_height">45dp</dimen><style name="BtgAlertDialog" parent="android:Theme.Dialog">
+    </style><dimen name="btg_login_logo_height">53dp</dimen><string name="btg_tag_menu_edit">Edit</string><dimen name="btg_report_dialog_btn_height">35dp</dimen><style name="btg_global_text_btn_negative">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/btg_text_black</item>
+        <item name="android:textSize">@dimen/btg_global_font_great</item>
+    </style><dimen name="btg_login_text_height">30dp</dimen><string name="btg_login_progress">Sign in​</string><dimen name="btg_fab_action_size">56dp</dimen><dimen name="btg_report_tag_state_text_width">35dp</dimen><string name="btg_global_cancel">Cancel</string><string name="btg_login_username">Account</string><style name="btg_global_text_btn_positive" parent="btg_global_text_btn_negative">
+        <item name="android:textColor">@drawable/btg_text_white</item>
+    </style></file><file path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\values-v11\values-v11.xml" qualifiers="v11"><style name="BtgAlertDialog" parent="android:Theme.Holo.Light.Dialog">
+    </style></file><file path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\values-zh-rCN\values-zh-rCN.xml" qualifiers="zh-rCN"><string name="btg_login_password">密码</string><string name="btg_global_error">错误请重试！</string><string name="btg_login_failed">登录失败，请重试</string><string name="btg_report_tag_improve">改进</string><string name="btg_tag_num_max">最多添加3个标签</string><string name="btg_logout_my_issue">我的问题</string><string name="btg_global_got_it">知道了！</string><string name="btg_tag_menu_delete">删除</string><string name="btg_tag_menu_edit">编辑</string><string name="btg_report_tag_bug">错误</string><string name="btg_login_captcha_needed">验证码不能为空</string><string name="btg_report_tag_hint">文字描述</string><string name="btg_login_password_empty">密码不能为空</string><string name="btg_guide_sub_1">单击屏幕选择标签位置</string><string name="btg_guide_sub_2">单击标签改变方向</string><string name="btg_login_captcha">验证码</string><string name="btg_guide_sub_3">长按标签可编辑或删除</string><string name="btg_global_cancel">取消</string><string-array name="btg_report_tag_priority_name">
+        <item>低</item>
+        <item>普通</item>
+        <item>高</item>
+        <item>紧急</item>
+    </string-array><string name="btg_logout_confirm">确定退出吗？</string><string name="btg_login_succeed">登录成功！</string><string name="btg_logout_do">退出登录</string><string name="btg_report_start">开始描述问题</string><string name="btg_global_confirm">确定</string><string name="btg_logout_title">选择操作</string><string name="btg_login_username_empty">帐号不能为空</string><string name="btg_login_do">登录</string><string name="btg_login_username">帐号</string><string name="btg_guide_sub_0">标签要这么玩</string><string name="btg_report_discard_alert">确定要放弃提交吗？</string><string name="btg_tag_menu_info">标签信息</string><string name="btg_tag_num_min">至少添加1个标签</string><array name="btg_tag_priority_res">
+        <item>@drawable/btg_icon_priority_0_full</item>
+        <item>@drawable/btg_icon_priority_1_full</item>
+        <item>@drawable/btg_icon_priority_2_full</item>
+        <item>@drawable/btg_icon_priority_3_full</item>
+    </array><string name="btg_login_progress">正在登录​</string></file><file path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\bugtags\unspecified\res\values-zh-rTW\values-zh-rTW.xml" qualifiers="zh-rTW"><string name="btg_login_captcha">驗證碼</string><string name="btg_global_cancel">取消</string><string name="btg_login_succeed">登錄成功！</string><string name="btg_tag_menu_delete">删除</string><string name="btg_global_error">錯誤請重試！</string><string name="btg_logout_do">退出登錄</string><string name="btg_logout_title">選擇操作</string><string name="btg_report_discard_alert">確定要放棄提交嗎？</string><string name="btg_logout_confirm">確定退出嗎？</string><string name="btg_login_password_empty">密碼不能為空</string><string name="btg_tag_menu_edit">編輯</string><string name="btg_tag_menu_info">標籤信息</string><string name="btg_login_password">密碼</string><array name="btg_tag_priority_res">
+        <item>@drawable/btg_icon_priority_0_full</item>
+        <item>@drawable/btg_icon_priority_1_full</item>
+        <item>@drawable/btg_icon_priority_2_full</item>
+        <item>@drawable/btg_icon_priority_3_full</item>
+    </array><string name="btg_report_start">開始描述問題</string><string name="btg_report_tag_bug">錯誤</string><string name="btg_report_tag_improve">改進</string><string name="btg_logout_my_issue">我的問題</string><string name="btg_global_confirm">確定</string><string name="btg_login_username_empty">帳號不能為空</string><string name="btg_login_captcha_needed">驗證碼不能為空</string><string name="btg_tag_num_max">最多添加3個標籤</string><string name="btg_login_do">登錄</string><string name="btg_guide_sub_2">單擊標籤改變方向</string><string name="btg_report_tag_hint">問題描述</string><string name="btg_guide_sub_1">單擊屏幕選擇標籤位置</string><string name="btg_guide_sub_3">長按標籤可編輯或刪除</string><string-array name="btg_report_tag_priority_name">
+        <item>低</item>
+        <item>普通</item>
+        <item>高</item>
+        <item>紧急</item>
+    </string-array><string name="btg_login_username">帳號</string><string name="btg_guide_sub_0">標籤要這麼玩</string><string name="btg_global_got_it">知道了！</string><string name="btg_login_failed">登錄失敗，請重試</string><string name="btg_login_progress">正在登錄​</string><string name="btg_tag_num_min">至少添加1個標籤</string></file></source></dataSet><dataSet config="unspecified" generated-set="unspecified$Generated"><source path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\oneCore\unspecified\res"><file name="ic_launcher" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\oneCore\unspecified\res\drawable-hdpi-v4\ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\oneCore\unspecified\res\drawable-ldpi-v4\ic_launcher.png" qualifiers="ldpi-v4" type="drawable"/><file name="ic_launcher" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\oneCore\unspecified\res\drawable-mdpi-v4\ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\oneCore\unspecified\res\drawable-xhdpi-v4\ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\oneCore\unspecified\res\values\values.xml" qualifiers=""><style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style><string name="app_name">oneCore</string><style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style></file><file path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\oneCore\unspecified\res\values-v11\values-v11.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style></file><file path="E:\onesapce\androidOne\build\intermediates\exploded-aar\onesapce\oneCore\unspecified\res\values-v14\values-v14.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style></file></source></dataSet><dataSet config="main" generated-set="main$Generated"><source path="E:\onesapce\androidOne\src\main\res"><file name="slide_in_from_bottom" path="E:\onesapce\androidOne\src\main\res\anim\slide_in_from_bottom.xml" qualifiers="" type="anim"/><file name="slide_in_from_top" path="E:\onesapce\androidOne\src\main\res\anim\slide_in_from_top.xml" qualifiers="" type="anim"/><file name="slide_out_to_bottom" path="E:\onesapce\androidOne\src\main\res\anim\slide_out_to_bottom.xml" qualifiers="" type="anim"/><file name="slide_out_to_top" path="E:\onesapce\androidOne\src\main\res\anim\slide_out_to_top.xml" qualifiers="" type="anim"/><file name="pulltorefresh_bg_bottom" path="E:\onesapce\androidOne\src\main\res\drawable\pulltorefresh_bg_bottom.xml" qualifiers="" type="drawable"/><file name="pulltorefresh_bg_top" path="E:\onesapce\androidOne\src\main\res\drawable\pulltorefresh_bg_top.xml" qualifiers="" type="drawable"/><file name="selector_menu_cart" path="E:\onesapce\androidOne\src\main\res\drawable\selector_menu_cart.xml" qualifiers="" type="drawable"/><file name="selector_menu_category" path="E:\onesapce\androidOne\src\main\res\drawable\selector_menu_category.xml" qualifiers="" type="drawable"/><file name="selector_menu_collection" path="E:\onesapce\androidOne\src\main\res\drawable\selector_menu_collection.xml" qualifiers="" type="drawable"/><file name="selector_menu_home" path="E:\onesapce\androidOne\src\main\res\drawable\selector_menu_home.xml" qualifiers="" type="drawable"/><file name="selector_menu_member" path="E:\onesapce\androidOne\src\main\res\drawable\selector_menu_member.xml" qualifiers="" type="drawable"/><file name="selector_menu_txt" path="E:\onesapce\androidOne\src\main\res\drawable\selector_menu_txt.xml" qualifiers="" type="drawable"/><file name="sidebar_background" path="E:\onesapce\androidOne\src\main\res\drawable\sidebar_background.xml" qualifiers="" type="drawable"/><file name="slidingtab_background_tab" path="E:\onesapce\androidOne\src\main\res\drawable\slidingtab_background_tab.xml" qualifiers="" type="drawable"/><file name="wheel_bg" path="E:\onesapce\androidOne\src\main\res\drawable\wheel_bg.xml" qualifiers="" type="drawable"/><file name="wheel_val" path="E:\onesapce\androidOne\src\main\res\drawable\wheel_val.xml" qualifiers="" type="drawable"/><file name="ad" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\ad.png" qualifiers="hdpi-v4" type="drawable"/><file name="background_item" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\background_item.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="drag" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\drag.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="drag_delete_x" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\drag_delete_x.png" qualifiers="hdpi-v4" type="drawable"/><file name="drag_icon" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\drag_icon.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="drawer_menu" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\drawer_menu.png" qualifiers="hdpi-v4" type="drawable"/><file name="drawer_shadow" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\drawer_shadow.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="guidepage_1" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\guidepage_1.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="guidepage_2" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\guidepage_2.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="guidepage_3" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\guidepage_3.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="guidepage_4" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\guidepage_4.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="page_indicator" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\page_indicator.png" qualifiers="hdpi-v4" type="drawable"/><file name="page_indicator_focused" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\page_indicator_focused.png" qualifiers="hdpi-v4" type="drawable"/><file name="pulltorefresh_default_flip" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\pulltorefresh_default_flip.png" qualifiers="hdpi-v4" type="drawable"/><file name="pulltorefresh_default_rotate" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\pulltorefresh_default_rotate.png" qualifiers="hdpi-v4" type="drawable"/><file name="pulltorefresh_indicator_arrow" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\pulltorefresh_indicator_arrow.png" qualifiers="hdpi-v4" type="drawable"/><file name="search_clear_pressed" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\search_clear_pressed.png" qualifiers="hdpi-v4" type="drawable"/><file name="waterfall_arrow" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\waterfall_arrow.png" qualifiers="hdpi-v4" type="drawable"/><file name="waterfall_item_bg" path="E:\onesapce\androidOne\src\main\res\drawable-hdpi\waterfall_item_bg.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="E:\onesapce\androidOne\src\main\res\drawable-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="bottom_bg" path="E:\onesapce\androidOne\src\main\res\drawable-xhdpi\bottom_bg.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btn_cart" path="E:\onesapce\androidOne\src\main\res\drawable-xhdpi\btn_cart.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btn_cart_press" path="E:\onesapce\androidOne\src\main\res\drawable-xhdpi\btn_cart_press.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btn_category" path="E:\onesapce\androidOne\src\main\res\drawable-xhdpi\btn_category.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btn_category_press" path="E:\onesapce\androidOne\src\main\res\drawable-xhdpi\btn_category_press.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btn_collection" path="E:\onesapce\androidOne\src\main\res\drawable-xhdpi\btn_collection.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btn_collection_press" path="E:\onesapce\androidOne\src\main\res\drawable-xhdpi\btn_collection_press.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btn_home" path="E:\onesapce\androidOne\src\main\res\drawable-xhdpi\btn_home.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btn_home_press" path="E:\onesapce\androidOne\src\main\res\drawable-xhdpi\btn_home_press.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btn_member" path="E:\onesapce\androidOne\src\main\res\drawable-xhdpi\btn_member.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btn_member_press" path="E:\onesapce\androidOne\src\main\res\drawable-xhdpi\btn_member_press.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="E:\onesapce\androidOne\src\main\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="E:\onesapce\androidOne\src\main\res\drawable-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="cart_layout" path="E:\onesapce\androidOne\src\main\res\layout\cart_layout.xml" qualifiers="" type="layout"/><file name="category_layout" path="E:\onesapce\androidOne\src\main\res\layout\category_layout.xml" qualifiers="" type="layout"/><file name="collection_layout" path="E:\onesapce\androidOne\src\main\res\layout\collection_layout.xml" qualifiers="" type="layout"/><file name="demo_drag_fragment_main" path="E:\onesapce\androidOne\src\main\res\layout\demo_drag_fragment_main.xml" qualifiers="" type="layout"/><file name="demo_drag_header_footer" path="E:\onesapce\androidOne\src\main\res\layout\demo_drag_header_footer.xml" qualifiers="" type="layout"/><file name="demo_drag_list_item_click_remove" path="E:\onesapce\androidOne\src\main\res\layout\demo_drag_list_item_click_remove.xml" qualifiers="" type="layout"/><file name="demo_drag_list_item_handle_left" path="E:\onesapce\androidOne\src\main\res\layout\demo_drag_list_item_handle_left.xml" qualifiers="" type="layout"/><file name="demo_drag_test_bed_main" path="E:\onesapce\androidOne\src\main\res\layout\demo_drag_test_bed_main.xml" qualifiers="" type="layout"/><file name="demo_drawer_list_item" path="E:\onesapce\androidOne\src\main\res\layout\demo_drawer_list_item.xml" qualifiers="" type="layout"/><file name="demo_drawer_menu_layout" path="E:\onesapce\androidOne\src\main\res\layout\demo_drawer_menu_layout.xml" qualifiers="" type="layout"/><file name="demo_layout_bluetooth" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_bluetooth.xml" qualifiers="" type="layout"/><file name="demo_layout_database" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_database.xml" qualifiers="" type="layout"/><file name="demo_layout_detail" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_detail.xml" qualifiers="" type="layout"/><file name="demo_layout_download" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_download.xml" qualifiers="" type="layout"/><file name="demo_layout_download_item" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_download_item.xml" qualifiers="" type="layout"/><file name="demo_layout_popmenu" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_popmenu.xml" qualifiers="" type="layout"/><file name="demo_layout_popwin" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_popwin.xml" qualifiers="" type="layout"/><file name="demo_layout_pulltorefresh" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_pulltorefresh.xml" qualifiers="" type="layout"/><file name="demo_layout_pulltorefresh_headgrid" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_pulltorefresh_headgrid.xml" qualifiers="" type="layout"/><file name="demo_layout_swiptab" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_swiptab.xml" qualifiers="" type="layout"/><file name="demo_layout_tabmenu" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_tabmenu.xml" qualifiers="" type="layout"/><file name="demo_layout_waterfall" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_waterfall.xml" qualifiers="" type="layout"/><file name="demo_layout_wheel" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_wheel.xml" qualifiers="" type="layout"/><file name="demo_layout_wheel_day" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_wheel_day.xml" qualifiers="" type="layout"/><file name="demo_layout_wheel_text_item" path="E:\onesapce\androidOne\src\main\res\layout\demo_layout_wheel_text_item.xml" qualifiers="" type="layout"/><file name="home_layout" path="E:\onesapce\androidOne\src\main\res\layout\home_layout.xml" qualifiers="" type="layout"/><file name="layout_base" path="E:\onesapce\androidOne\src\main\res\layout\layout_base.xml" qualifiers="" type="layout"/><file name="layout_demo_photo" path="E:\onesapce\androidOne\src\main\res\layout\layout_demo_photo.xml" qualifiers="" type="layout"/><file name="layout_dialog" path="E:\onesapce\androidOne\src\main\res\layout\layout_dialog.xml" qualifiers="" type="layout"/><file name="layout_dialog_bottom" path="E:\onesapce\androidOne\src\main\res\layout\layout_dialog_bottom.xml" qualifiers="" type="layout"/><file name="layout_dialog_drag" path="E:\onesapce\androidOne\src\main\res\layout\layout_dialog_drag.xml" qualifiers="" type="layout"/><file name="layout_dialog_drag_item" path="E:\onesapce\androidOne\src\main\res\layout\layout_dialog_drag_item.xml" qualifiers="" type="layout"/><file name="layout_dialog_loading" path="E:\onesapce\androidOne\src\main\res\layout\layout_dialog_loading.xml" qualifiers="" type="layout"/><file name="layout_dialog_menu" path="E:\onesapce\androidOne\src\main\res\layout\layout_dialog_menu.xml" qualifiers="" type="layout"/><file name="layout_dialog_menu_item" path="E:\onesapce\androidOne\src\main\res\layout\layout_dialog_menu_item.xml" qualifiers="" type="layout"/><file name="layout_dialog_message" path="E:\onesapce\androidOne\src\main\res\layout\layout_dialog_message.xml" qualifiers="" type="layout"/><file name="layout_guide" path="E:\onesapce\androidOne\src\main\res\layout\layout_guide.xml" qualifiers="" type="layout"/><file name="layout_guide_item1" path="E:\onesapce\androidOne\src\main\res\layout\layout_guide_item1.xml" qualifiers="" type="layout"/><file name="layout_guide_item2" path="E:\onesapce\androidOne\src\main\res\layout\layout_guide_item2.xml" qualifiers="" type="layout"/><file name="layout_guide_item3" path="E:\onesapce\androidOne\src\main\res\layout\layout_guide_item3.xml" qualifiers="" type="layout"/><file name="layout_guide_item4" path="E:\onesapce\androidOne\src\main\res\layout\layout_guide_item4.xml" qualifiers="" type="layout"/><file name="layout_listview_item" path="E:\onesapce\androidOne\src\main\res\layout\layout_listview_item.xml" qualifiers="" type="layout"/><file name="layout_main" path="E:\onesapce\androidOne\src\main\res\layout\layout_main.xml" qualifiers="" type="layout"/><file name="layout_splash" path="E:\onesapce\androidOne\src\main\res\layout\layout_splash.xml" qualifiers="" type="layout"/><file name="more_layout" path="E:\onesapce\androidOne\src\main\res\layout\more_layout.xml" qualifiers="" type="layout"/><file name="pay_result" path="E:\onesapce\androidOne\src\main\res\layout\pay_result.xml" qualifiers="" type="layout"/><file name="pulltorefresh_header" path="E:\onesapce\androidOne\src\main\res\layout\pulltorefresh_header.xml" qualifiers="" type="layout"/><file name="slidingmenu_frame" path="E:\onesapce\androidOne\src\main\res\layout\slidingmenu_frame.xml" qualifiers="" type="layout"/><file name="slidingmenu_main" path="E:\onesapce\androidOne\src\main\res\layout\slidingmenu_main.xml" qualifiers="" type="layout"/><file name="waterfall_footer" path="E:\onesapce\androidOne\src\main\res\layout\waterfall_footer.xml" qualifiers="" type="layout"/><file name="waterfall_header" path="E:\onesapce\androidOne\src\main\res\layout\waterfall_header.xml" qualifiers="" type="layout"/><file name="drag_mode_menu" path="E:\onesapce\androidOne\src\main\res\menu\drag_mode_menu.xml" qualifiers="" type="menu"/><file name="menu" path="E:\onesapce\androidOne\src\main\res\menu\menu.xml" qualifiers="" type="menu"/><file path="E:\onesapce\androidOne\src\main\res\values\colors.xml" qualifiers=""><color name="bottom_line_color">#c4c7cc</color><color name="bg_color">#f3f3f3</color><color name="bottom_txt_select">#019199</color><color name="navpage">#FFE1E8EB</color><color name="head_bg_color">#019199</color><color name="bottom_txt_normal">#cccccc</color><color name="white">#FFFFFF</color><color name="black">#000000</color></file><file path="E:\onesapce\androidOne\src\main\res\values\dimens.xml" qualifiers=""><dimen name="activity_vertical_margin">16dp</dimen><dimen name="activity_horizontal_margin">16dp</dimen></file><file path="E:\onesapce\androidOne\src\main\res\values\drag_strings.xml" qualifiers=""><string name="select_drag_init_mode">Start-drag modes</string><item name="click_remove" type="id"/><string-array name="remove_mode_labels">
+        <item>Click remove</item>
+        <item>Fling remove</item>
+    </string-array><string-array name="jazz_artist_names">
+        <item>PullToRefreshActivity</item>
+        <item>DrawerMenuActivity</item>
+        <item>TimeWheelActivity</item>
+        <item>WaterfallActivity</item>
+        <item>Miles Davis</item>
+        <item>Wayne Shorter</item>
+        <item>Michael Brecker</item>
+        <item>Herbie Hancock</item>
+        <item>Joe Zawinul</item>
+        <item>Brian Blade</item>
+        <item>Jeff Ballard</item>
+        <item>Larry Grenadier</item>
+        <item>Keith Jarrett</item>
+        <item>McCoy Tyner</item>
+        <item>Stephon Harris</item>
+        <item>Mark Turner</item>
+    </string-array><string-array name="enables_labels">
+        <item>Enable drag</item>
+        <item>Enable sort</item>
+        <item>Enable remove</item>
+    </string-array><declare-styleable name="DragSortListView">
+        <attr format="dimension" name="collapsed_height"/>
+        <attr format="float" name="drag_scroll_start"/>
+        <attr format="float" name="max_drag_scroll_speed"/>
+        <attr format="color" name="float_background_color"/>
+        <attr name="remove_mode">
+            <enum name="clickRemove" value="0"/>
+            <enum name="flingRemove" value="1"/>
+        </attr>
+        <attr format="boolean" name="track_drag_sort"/>
+        <attr format="float" name="float_alpha"/>
+        <attr format="float" name="slide_shuffle_speed"/>
+        <attr format="integer" name="remove_animation_duration"/>
+        <attr format="integer" name="drop_animation_duration"/>
+        <attr format="boolean" name="drag_enabled"/>
+        <attr format="boolean" name="sort_enabled"/>
+        <attr format="boolean" name="remove_enabled"/>
+        <attr name="drag_start_mode">
+            <enum name="onDown" value="0"/>
+            <enum name="onMove" value="1"/>
+            <enum name="onLongPress" value="2"/>
+        </attr>
+        <attr format="integer" name="drag_handle_id"/>
+        <attr format="integer" name="fling_handle_id"/>
+        <attr format="integer" name="click_remove_id"/>
+        <attr format="boolean" name="use_default_controller"/>
+    </declare-styleable><string name="select_remove_mode">Remove modes</string><dimen name="item_height">67dp</dimen><item name="drag_handle" type="id"/><string name="add_footer">Add footer</string><string name="add_header">Add header</string><string name="ok">OK</string><string name="select_enables">Enable/Disable</string><string-array name="drag_init_mode_labels">
+        <item>On down</item>
+        <item>On drag</item>
+        <item>On long press</item>
+    </string-array></file><file path="E:\onesapce\androidOne\src\main\res\values\pulltorefresh_strings.xml" qualifiers=""><dimen name="indicator_corner_radius">12dp</dimen><string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string><dimen name="indicator_right_padding">10dp</dimen><item name="scrollview" type="id"/><declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr format="reference|color" name="ptrRefreshableViewBackground"/>
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr format="reference|color" name="ptrHeaderBackground"/>
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr format="reference|color" name="ptrHeaderTextColor"/>
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr format="reference|color" name="ptrHeaderSubTextColor"/>
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0"/>
+            <flag name="pullFromStart" value="0x1"/>
+            <flag name="pullFromEnd" value="0x2"/>
+            <flag name="both" value="0x3"/>
+            <flag name="manualOnly" value="0x4"/>
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1"/>
+            <flag name="pullUpFromBottom" value="0x2"/>
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr format="reference|boolean" name="ptrShowIndicator"/>
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr format="reference" name="ptrDrawable"/>
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr format="reference" name="ptrDrawableStart"/>
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr format="reference" name="ptrDrawableEnd"/>
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr format="reference|boolean" name="ptrOverScroll"/>
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr format="reference" name="ptrHeaderTextAppearance"/>
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr format="reference" name="ptrSubHeaderTextAppearance"/>
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0"/>
+            <flag name="flip" value="0x1"/>
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/>
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr format="reference|boolean" name="ptrListViewExtrasEnabled"/>
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/>
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr format="reference|color" name="ptrAdapterViewBackground"/>
+        <attr format="reference" name="ptrDrawableTop"/>
+        <attr format="reference" name="ptrDrawableBottom"/>
+    </declare-styleable><item name="gridview" type="id"/><string name="pull_to_refresh_release_label">放开以刷新…</string><string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string><string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string><dimen name="header_footer_top_bottom_padding">12dp</dimen><item name="webview" type="id"/><dimen name="indicator_internal_padding">4dp</dimen><string name="pull_to_refresh_refreshing_label">正在载入…</string><string name="pull_to_refresh_pull_label">下拉刷新…</string><dimen name="header_footer_left_right_padding">24dp</dimen></file><file path="E:\onesapce\androidOne\src\main\res\values\slidingmenu_strings.xml" qualifiers=""><item name="selected_view" type="id"/><color name="holo_blue_bright">#ff00ddff</color><declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr format="reference" name="viewAbove"/>
+        <attr format="reference" name="viewBehind"/>
+        <attr format="dimension" name="behindOffset"/>
+        <attr format="dimension" name="behindWidth"/>
+        <attr format="float" name="behindScrollScale"/>
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0"/>
+            <enum name="fullscreen" value="1"/>
+        </attr>
+        <attr format="reference" name="shadowDrawable"/>
+        <attr format="dimension" name="shadowWidth"/>
+        <attr format="boolean" name="behindFadeEnabled"/>
+        <attr format="float" name="behindFadeDegree"/>
+        <attr format="boolean" name="selectorEnabled"/>
+        <attr format="reference" name="selectorDrawable"/>
+    </declare-styleable><item name="scrapped_view" type="id"/><dimen name="shadow_width">15dp</dimen><dimen name="menu_header_line">3dp</dimen><dimen name="menu_item_padding">10dp</dimen><dimen name="menu_header_padding_top">8dp</dimen><dimen name="menu_icon_side">40dp</dimen><dimen name="slidingmenu_offset">60dp</dimen></file><file path="E:\onesapce\androidOne\src\main\res\values\slidingtab_strings.xml" qualifiers=""><declare-styleable name="PagerSlidingTabStrip">
+        <attr format="color" name="pstsIndicatorColor"/>
+        <attr format="color" name="pstsUnderlineColor"/>
+        <attr format="color" name="pstsDividerColor"/>
+        <attr format="dimension" name="pstsIndicatorHeight"/>
+        <attr format="dimension" name="pstsUnderlineHeight"/>
+        <attr format="dimension" name="pstsDividerPadding"/>
+        <attr format="dimension" name="pstsTabPaddingLeftRight"/>
+        <attr format="dimension" name="pstsScrollOffset"/>
+        <attr format="reference" name="pstsTabBackground"/>
+        <attr format="boolean" name="pstsShouldExpand"/>
+        <attr format="boolean" name="pstsTextAllCaps"/>
+    </declare-styleable><color name="background_tab_pressed">#6633B5E5</color></file><file path="E:\onesapce\androidOne\src\main\res\values\strings.xml" qualifiers=""><string name="hello_world">Hello world!</string><string name="common_exit">press again to exit the system</string><string name="common_request_error">get data is error, please try it</string><string name="common_title_tips">Tips</string><string-array name="main_menu_array">
+        <item>product list</item>
+        <item>action list</item>
+        <item>company description</item>
+        <item>about us</item>
+        <item>switch bg</item>
+        <item>switch lang</item>
+    </string-array><string name="common_confirm">Confirm</string><string name="action_settings">Settings</string><string name="app_name">One</string><string name="menu_member_title">更多</string><string name="menu_category_title">分类</string><string name="common_network_error">network problem, please try again later</string><string name="menu_home_title">首页</string><string name="menu_cart_title">购物车</string><string name="common_app_version">version：1.0</string><string name="common_cancel">Cancel</string><string name="menu_collection_title">收藏</string><string name="common_app_copyright">Copyright © 2012 SD, Inc. All Rights Reserved.</string><string name="common_network_unavailable">currently netwok not available</string><string-array name="countries">
+        
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua &amp; Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+         
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burma</item>
+        <item>Burundi</item>
+        
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape Verde</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo, Democratic Republic of the</item>
+        <item>Congo, Republic of the</item>
+        <item>Costa Rica</item>
+        <item>Cote d\'voire</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+
+        <item>Gabon</item>
+        <item>Gambia, The</item>
+        <item>Georgia</item>
+        <item>Ghana</item>
+        <item>Greece</item>
+        <item>Grenada</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        
+        <item>Haiti</item>
+        <item>Holy See</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Korea, North</item>
+        <item>Korea, South</item>
+        <item>Kosovo</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        
+        <item>Macau</item>
+		<item>Macedonia</item>
+		<item>Madagascar</item>
+		<item>Malawi</item>
+		<item>Malaysia</item>
+		<item>Maldives</item>
+		<item>Mali</item>
+		<item>Malta</item>
+		<item>Marshall Islands</item>
+		<item>Mauritania</item>
+		<item>Mauritius</item>
+		<item>Mexico</item>
+		<item>Micronesia</item>
+		<item>Moldova</item>
+		<item>Monaco</item>
+		<item>Mongolia</item>
+		<item>Montenegro</item>
+		<item>Morocco</item>
+		<item>Mozambique</item>
+		
+        <item>Namibia</item>
+		<item>Nauru</item>
+		<item>Nepal</item>
+		<item>Netherlands</item>
+		<item>Netherlands Antilles</item>
+		<item>New Zealand</item>
+		<item>Nicaragua</item>
+		<item>Niger</item>
+		<item>Nigeria</item>
+		<item>North Korea</item>
+		<item>Norway</item>
+		
+        <item>Oman</item>
+        
+        <item>Pakistan</item>
+		<item>Palau</item>
+		<item>Palestinian Territories</item>
+		<item>Panama</item>
+		<item>Papua New Guinea</item>
+		<item>Paraguay</item>
+		<item>Peru</item>
+		<item>Philippines</item>
+		<item>Poland</item>
+		<item>Portugal</item>
+		
+        <item>Qatar</item>
+        
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        
+        <item>Saint Kitts and Nevis</item>
+		<item>Saint Lucia</item>
+		<item>Saint Vincent and the Grenadines</item>
+		<item>Samoa</item>
+		<item>San Marino</item>
+		<item>Sao Tome and Principe</item>
+		<item>Saudi Arabia</item>
+		<item>Senegal</item>
+		<item>Serbia</item>
+		<item>Seychelles</item>
+		<item>Sierra Leone</item>
+		<item>Singapore</item>
+		<item>Slovakia</item>
+		<item>Slovenia</item>
+		<item>Solomon Islands</item>
+		<item>Somalia</item>
+		<item>South Africa</item>
+		<item>South Korea</item>
+		<item>South Sudan</item>
+		<item>Spain</item>
+		<item>Sri Lanka</item>
+		<item>Sudan</item>
+		<item>Suriname</item>
+		<item>Swaziland</item>
+		<item>Sweden</item>
+		<item>Switzerland</item>
+		<item>Syria</item>
+
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand </item>
+        <item>Timor-Leste</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Tuvalu</item>
+        
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        
+        <item>Yemen</item>
+        
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array><string name="common_loading_tips">Loading…</string></file><file path="E:\onesapce\androidOne\src\main\res\values\styles.xml" qualifiers=""><style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style><style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style><style name="dialogFullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style><style name="MainTabButton">
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+         <item name="android:background">@null</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/selector_menu_txt</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingTop">5.0dip</item>
+    </style><style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here. 
+        -->
+    </style></file><file path="E:\onesapce\androidOne\src\main\res\values\swipelistview_string.xml" qualifiers=""><dimen name="height_list">90dp</dimen><style name="ListFrontContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/height_list</item>
+        <item name="android:background">@color/background_list_front</item>
+        <item name="android:padding">@dimen/padding_default</item>
+    </style><dimen name="size_list_image">64dp</dimen><style name="ListImage">
+        <item name="android:layout_width">@dimen/size_list_image</item>
+        <item name="android:layout_height">@dimen/size_list_image</item>
+        <item name="android:scaleGravity">fill</item>
+        <item name="android:layout_marginRight">@dimen/padding_default</item>
+    </style><dimen name="padding_default">8dp</dimen><declare-styleable name="SwipeListView">
+        <attr format="boolean" name="swipeOpenOnLongPress"/>
+        <attr format="integer" name="swipeAnimationTime"/>
+        <attr format="dimension" name="swipeOffsetLeft"/>
+        <attr format="dimension" name="swipeOffsetRight"/>
+        <attr format="boolean" name="swipeCloseAllItemsWhenMoveList"/>
+        <attr format="reference" name="swipeFrontView"/>
+        <attr format="reference" name="swipeBackView"/>
+        <attr format="enum" name="swipeMode">
+            <enum name="none" value="0"/>
+            <enum name="both" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="left" value="3"/>
+        </attr>
+        <attr format="enum" name="swipeActionLeft">
+            <enum name="reveal" value="0"/>
+            <enum name="dismiss" value="1"/>
+            <enum name="choice" value="2"/>
+        </attr>
+        <attr format="enum" name="swipeActionRight">
+            <enum name="reveal" value="0"/>
+            <enum name="dismiss" value="1"/>
+            <enum name="choice" value="2"/>
+        </attr>
+        <attr format="reference" name="swipeDrawableChecked"/>
+        <attr format="reference" name="swipeDrawableUnchecked"/>
+    </declare-styleable><style name="ListBackContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/height_list</item>
+        <item name="android:background">@drawable/background_item</item>
+        <item name="android:gravity">center</item>
+    </style><color name="background_list_front">#ffffff</color></file><file path="E:\onesapce\androidOne\src\main\res\values\waterfall_strings.xml" qualifiers=""><string name="xlistview_header_hint_loading">正在加载…</string><string name="xlistview_footer_hint_normal">查看更多</string><declare-styleable name="AbsListView">
+
+        <!-- Drawable used to indicate the currently selected item in the list. -->
+        <attr format="color|reference" name="listSelector"/>
+        <!--
+             When set to true, the selector will be drawn over the selected item.
+             Otherwise the selector is drawn behind the selected item. The default
+             value is false.
+        -->
+        <attr format="boolean" name="drawSelectorOnTop"/>
+        <!-- Used by ListView and GridView to stack their content from the bottom. -->
+        <attr format="boolean" name="stackFromBottom"/>
+        <!--
+             When set to true, the list uses a drawing cache during scrolling.
+             This makes the rendering faster but uses more memory. The default
+             value is true.
+        -->
+        <attr format="boolean" name="scrollingCache"/>
+        <!--
+             When set to true, the list will filter results as the user types. The
+             List's adapter must support the Filterable interface for this to work.
+        -->
+        <attr format="boolean" name="textFilterEnabled"/>
+        <!--
+             Sets the transcript mode for the list. In transcript mode, the list
+             scrolls to the bottom to make new items visible when they are added.
+        -->
+        <attr name="transcriptMode">
+
+            <!-- Disables transcript mode. This is the default value. -->
+            <enum name="disabled" value="0"/>
+            <!--
+                 The list will automatically scroll to the bottom when
+                 a data set change notification is received and only if the last item is
+                 already visible on screen.
+            -->
+            <enum name="normal" value="1"/>
+            <!--
+                 The list will automatically scroll to the bottom, no matter what items
+                 are currently visible.
+            -->
+            <enum name="alwaysScroll" value="2"/>
+        </attr>
+        <!--
+             Indicates that this list will always be drawn on top of solid, single-color
+             opaque background. This allows the list to optimize drawing.
+        -->
+        <attr format="color" name="cacheColorHint"/>
+        <!--
+             Enables the fast scroll thumb that can be dragged to quickly scroll through
+             the list.
+        -->
+        <attr format="boolean" name="fastScrollEnabled"/>
+        <!--
+             When set to true, the list will use a more refined calculation
+             method based on the pixels height of the items visible on screen. This
+             property is set to true by default but should be set to false if your adapter
+             will display items of varying heights. When this property is set to true and
+             your adapter displays items of varying heights, the scrollbar thumb will
+             change size as the user scrolls through the list. When set to fale, the list
+             will use only the number of items in the adapter and the number of items visible
+             on screen to determine the scrollbar's properties.
+        -->
+        <attr format="boolean" name="smoothScrollbar"/>
+        <!--
+             Defines the choice behavior for the view. By default, lists do not have
+             any choice behavior. By setting the choiceMode to singleChoice, the list
+             allows up to one item to be in a chosen state. By setting the choiceMode to
+             multipleChoice, the list allows any number of items to be chosen.
+             Finally, by setting the choiceMode to multipleChoiceModal the list allows
+             any number of items to be chosen in a special selection mode.
+             The application will supply a
+             {@link android.widget.AbsListView.MultiChoiceModeListener} using
+             {@link android.widget.AbsListView#setMultiChoiceModeListener} to control the
+             selection mode. This uses the {@link android.view.ActionMode} API.
+        -->
+        <attr name="choiceMode">
+
+            <!-- Normal list that does not indicate choices. -->
+            <enum name="none" value="0"/>
+            <!-- The list allows up to one choice. -->
+            <enum name="singleChoice" value="1"/>
+            <!-- The list allows multiple choices. -->
+            <enum name="multipleChoice" value="2"/>
+            <!-- The list allows multiple choices in a custom selection mode. -->
+            <enum name="multipleChoiceModal" value="3"/>
+        </attr>
+
+        <!--
+             When set to true, the list will always show the fast scroll interface.
+             This setting implies fastScrollEnabled.
+        -->
+        <attr format="boolean" name="fastScrollAlwaysVisible"/>
+    </declare-styleable><string name="xlistview_header_hint_ready">松开刷新数据</string><string name="xlistview_footer_hint_ready">松开载入更多</string><attr format="reference" name="absListViewStyle"/><declare-styleable name="View">
+
+        <!--
+             Supply an identifier name for this view, to later retrieve it
+             with {@link android.view.View#findViewById View.findViewById()} or
+             {@link android.app.Activity#findViewById Activity.findViewById()}.
+             This must be a
+             resource reference; typically you set this using the
+             <code>@+</code> syntax to create a new ID resources.
+             For example: <code>android:id="@+id/my_id"</code> which
+             allows you to later retrieve the view
+             with <code>findViewById(R.id.my_id)</code>.
+        -->
+        <attr format="reference" name="id"/>
+
+        <!--
+             Supply a tag for this view containing a String, to be retrieved
+             later with {@link android.view.View#getTag View.getTag()} or
+             searched for with {@link android.view.View#findViewWithTag
+             View.findViewWithTag()}.  It is generally preferable to use
+             IDs (through the android:id attribute) instead of tags because
+             they are faster and allow for compile-time type checking.
+        -->
+        <attr format="string" name="tag"/>
+
+        <!-- The initial horizontal scroll offset, in pixels. -->
+        <attr format="dimension" name="scrollX"/>
+
+        <!-- The initial vertical scroll offset, in pixels. -->
+        <attr format="dimension" name="scrollY"/>
+
+        <!--
+             A drawable to use as the background.  This can be either a reference
+             to a full drawable resource (such as a PNG image, 9-patch,
+             XML state list description, etc), or a solid color such as "#ff000000"
+            (black).
+        -->
+
+
+        <!-- <attr name="background" format="reference|color" /> -->
+
+
+        <!--
+             Sets the padding, in pixels, of all four edges.  Padding is defined as
+             space between the edges of the view and the view's content. A views size
+             will include it's padding.  If a {@link android.R.attr#background}
+             is provided, the padding will initially be set to that (0 if the
+             drawable does not have padding).  Explicitly setting a padding value
+             will override the corresponding padding found in the background.
+        -->
+        <attr format="dimension" name="padding"/>
+        <!-- Sets the padding, in pixels, of the left edge; see {@link android.R.attr#padding}. -->
+        <attr format="dimension" name="paddingLeft"/>
+        <!-- Sets the padding, in pixels, of the top edge; see {@link android.R.attr#padding}. -->
+        <attr format="dimension" name="paddingTop"/>
+        <!-- Sets the padding, in pixels, of the right edge; see {@link android.R.attr#padding}. -->
+        <attr format="dimension" name="paddingRight"/>
+        <!-- Sets the padding, in pixels, of the bottom edge; see {@link android.R.attr#padding}. -->
+        <attr format="dimension" name="paddingBottom"/>
+        <!-- Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}. -->
+        <attr format="dimension" name="paddingStart"/>
+        <!-- Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}. -->
+        <attr format="dimension" name="paddingEnd"/>
+
+        <!--
+             Boolean that controls whether a view can take focus.  By default the user can not
+             move focus to a view; by setting this attribute to true the view is
+             allowed to take focus.  This value does not impact the behavior of
+             directly calling {@link android.view.View#requestFocus}, which will
+             always request focus regardless of this view.  It only impacts where
+             focus navigation will try to move focus.
+        -->
+        <attr format="boolean" name="focusable"/>
+
+        <!--
+             Boolean that controls whether a view can take focus while in touch mode.
+             If this is true for a view, that view can gain focus when clicked on, and can keep
+             focus if another view is clicked on that doesn't have this attribute set to true.
+        -->
+        <attr format="boolean" name="focusableInTouchMode"/>
+
+        <!-- Controls the initial visibility of the view. -->
+        <attr name="visibility">
+
+            <!-- Visible on screen; the default value. -->
+            <enum name="visible" value="0"/>
+            <!-- Not displayed, but taken into account during layout (space is left for it). -->
+            <enum name="invisible" value="1"/>
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="2"/>
+        </attr>
+
+        <!--
+             Boolean internal attribute to adjust view layout based on
+             system windows such as the status bar.
+             If true, adjusts the padding of this view to leave space for the system windows.
+             Will only take effect if this view is in a non-embedded activity.
+        -->
+        <attr format="boolean" name="fitsSystemWindows"/>
+
+        <!-- Defines which scrollbars should be displayed on scrolling or not. -->
+        <attr name="scrollbars">
+
+            <!-- No scrollbar is displayed. -->
+            <flag name="none" value="0x00000000"/>
+            <!-- Displays horizontal scrollbar only. -->
+            <flag name="horizontal" value="0x00000100"/>
+            <!-- Displays vertical scrollbar only. -->
+            <flag name="vertical" value="0x00000200"/>
+        </attr>
+
+        <!--
+             Controls the scrollbar style and position. The scrollbars can be overlaid or
+             inset. When inset, they add to the padding of the view. And the
+             scrollbars can be drawn inside the padding area or on the edge of
+             the view. For example, if a view has a background drawable and you
+             want to draw the scrollbars inside the padding specified by the
+             drawable, you can use insideOverlay or insideInset. If you want them
+             to appear at the edge of the view, ignoring the padding, then you can
+             use outsideOverlay or outsideInset.
+        -->
+        <attr name="scrollbarStyle">
+
+            <!-- Inside the padding and overlaid -->
+            <enum name="insideOverlay" value="0x0"/>
+            <!-- Inside the padding and inset -->
+            <enum name="insideInset" value="0x01000000"/>
+            <!-- Edge of the view and overlaid -->
+            <enum name="outsideOverlay" value="0x02000000"/>
+            <!-- Edge of the view and inset -->
+            <enum name="outsideInset" value="0x03000000"/>
+        </attr>
+
+        <!--
+             Set this if the view will serve as a scrolling container, meaing
+             that it can be resized to shrink its overall window so that there
+             will be space for an input method.  If not set, the default
+             value will be true if "scrollbars" has the vertical scrollbar
+             set, else it will be false.
+        -->
+        <attr format="boolean" name="isScrollContainer"/>
+
+        <!-- Defines whether to fade out scrollbars when they are not in use. -->
+        <attr format="boolean" name="fadeScrollbars"/>
+        <!-- Defines the delay in milliseconds that a scrollbar takes to fade out. -->
+        <attr format="integer" name="scrollbarFadeDuration"/>
+        <!-- Defines the delay in milliseconds that a scrollbar waits before fade out. -->
+        <attr format="integer" name="scrollbarDefaultDelayBeforeFade"/>
+        <!-- Sets the width of vertical scrollbars and height of horizontal scrollbars. -->
+        <attr format="dimension" name="scrollbarSize"/>
+        <!-- Defines the horizontal scrollbar thumb drawable. -->
+        <attr format="reference" name="scrollbarThumbHorizontal"/>
+        <!-- Defines the vertical scrollbar thumb drawable. -->
+        <attr format="reference" name="scrollbarThumbVertical"/>
+        <!-- Defines the horizontal scrollbar track drawable. -->
+        <attr format="reference" name="scrollbarTrackHorizontal"/>
+        <!-- Defines the vertical scrollbar track drawable. -->
+        <attr format="reference" name="scrollbarTrackVertical"/>
+        <!-- Defines whether the horizontal scrollbar track should always be drawn. -->
+        <attr format="boolean" name="scrollbarAlwaysDrawHorizontalTrack"/>
+        <!-- Defines whether the vertical scrollbar track should always be drawn. -->
+        <attr format="boolean" name="scrollbarAlwaysDrawVerticalTrack"/>
+
+        <!--
+             This attribute is deprecated and will be ignored as of
+             API level 14 ({@link android.os.Build.VERSION_CODES#ICE_CREAM_SANDWICH}).
+             Using fading edges may introduce noticeable performance
+             degradations and should be used only when required by the application's
+             visual design. To request fading edges with API level 14 and above,
+             use the <code>android:requiresFadingEdge</code> attribute instead.
+        -->
+        <attr name="fadingEdge">
+
+            <!-- No edge is faded. -->
+            <flag name="none" value="0x00000000"/>
+            <!-- Fades horizontal edges only. -->
+            <flag name="horizontal" value="0x00001000"/>
+            <!-- Fades vertical edges only. -->
+            <flag name="vertical" value="0x00002000"/>
+        </attr>
+        <!-- Defines which edges should be faded on scrolling. -->
+        <attr name="requiresFadingEdge">
+
+            <!-- No edge is faded. -->
+            <flag name="none" value="0x00000000"/>
+            <!-- Fades horizontal edges only. -->
+            <flag name="horizontal" value="0x00001000"/>
+            <!-- Fades vertical edges only. -->
+            <flag name="vertical" value="0x00002000"/>
+        </attr>
+        <!-- Defines the length of the fading edges. -->
+        <attr format="dimension" name="fadingEdgeLength"/>
+
+        <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_LEFT}.
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+        -->
+        <attr format="reference" name="nextFocusLeft"/>
+
+        <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_RIGHT}
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+        -->
+        <attr format="reference" name="nextFocusRight"/>
+
+        <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_UP}
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+        -->
+        <attr format="reference" name="nextFocusUp"/>
+
+        <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_DOWN}
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+        -->
+        <attr format="reference" name="nextFocusDown"/>
+
+        <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_FORWARD}
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+        -->
+        <attr format="reference" name="nextFocusForward"/>
+
+        <!-- Defines whether this view reacts to click events. -->
+        <attr format="boolean" name="clickable"/>
+
+        <!-- Defines whether this view reacts to long click events. -->
+        <attr format="boolean" name="longClickable"/>
+
+        <!--
+             If unset, no state will be saved for this view when it is being
+             frozen. The default is true, allowing the view to be saved
+             (however it also must have an ID assigned to it for its
+             state to be saved).  Setting this to false only disables the
+             state for this view, not for its children which may still
+             be saved.
+        -->
+        <attr format="boolean" name="saveEnabled"/>
+
+        <!--
+             Specifies whether to filter touches when the view's window is obscured by
+             another visible window.  When set to true, the view will not receive touches
+             whenever a toast, dialog or other window appears above the view's window.
+             Refer to the {@link android.view.View} security documentation for more details.
+        -->
+        <attr format="boolean" name="filterTouchesWhenObscured"/>
+
+        <!--
+             Defines the quality of translucent drawing caches. This property is used
+             only when the drawing cache is enabled and translucent. The default value is auto.
+        -->
+        <attr name="drawingCacheQuality">
+
+            <!--
+                 Lets the framework decide what quality level should be used
+                 for the drawing cache.
+            -->
+            <enum name="auto" value="0"/>
+            <!--
+                 Low quality. When set to low quality, the drawing cache uses a lower color
+                 depth, thus losing precision in rendering gradients, but uses less memory.
+            -->
+            <enum name="low" value="1"/>
+            <!--
+                 High quality. When set to high quality, the drawing cache uses a higher
+                 color depth but uses more memory.
+            -->
+            <enum name="high" value="2"/>
+        </attr>
+
+        <!--
+             Controls whether the view's window should keep the screen on
+             while visible.
+        -->
+        <attr format="boolean" name="keepScreenOn"/>
+
+        <!--
+             When this attribute is set to true, the view gets its drawable state
+             (focused, pressed, etc.) from its direct parent rather than from itself.
+        -->
+        <attr format="boolean" name="duplicateParentState"/>
+
+        <!--
+             Defines the minimum height of the view. It is not guaranteed
+             the view will be able to achieve this minimum height (for example,
+             if its parent layout constrains it with less available height).
+        -->
+        <attr format="dimension" name="minHeight"/>
+
+        <!--
+             Defines the minimum width of the view. It is not guaranteed
+             the view will be able to achieve this minimum width (for example,
+             if its parent layout constrains it with less available width).
+        -->
+        <attr format="dimension" name="minWidth"/>
+
+        <!--
+             Boolean that controls whether a view should have sound effects
+             enabled for events such as clicking and touching.
+        -->
+        <attr format="boolean" name="soundEffectsEnabled"/>
+
+        <!--
+             Boolean that controls whether a view should have haptic feedback
+             enabled for events such as long presses.
+        -->
+        <attr format="boolean" name="hapticFeedbackEnabled"/>
+
+        <!--
+             Defines text that briefly describes content of the view. This property is used
+             primarily for accessibility. Since some views do not have textual
+             representation this attribute can be used for providing such.
+        -->
+        <attr format="string" localization="suggested" name="contentDescription"/>
+
+        <!--
+             Name of the method in this View's context to invoke when the view is
+             clicked. This name must correspond to a public method that takes
+             exactly one parameter of type View. For instance, if you specify
+             <code>android:onClick="sayHello"</code>, you must declare a
+             <code>public void sayHello(View v)</code> method of your context
+             (typically, your Activity).
+        -->
+        <attr format="string" name="onClick"/>
+
+        <!--
+             Defines over-scrolling behavior. This property is used only if the
+             View is scrollable. Over-scrolling is the ability for the user to
+             receive feedback when attempting to scroll beyond meaningful content.
+        -->
+        <attr name="overScrollMode">
+
+            <!--
+                 Always show over-scroll effects, even if the content fits entirely
+                 within the available space.
+            -->
+            <enum name="always" value="0"/>
+            <!--
+                 Only show over-scroll effects if the content is large
+                 enough to meaningfully scroll.
+            -->
+            <enum name="ifContentScrolls" value="1"/>
+            <!-- Never show over-scroll effects. -->
+            <enum name="never" value="2"/>
+        </attr>
+
+        <!--
+             alpha property of the view, as a value between 0 (completely transparent) and 1
+             (completely opaque).
+        -->
+        <attr format="float" name="alpha"/>
+
+        <!--
+             translation in x of the view. This value is added post-layout to the left
+             property of the view, which is set by its layout.
+        -->
+        <attr format="dimension" name="translationX"/>
+
+        <!--
+             translation in y of the view. This value is added post-layout to the left
+             property of the view, which is set by its layout.
+        -->
+        <attr format="dimension" name="translationY"/>
+
+        <!--
+             x location of the pivot point around which the view will rotate and scale.
+             This xml attribute sets the pivotX property of the View.
+        -->
+        <attr format="dimension" name="transformPivotX"/>
+
+        <!--
+             y location of the pivot point around which the view will rotate and scale.
+             This xml attribute sets the pivotY property of the View.
+        -->
+        <attr format="dimension" name="transformPivotY"/>
+
+        <!-- rotation of the view, in degrees. -->
+        <attr format="float" name="rotation"/>
+
+        <!-- rotation of the view around the x axis, in degrees. -->
+        <attr format="float" name="rotationX"/>
+
+        <!-- rotation of the view around the y axis, in degrees. -->
+        <attr format="float" name="rotationY"/>
+
+        <!-- scale of the view in the x direction. -->
+        <attr format="float" name="scaleX"/>
+
+        <!-- scale of the view in the y direction. -->
+        <attr format="float" name="scaleY"/>
+
+        <!-- Determines which side the vertical scroll bar should be placed on. -->
+        <attr name="verticalScrollbarPosition">
+
+            <!-- Place the scroll bar wherever the system default determines. -->
+            <enum name="defaultPosition" value="0"/>
+            <!-- Place the scroll bar on the left. -->
+            <enum name="left" value="1"/>
+            <!-- Place the scroll bar on the right. -->
+            <enum name="right" value="2"/>
+        </attr>
+
+        <!--
+             Specifies the type of layer backing this view. The default value is none.
+             Refer to {@link android.view.View#setLayerType(int, android.graphics.Paint)}
+             for more information.
+        -->
+        <attr name="layerType">
+
+            <!-- Don't use a layer. -->
+            <enum name="none" value="0"/>
+            <!--
+                 Use a software layer. Refer to
+                 {@link android.view.View#setLayerType(int, android.graphics.Paint) for
+                 more information.
+            -->
+            <enum name="software" value="1"/>
+            <!--
+                 Use a hardware layer. Refer to
+                 {@link android.view.View#setLayerType(int, android.graphics.Paint) for
+                 more information.
+            -->
+            <enum name="hardware" value="2"/>
+        </attr>
+
+        <!--
+             Defines the direction of layout drawing. This typically is associated with writing
+             direction of the language script used. The possible values are "ltr" for Left-to-Right,
+             "rtl" for Right-to-Left, "locale" and "inherit" from parent view. If there is nothing
+             to inherit, "locale" is used. "locale" falls back to "en-US". "ltr" is the direction
+             used in "en-US". The default for this attribute is "inherit".
+        -->
+        <attr name="layoutDirection">
+
+            <!-- Left-to-Right -->
+            <enum name="ltr" value="0"/>
+            <!-- Right-to-Left -->
+            <enum name="rtl" value="1"/>
+            <!-- Inherit from parent -->
+            <enum name="inherit" value="2"/>
+            <!-- Locale -->
+            <enum name="locale" value="3"/>
+        </attr>
+
+        <!--
+             Direction of the text. A heuristic is used to determine the resolved text direction
+             of paragraphs.
+        -->
+        <attr format="integer" name="textDirection">
+
+            <!-- Default -->
+            <enum name="inherit" value="0"/>
+            <!--
+                 Default for the root view. The first strong directional character determines the
+                 paragraph direction.  If there is no strong directional character, the paragraph
+                 direction is the view’s resolved layout direction.
+            -->
+            <enum name="firstStrong" value="1"/>
+            <!--
+                 The paragraph direction is RTL if it contains any strong RTL character, otherwise
+                 it is LTR if it contains any strong LTR characters.  If there are neither, the
+                 paragraph direction is the view’s resolved layout direction.
+            -->
+            <enum name="anyRtl" value="2"/>
+            <!-- The paragraph direction is left to right. -->
+            <enum name="ltr" value="3"/>
+            <!-- The paragraph direction is right to left. -->
+            <enum name="rtl" value="4"/>
+            <!-- The paragraph direction is coming from the system Locale. -->
+            <enum name="locale" value="5"/>
+        </attr>
+
+        <!--
+             Alignment of the text. A heuristic is used to determine the resolved
+            text alignment.
+        -->
+        <attr format="integer" name="textAlignment">
+
+            <!-- Default -->
+            <enum name="inherit" value="0"/>
+            <!--
+                 Default for the root view. The gravity determines the alignment, ALIGN_NORMAL,
+                ALIGN_CENTER, or ALIGN_OPPOSITE, which are relative to each paragraph’s
+                text direction
+            -->
+            <enum name="gravity" value="1"/>
+            <!-- Align to the start of the paragraph, e.g. ALIGN_NORMAL. -->
+            <enum name="textStart" value="2"/>
+            <!-- Align to the end of the paragraph, e.g. ALIGN_OPPOSITE. -->
+            <enum name="textEnd" value="3"/>
+            <!-- Center the paragraph, e.g. ALIGN_CENTER. -->
+            <enum name="center" value="4"/>
+            <!--
+                 Align to the start of the view, which is ALIGN_LEFT if the view’s resolved
+                layoutDirection is LTR, and ALIGN_RIGHT otherwise.
+            -->
+            <enum name="viewStart" value="5"/>
+            <!--
+                 Align to the end of the view, which is ALIGN_RIGHT if the view’s resolved
+                layoutDirection is LTR, and ALIGN_LEFT otherwise
+            -->
+            <enum name="viewEnd" value="6"/>
+        </attr>
+
+        <!--
+             Controls how this View is important for accessibility which is if it fires
+             accessibility events and if it is reported to accessibility services that
+             query the screen. Note: While not recommended, an accessibility service may
+             decide to ignore this attribute and operate on all views in the view tree.
+        -->
+        <attr format="integer" name="importantForAccessibility">
+
+            <!--
+                 The system determines whether the view is important for accessibility - default
+                 (recommended).
+            -->
+            <enum name="auto" value="0"/>
+            <!-- The view is important for accessibility. -->
+            <enum name="yes" value="1"/>
+            <!-- The view is not important for accessibility. -->
+            <enum name="no" value="2"/>
+        </attr>
+
+        <!-- @hide Controls whether this view can take accessibility focus. -->
+        <attr format="integer" name="accessibilityFocusable">
+
+            <!--
+                 The system determines whether the view can take accessibility focus - default
+                 (recommended).
+                 <p>
+                 Such a view is consideted by the focus search if it is:
+                 <ul>
+                 <li>
+                 Important for accessibility and actionable (clickable, long clickable, focusable)
+                 </li>
+                 <li>
+                 Important for accessibility, not actionable (clickable, long clickable, focusable),
+                 and does not have an actionable predecessor.
+                 </li>
+                 </ul>
+                 An accessibility srvice can request putting accessibility focus on such a view.
+                 </p>
+            -->
+            <enum name="auto" value="0"/>
+            <!--
+                 The view can take accessibility focus.
+                 <p>
+                 A view that can take accessibility focus is always considered during focus
+                 search and an accessibility service can request putting accessibility focus
+                 on it.
+                 </p>
+            -->
+            <enum name="yes" value="1"/>
+            <!--
+                 The view can not take accessibility focus.
+                 <p>
+                 A view that can not take accessibility focus is never considered during focus
+                 search and an accessibility service can not request putting accessibility focus
+                 on it.
+                 </p>
+            -->
+            <enum name="no" value="2"/>
+        </attr>
+    </declare-styleable><declare-styleable name="ViewGroup">
+
+        <!--
+             Defines whether changes in layout (caused by adding and removing items) should
+             cause a LayoutTransition to run. When this flag is set to true, a default
+             LayoutTransition object will be set on the ViewGroup container and default
+             animations will run when these layout changes occur.
+        -->
+        <attr format="boolean" name="animateLayoutChanges"/>
+        <!--
+             Defines whether a child is limited to draw inside of its bounds or not.
+             This is useful with animations that scale the size of the children to more
+             than 100% for instance. In such a case, this property should be set to false
+             to allow the children to draw outside of their bounds. The default value of
+             this property is true.
+        -->
+        <attr format="boolean" name="clipChildren"/>
+        <!--
+             Defines whether the ViewGroup will clip its drawing surface so as to exclude
+             the padding area. This property is set to true by default.
+        -->
+        <attr format="boolean" name="clipToPadding"/>
+        <!--
+             Defines the layout animation to use the first time the ViewGroup is laid out.
+             Layout animations can also be started manually after the first layout.
+        -->
+        <attr format="reference" name="layoutAnimation"/>
+        <!--
+             Defines whether layout animations should create a drawing cache for their
+             children. Enabling the animation cache consumes more memory and requires
+             a longer initialization but provides better performance. The animation
+             cache is enabled by default.
+        -->
+        <attr format="boolean" name="animationCache"/>
+        <!--
+             Defines the persistence of the drawing cache. The drawing cache might be
+             enabled by a ViewGroup for all its children in specific situations (for
+             instance during a scrolling.) This property lets you persist the cache
+             in memory after its initial usage. Persisting the cache consumes more
+             memory but may prevent frequent garbage collection is the cache is created
+             over and over again. By default the persistence is set to scrolling.
+        -->
+        <attr name="persistentDrawingCache">
+
+            <!-- The drawing cache is not persisted after use. -->
+            <flag name="none" value="0x0"/>
+            <!-- The drawing cache is persisted after a layout animation. -->
+            <flag name="animation" value="0x1"/>
+            <!-- The drawing cache is persisted after a scroll. -->
+            <flag name="scrolling" value="0x2"/>
+            <!-- The drawing cache is always persisted. -->
+            <flag name="all" value="0x3"/>
+        </attr>
+        <!--
+             Defines whether the ViewGroup should always draw its children using their
+             drawing cache or not. The default value is true.
+        -->
+        <attr format="boolean" name="alwaysDrawnWithCache"/>
+        <!--
+             Sets whether this ViewGroup's drawable states also include
+             its children's drawable states.  This is used, for example, to
+             make a group appear to be focused when its child EditText or button
+             is focused.
+        -->
+        <attr format="boolean" name="addStatesFromChildren"/>
+
+        <!--
+             Defines the relationship between the ViewGroup and its descendants
+             when looking for a View to take focus.
+        -->
+        <attr name="descendantFocusability">
+
+            <!-- The ViewGroup will get focus before any of its descendants. -->
+            <enum name="beforeDescendants" value="0"/>
+            <!-- The ViewGroup will get focus only if none of its descendants want it. -->
+            <enum name="afterDescendants" value="1"/>
+            <!-- The ViewGroup will block its descendants from receiving focus. -->
+            <enum name="blocksDescendants" value="2"/>
+        </attr>
+
+        <!--
+             Sets whether this ViewGroup should split MotionEvents
+             to separate child views during touch event dispatch.
+             If false (default), touch events will be dispatched to
+             the child view where the first pointer went down until
+             the last pointer goes up.
+             If true, touch events may be dispatched to multiple children.
+             MotionEvents for each pointer will be dispatched to the child
+             view where the initial ACTION_DOWN event happened.
+             See {@link android.view.ViewGroup#setMotionEventSplittingEnabled(boolean)}
+             for more information.
+        -->
+        <attr format="boolean" name="splitMotionEvents"/>
+    </declare-styleable><declare-styleable name="PinterestLikeAdapterView">
+        <attr format="integer" name="plaColumnNumber"/>
+        <attr format="integer" name="plaLandscapeColumnNumber"/>
+        <attr format="dimension" name="plaColumnPaddingLeft"/>
+        <attr format="dimension" name="plaColumnPaddingRight"/>
+    </declare-styleable><attr format="reference" name="listViewStyle"/><declare-styleable name="ListView">
+
+        <!-- Drawable or color to draw between list items. -->
+        <!-- <attr name="divider" format="reference|color" /> -->
+        <!--
+             Height of the divider. Will use the intrinsic height of the divider if this
+             is not specified.
+        -->
+        <attr format="dimension" name="dividerHeight"/>
+        <!--
+             When set to false, the ListView will not draw the divider after each header view.
+             The default value is true.
+        -->
+        <attr format="boolean" name="headerDividersEnabled"/>
+        <!--
+             When set to false, the ListView will not draw the divider before each footer view.
+             The default value is true.
+        -->
+        <attr format="boolean" name="footerDividersEnabled"/>
+        <!-- Drawable to draw above list content. -->
+        <attr format="reference|color" name="overScrollHeader"/>
+        <!-- Drawable to draw below list content. -->
+
+        <attr format="reference|color" name="overScrollFooter"/>
+    </declare-styleable><string name="xlistview_header_hint_normal">下拉刷新</string><string name="xlistview_header_last_time">上次更新时间：</string></file><file path="E:\onesapce\androidOne\src\main\res\values-zh\strings.xml" qualifiers="zh"><string name="app_name">一个</string><string name="common_exit">再按一次退出程序</string><string name="common_network_error">网络有问题，请稍后重试</string><string name="common_title_tips">温馨提示</string><string name="common_app_version">版本：1.0</string><string name="common_network_unavailable">当前网络不可用</string><string-array name="main_menu_array">
+        <item>产品列表</item>
+        <item>促销活动</item>
+        <item>公司简介</item>
+        <item>关于我们</item>
+        <item>切换背景</item>
+        <item>切换语言</item>
+    </string-array><string name="common_request_error">获取数据异常，请重试</string><string name="common_app_copyright">Copyright © 2012 SD, Inc. All Rights Reserved.</string><string name="action_settings">设置</string><string name="common_confirm">确认</string><string name="common_cancel">取消</string><string name="common_loading_tips">正在加载…</string><string name="hello_world">你好</string></file><file name="config" path="E:\onesapce\androidOne\src\main\res\xml\config.xml" qualifiers="" type="xml"/></source><source path="E:\onesapce\androidOne\build\generated\res\rs\debug"/><source path="E:\onesapce\androidOne\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="E:\onesapce\androidOne\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode"><flag name="disabled" value="0x0"/><flag name="pullFromStart" value="0x1"/><flag name="pullFromEnd" value="0x2"/><flag name="both" value="0x3"/><flag name="manualOnly" value="0x4"/><flag name="pullDownFromTop" value="0x1"/><flag name="pullUpFromBottom" value="0x2"/></attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle"><flag name="rotate" value="0x0"/><flag name="flip" value="0x1"/></attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable><declare-styleable name="SwipeListView"><attr format="boolean" name="swipeOpenOnLongPress"/><attr format="integer" name="swipeAnimationTime"/><attr format="dimension" name="swipeOffsetLeft"/><attr format="dimension" name="swipeOffsetRight"/><attr format="boolean" name="swipeCloseAllItemsWhenMoveList"/><attr format="reference" name="swipeFrontView"/><attr format="reference" name="swipeBackView"/><attr format="enum" name="swipeMode"><enum name="none" value="0"/><enum name="both" value="1"/><enum name="right" value="2"/><enum name="left" value="3"/></attr><attr format="enum" name="swipeActionLeft"><enum name="reveal" value="0"/><enum name="dismiss" value="1"/><enum name="choice" value="2"/></attr><attr format="enum" name="swipeActionRight"><enum name="reveal" value="0"/><enum name="dismiss" value="1"/><enum name="choice" value="2"/></attr><attr format="reference" name="swipeDrawableChecked"/><attr format="reference" name="swipeDrawableUnchecked"/></declare-styleable><declare-styleable name="SlidingMenu"><attr name="mode"><enum name="left" value="0"/><enum name="right" value="1"/></attr><attr format="reference" name="viewAbove"/><attr format="reference" name="viewBehind"/><attr format="dimension" name="behindOffset"/><attr format="dimension" name="behindWidth"/><attr format="float" name="behindScrollScale"/><attr name="touchModeAbove"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/></attr><attr format="reference" name="shadowDrawable"/><attr format="dimension" name="shadowWidth"/><attr format="boolean" name="behindFadeEnabled"/><attr format="float" name="behindFadeDegree"/><attr format="boolean" name="selectorEnabled"/><attr format="reference" name="selectorDrawable"/></declare-styleable><declare-styleable name="BtgHorizontalListView"><attr format="dimension" name="btg_dividerWidth"/><attr name="android:divider"/><attr name="android:requiresFadingEdge"/><attr name="android:fadingEdgeLength"/></declare-styleable><declare-styleable name="ListView"><attr format="dimension" name="dividerHeight"/><attr format="boolean" name="headerDividersEnabled"/><attr format="boolean" name="footerDividersEnabled"/><attr format="reference|color" name="overScrollHeader"/><attr format="reference|color" name="overScrollFooter"/></declare-styleable><declare-styleable name="PagerSlidingTabStrip"><attr format="color" name="pstsIndicatorColor"/><attr format="color" name="pstsUnderlineColor"/><attr format="color" name="pstsDividerColor"/><attr format="dimension" name="pstsIndicatorHeight"/><attr format="dimension" name="pstsUnderlineHeight"/><attr format="dimension" name="pstsDividerPadding"/><attr format="dimension" name="pstsTabPaddingLeftRight"/><attr format="dimension" name="pstsScrollOffset"/><attr format="reference" name="pstsTabBackground"/><attr format="boolean" name="pstsShouldExpand"/><attr format="boolean" name="pstsTextAllCaps"/></declare-styleable><declare-styleable name="ViewGroup"><attr format="boolean" name="animateLayoutChanges"/><attr format="boolean" name="clipChildren"/><attr format="boolean" name="clipToPadding"/><attr format="reference" name="layoutAnimation"/><attr format="boolean" name="animationCache"/><attr name="persistentDrawingCache"><flag name="none" value="0x0"/><flag name="animation" value="0x1"/><flag name="scrolling" value="0x2"/><flag name="all" value="0x3"/></attr><attr format="boolean" name="alwaysDrawnWithCache"/><attr format="boolean" name="addStatesFromChildren"/><attr name="descendantFocusability"><enum name="beforeDescendants" value="0"/><enum name="afterDescendants" value="1"/><enum name="blocksDescendants" value="2"/></attr><attr format="boolean" name="splitMotionEvents"/></declare-styleable><declare-styleable name="BtgRippleView"><attr format="reference" name="btg_rv_background"/><attr format="reference" name="btg_rv_foreground"/></declare-styleable><declare-styleable name="AbsListView"><attr format="color|reference" name="listSelector"/><attr format="boolean" name="drawSelectorOnTop"/><attr format="boolean" name="stackFromBottom"/><attr format="boolean" name="scrollingCache"/><attr format="boolean" name="textFilterEnabled"/><attr name="transcriptMode"><enum name="disabled" value="0"/><enum name="normal" value="1"/><enum name="alwaysScroll" value="2"/></attr><attr format="color" name="cacheColorHint"/><attr format="boolean" name="fastScrollEnabled"/><attr format="boolean" name="smoothScrollbar"/><attr name="choiceMode"><enum name="none" value="0"/><enum name="singleChoice" value="1"/><enum name="multipleChoice" value="2"/><enum name="multipleChoiceModal" value="3"/></attr><attr format="boolean" name="fastScrollAlwaysVisible"/></declare-styleable><declare-styleable name="DragSortListView"><attr format="dimension" name="collapsed_height"/><attr format="float" name="drag_scroll_start"/><attr format="float" name="max_drag_scroll_speed"/><attr format="color" name="float_background_color"/><attr name="remove_mode"><enum name="clickRemove" value="0"/><enum name="flingRemove" value="1"/></attr><attr format="boolean" name="track_drag_sort"/><attr format="float" name="float_alpha"/><attr format="float" name="slide_shuffle_speed"/><attr format="integer" name="remove_animation_duration"/><attr format="integer" name="drop_animation_duration"/><attr format="boolean" name="drag_enabled"/><attr format="boolean" name="sort_enabled"/><attr format="boolean" name="remove_enabled"/><attr name="drag_start_mode"><enum name="onDown" value="0"/><enum name="onMove" value="1"/><enum name="onLongPress" value="2"/></attr><attr format="integer" name="drag_handle_id"/><attr format="integer" name="fling_handle_id"/><attr format="integer" name="click_remove_id"/><attr format="boolean" name="use_default_controller"/></declare-styleable><declare-styleable name="View"><attr format="reference" name="id"/><attr format="string" name="tag"/><attr format="dimension" name="scrollX"/><attr format="dimension" name="scrollY"/><attr format="dimension" name="padding"/><attr format="dimension" name="paddingLeft"/><attr format="dimension" name="paddingTop"/><attr format="dimension" name="paddingRight"/><attr format="dimension" name="paddingBottom"/><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr format="boolean" name="focusable"/><attr format="boolean" name="focusableInTouchMode"/><attr name="visibility"><enum name="visible" value="0"/><enum name="invisible" value="1"/><enum name="gone" value="2"/></attr><attr format="boolean" name="fitsSystemWindows"/><attr name="scrollbars"><flag name="none" value="0x00000000"/><flag name="horizontal" value="0x00000100"/><flag name="vertical" value="0x00000200"/></attr><attr name="scrollbarStyle"><enum name="insideOverlay" value="0x0"/><enum name="insideInset" value="0x01000000"/><enum name="outsideOverlay" value="0x02000000"/><enum name="outsideInset" value="0x03000000"/></attr><attr format="boolean" name="isScrollContainer"/><attr format="boolean" name="fadeScrollbars"/><attr format="integer" name="scrollbarFadeDuration"/><attr format="integer" name="scrollbarDefaultDelayBeforeFade"/><attr format="dimension" name="scrollbarSize"/><attr format="reference" name="scrollbarThumbHorizontal"/><attr format="reference" name="scrollbarThumbVertical"/><attr format="reference" name="scrollbarTrackHorizontal"/><attr format="reference" name="scrollbarTrackVertical"/><attr format="boolean" name="scrollbarAlwaysDrawHorizontalTrack"/><attr format="boolean" name="scrollbarAlwaysDrawVerticalTrack"/><attr name="fadingEdge"><flag name="none" value="0x00000000"/><flag name="horizontal" value="0x00001000"/><flag name="vertical" value="0x00002000"/></attr><attr name="requiresFadingEdge"><flag name="none" value="0x00000000"/><flag name="horizontal" value="0x00001000"/><flag name="vertical" value="0x00002000"/></attr><attr format="dimension" name="fadingEdgeLength"/><attr format="reference" name="nextFocusLeft"/><attr format="reference" name="nextFocusRight"/><attr format="reference" name="nextFocusUp"/><attr format="reference" name="nextFocusDown"/><attr format="reference" name="nextFocusForward"/><attr format="boolean" name="clickable"/><attr format="boolean" name="longClickable"/><attr format="boolean" name="saveEnabled"/><attr format="boolean" name="filterTouchesWhenObscured"/><attr name="drawingCacheQuality"><enum name="auto" value="0"/><enum name="low" value="1"/><enum name="high" value="2"/></attr><attr format="boolean" name="keepScreenOn"/><attr format="boolean" name="duplicateParentState"/><attr format="dimension" name="minHeight"/><attr format="dimension" name="minWidth"/><attr format="boolean" name="soundEffectsEnabled"/><attr format="boolean" name="hapticFeedbackEnabled"/><attr format="string" localization="suggested" name="contentDescription"/><attr format="string" name="onClick"/><attr name="overScrollMode"><enum name="always" value="0"/><enum name="ifContentScrolls" value="1"/><enum name="never" value="2"/></attr><attr format="float" name="alpha"/><attr format="dimension" name="translationX"/><attr format="dimension" name="translationY"/><attr format="dimension" name="transformPivotX"/><attr format="dimension" name="transformPivotY"/><attr format="float" name="rotation"/><attr format="float" name="rotationX"/><attr format="float" name="rotationY"/><attr format="float" name="scaleX"/><attr format="float" name="scaleY"/><attr name="verticalScrollbarPosition"><enum name="defaultPosition" value="0"/><enum name="left" value="1"/><enum name="right" value="2"/></attr><attr name="layerType"><enum name="none" value="0"/><enum name="software" value="1"/><enum name="hardware" value="2"/></attr><attr name="layoutDirection"><enum name="ltr" value="0"/><enum name="rtl" value="1"/><enum name="inherit" value="2"/><enum name="locale" value="3"/></attr><attr format="integer" name="textDirection"><enum name="inherit" value="0"/><enum name="firstStrong" value="1"/><enum name="anyRtl" value="2"/><enum name="ltr" value="3"/><enum name="rtl" value="4"/><enum name="locale" value="5"/></attr><attr format="integer" name="textAlignment"><enum name="inherit" value="0"/><enum name="gravity" value="1"/><enum name="textStart" value="2"/><enum name="textEnd" value="3"/><enum name="center" value="4"/><enum name="viewStart" value="5"/><enum name="viewEnd" value="6"/></attr><attr format="integer" name="importantForAccessibility"><enum name="auto" value="0"/><enum name="yes" value="1"/><enum name="no" value="2"/></attr><attr format="integer" name="accessibilityFocusable"><enum name="auto" value="0"/><enum name="yes" value="1"/><enum name="no" value="2"/></attr></declare-styleable><declare-styleable name="PinterestLikeAdapterView"><attr format="integer" name="plaColumnNumber"/><attr format="integer" name="plaLandscapeColumnNumber"/><attr format="dimension" name="plaColumnPaddingLeft"/><attr format="dimension" name="plaColumnPaddingRight"/></declare-styleable></configuration></mergedItems></merger>

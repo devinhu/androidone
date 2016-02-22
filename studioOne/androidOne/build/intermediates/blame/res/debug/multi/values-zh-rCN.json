@@ -1,0 +1,657 @@
+[
+    {
+        "outputFile": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\debug\\values-zh-rCN\\values-zh-rCN.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 7,
+                    "endColumn": 19,
+                    "endOffset": 219
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 7,
+                        "endColumn": 19,
+                        "endOffset": 219
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 224,
+                    "endLine": 13,
+                    "endColumn": 12,
+                    "endOffset": 496
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 224,
+                        "endLine": 13,
+                        "endColumn": 12,
+                        "endOffset": 496
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 501,
+                    "endColumn": 48,
+                    "endOffset": 545
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 501,
+                        "endColumn": 48,
+                        "endOffset": 545
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 550,
+                    "endColumn": 49,
+                    "endOffset": 595
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 550,
+                        "endColumn": 49,
+                        "endOffset": 595
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 600,
+                    "endColumn": 51,
+                    "endOffset": 647
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 600,
+                        "endColumn": 51,
+                        "endOffset": 647
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 652,
+                    "endColumn": 50,
+                    "endOffset": 698
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 652,
+                        "endColumn": 50,
+                        "endOffset": 698
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 703,
+                    "endColumn": 50,
+                    "endOffset": 749
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 703,
+                        "endColumn": 50,
+                        "endOffset": 749
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 754,
+                    "endColumn": 54,
+                    "endOffset": 804
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 754,
+                        "endColumn": 54,
+                        "endOffset": 804
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 809,
+                    "endColumn": 52,
+                    "endOffset": 857
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 809,
+                        "endColumn": 52,
+                        "endOffset": 857
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 862,
+                    "endColumn": 54,
+                    "endOffset": 912
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 862,
+                        "endColumn": 54,
+                        "endOffset": 912
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 917,
+                    "endColumn": 49,
+                    "endOffset": 962
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 917,
+                        "endColumn": 49,
+                        "endOffset": 962
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 967,
+                    "endColumn": 60,
+                    "endOffset": 1023
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 967,
+                        "endColumn": 60,
+                        "endOffset": 1023
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1028,
+                    "endColumn": 43,
+                    "endOffset": 1067
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1028,
+                        "endColumn": 43,
+                        "endOffset": 1067
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1072,
+                    "endColumn": 53,
+                    "endOffset": 1121
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1072,
+                        "endColumn": 53,
+                        "endOffset": 1121
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1126,
+                    "endColumn": 49,
+                    "endOffset": 1171
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1126,
+                        "endColumn": 49,
+                        "endOffset": 1171
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1176,
+                    "endColumn": 59,
+                    "endOffset": 1231
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1176,
+                        "endColumn": 59,
+                        "endOffset": 1231
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1236,
+                    "endColumn": 52,
+                    "endOffset": 1284
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1236,
+                        "endColumn": 52,
+                        "endOffset": 1284
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1289,
+                    "endColumn": 51,
+                    "endOffset": 1336
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1289,
+                        "endColumn": 51,
+                        "endOffset": 1336
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1341,
+                    "endColumn": 49,
+                    "endOffset": 1386
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1341,
+                        "endColumn": 49,
+                        "endOffset": 1386
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 1391,
+                    "endColumn": 59,
+                    "endOffset": 1446
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1391,
+                        "endColumn": 59,
+                        "endOffset": 1446
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 1451,
+                    "endColumn": 53,
+                    "endOffset": 1500
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1451,
+                        "endColumn": 53,
+                        "endOffset": 1500
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 1505,
+                    "endColumn": 46,
+                    "endOffset": 1547
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 1505,
+                        "endColumn": 46,
+                        "endOffset": 1547
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 1552,
+                    "endColumn": 52,
+                    "endOffset": 1600
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1552,
+                        "endColumn": 52,
+                        "endOffset": 1600
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1605,
+                    "endColumn": 49,
+                    "endOffset": 1650
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1605,
+                        "endColumn": 49,
+                        "endOffset": 1650
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1655,
+                    "endColumn": 62,
+                    "endOffset": 1713
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1655,
+                        "endColumn": 62,
+                        "endOffset": 1713
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 1718,
+                    "endColumn": 51,
+                    "endOffset": 1765
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1718,
+                        "endColumn": 51,
+                        "endOffset": 1765
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 1770,
+                    "endColumn": 49,
+                    "endOffset": 1815
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1770,
+                        "endColumn": 49,
+                        "endOffset": 1815
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 1820,
+                    "endColumn": 52,
+                    "endOffset": 1868
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 1820,
+                        "endColumn": 52,
+                        "endOffset": 1868
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 1873,
+                    "endColumn": 53,
+                    "endOffset": 1922
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 1873,
+                        "endColumn": 53,
+                        "endOffset": 1922
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 1927,
+                    "endColumn": 50,
+                    "endOffset": 1973
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 1927,
+                        "endColumn": 50,
+                        "endOffset": 1973
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 1978,
+                    "endColumn": 48,
+                    "endOffset": 2022
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 1978,
+                        "endColumn": 48,
+                        "endOffset": 2022
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 2027,
+                    "endColumn": 50,
+                    "endOffset": 2073
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 2027,
+                        "endColumn": 50,
+                        "endOffset": 2073
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 2078,
+                    "endColumn": 52,
+                    "endOffset": 2126
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 2078,
+                        "endColumn": 52,
+                        "endOffset": 2126
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 2131,
+                    "endColumn": 52,
+                    "endOffset": 2179
+                },
+                "from": {
+                    "file": "E:\\onesapce\\androidOne\\build\\intermediates\\exploded-aar\\onesapce\\bugtags\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 2131,
+                        "endColumn": 52,
+                        "endOffset": 2179
+                    }
+                }
+            }
+        ]
+    }
+]

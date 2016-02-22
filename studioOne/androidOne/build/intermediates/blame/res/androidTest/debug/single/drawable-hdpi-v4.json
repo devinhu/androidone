@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\drawer_shadow.9.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\drawer_shadow.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\background_item.9.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\background_item.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\drag_delete_x.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\drag_delete_x.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\guidepage_3.jpg",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\guidepage_3.jpg"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\guidepage_1.jpg",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\guidepage_1.jpg"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\waterfall_arrow.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\waterfall_arrow.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\pulltorefresh_default_flip.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\pulltorefresh_default_flip.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\guidepage_4.jpg",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\guidepage_4.jpg"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\search_clear_pressed.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\search_clear_pressed.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\pulltorefresh_default_rotate.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\pulltorefresh_default_rotate.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\guidepage_2.jpg",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\guidepage_2.jpg"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\drag.9.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\drag.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\pulltorefresh_indicator_arrow.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\pulltorefresh_indicator_arrow.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\page_indicator_focused.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\page_indicator_focused.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\waterfall_item_bg.9.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\waterfall_item_bg.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\drawer_menu.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\drawer_menu.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\drag_icon.9.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\drag_icon.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\page_indicator.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\page_indicator.png"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ad.png",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable-hdpi\\ad.png"
+    }
+]

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/btg_global_translucent_white">
+
+    <LinearLayout
+        android:layout_width="@dimen/btg_login_dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/btg_report_dialog_margin_top"
+        android:background="@drawable/btg_bg_dialog"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/btg_login_logo_width"
+            android:layout_height="@dimen/btg_login_logo_height"
+            android:layout_marginTop="@dimen/btg_global_margin_large"
+            android:src="@drawable/btg_logo"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/btg_global_margin_standard"
+            android:background="@drawable/btg_line_horizontal"/>
+
+        <EditText
+            android:id="@+id/usernameText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btg_login_text_height"
+            android:layout_marginLeft="@dimen/btg_global_margin_standard"
+            android:layout_marginTop="@dimen/btg_login_margin_top"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/btg_icon_account"
+            android:drawablePadding="@dimen/btg_global_margin_standard"
+            android:hint="@string/btg_login_username"
+            android:nextFocusForward="@+id/passwordText"
+            android:singleLine="true"
+            android:textSize="@dimen/btg_global_font_big"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/btg_login_margin_top"
+            android:background="@drawable/btg_line_horizontal"/>
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btg_login_text_height"
+            android:layout_marginLeft="@dimen/btg_global_margin_standard"
+            android:layout_marginTop="@dimen/btg_login_margin_top"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/btg_icon_password"
+            android:drawablePadding="@dimen/btg_global_margin_standard"
+            android:hint="@string/btg_login_password"
+            android:inputType="textPassword"
+            android:nextFocusForward="@+id/finishButton"
+            android:singleLine="true"
+            android:textSize="@dimen/btg_global_font_big"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/btg_login_margin_top"
+            android:background="@drawable/btg_line_horizontal"/>
+
+        <RelativeLayout
+            android:id="@+id/captchaView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/captchaImage"
+                android:layout_width="@dimen/btg_login_captcha_width"
+                android:layout_height="@dimen/btg_login_text_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/btg_global_margin_tiny"/>
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/captchaText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btg_login_text_height"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/btg_global_margin_large"
+                android:layout_marginTop="@dimen/btg_login_margin_top"
+                android:layout_toLeftOf="@id/captchaImage"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/btg_icon_captcha"
+                android:drawablePadding="@dimen/btg_global_margin_standard"
+                android:hint="@string/btg_login_captcha"
+                android:inputType="text"
+                android:textSize="@dimen/btg_global_font_big"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/captchaText"
+                android:layout_marginTop="@dimen/btg_login_margin_top"
+                android:background="@drawable/btg_line_horizontal"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/btg_global_margin_tiny"
+            android:layout_marginLeft="@dimen/btg_global_margin_standard"
+            android:layout_marginRight="@dimen/btg_global_margin_standard"
+            android:layout_marginTop="@dimen/btg_global_margin_tiny"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelButton"
+                style="@style/btg_global_text_btn_negative"
+                android:layout_width="@dimen/btg_report_dialog_btn_width"
+                android:layout_height="@dimen/btg_report_dialog_btn_height"
+                android:layout_weight="1"
+                android:background="@drawable/btg_btn_white_rect"
+                android:text="@string/btg_global_cancel"/>
+
+            <Button
+                android:id="@+id/finishButton"
+                style="@style/btg_global_text_btn_positive"
+                android:layout_width="@dimen/btg_report_dialog_btn_width"
+                android:layout_height="@dimen/btg_report_dialog_btn_height"
+                android:layout_marginLeft="@dimen/btg_global_margin_standard"
+                android:layout_weight="1"
+                android:background="@drawable/btg_btn_blue_rect"
+                android:text="@string/btg_login_do"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

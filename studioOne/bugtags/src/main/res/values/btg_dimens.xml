@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--global-->
+    <dimen name="btg_global_margin_tiny">5dp</dimen>
+    <dimen name="btg_global_margin_standard">10dp</dimen>
+    <dimen name="btg_global_margin_large">15dp</dimen>
+    <dimen name="btg_global_margin_great">20dp</dimen>
+
+    <!--font-->
+    <dimen name="btg_global_font_standard">11sp</dimen>
+    <dimen name="btg_global_font_less_big">12sp</dimen>
+    <dimen name="btg_global_font_big">13sp</dimen>
+    <dimen name="btg_global_font_large">14sp</dimen>
+    <dimen name="btg_global_font_great">17sp</dimen>
+    <dimen name="btg_global_font_grand">20sp</dimen>
+
+    <!--fab-->
+    <dimen name="btg_fab_action_size">56dp</dimen>
+    <dimen name="btg_fab_menu_base_size">50dp</dimen>
+    <dimen name="btg_fab_menu_item_size">50dp</dimen>
+    <dimen name="btg_fab_menu_item_spacing">0dp</dimen>
+    <dimen name="btg_fab_menu_item_overshoot">15dp</dimen>
+    <dimen name="btg_fab_action_offset">8dp</dimen>
+
+    <!--tag-->
+    <dimen name="btg_tag_ripple_size">20dp</dimen>
+    <dimen name="btg_tag_height_max">50dp</dimen>
+    <dimen name="btg_tag_ripple_foreground_size">15dp</dimen>
+
+    <!--tag edit-->
+    <dimen name="btg_report_top_height">45dp</dimen>
+    <dimen name="btg_report_tag_state_text_width">35dp</dimen>
+    <dimen name="btg_report_tag_assignee_size">20dp</dimen>
+    <dimen name="btg_report_dialog_height">215dp</dimen>
+    <dimen name="btg_report_dialog_picker_height">105dp</dimen>
+    <dimen name="btg_report_dialog_width">290dp</dimen>
+    <dimen name="btg_report_dialog_btn_height">35dp</dimen>
+    <dimen name="btg_report_dialog_btn_width">130dp</dimen>
+    <dimen name="btg_report_dialog_margin_top">70dp</dimen>
+    <dimen name="btg_report_member_icon_size">44dp</dimen>
+    <dimen name="btg_report_member_item_width">67dp</dimen>
+    <dimen name="btg_report_member_item_height">75dp</dimen>
+
+    <!--login-->
+    <dimen name="btg_login_dialog_width">297dp</dimen>
+    <dimen name="btg_login_logo_width">105dp</dimen>
+    <dimen name="btg_login_logo_height">53dp</dimen>
+    <dimen name="btg_login_text_height">30dp</dimen>
+    <dimen name="btg_login_captcha_width">80dp</dimen>
+    <dimen name="btg_login_margin_top">4dp</dimen>
+
+    <!--guide-->
+    <dimen name="btg_guide_view_width">240dp</dimen>
+    <dimen name="btg_guide_button_height">30dp</dimen>
+
+
+</resources>

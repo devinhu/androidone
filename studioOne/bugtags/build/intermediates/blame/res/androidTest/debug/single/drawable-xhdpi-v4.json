@@ -1,0 +1,170 @@
+[
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_exchange_normal.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_exchange_normal.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_priority_1_normal.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_priority_1_normal.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_issue_type_bug.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_issue_type_bug.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_priority_2_selected.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_priority_2_selected.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_user_pressed.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_user_pressed.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_cross_normal.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_cross_normal.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_priority_2_normal.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_priority_2_normal.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_priority_1_full.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_priority_1_full.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_exchange_pressed.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_exchange_pressed.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_invoker_normal.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_invoker_normal.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_captcha.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_captcha.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_priority_3_normal.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_priority_3_normal.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_user_normal.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_user_normal.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_tips_tag_3.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_tips_tag_3.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_tick_normal.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_tick_normal.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_report_pressed.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_report_pressed.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_checkmark.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_checkmark.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_tips_tag_2.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_tips_tag_2.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_priority_2_full.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_priority_2_full.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_priority_0_selected.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_priority_0_selected.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_tag_pin.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_tag_pin.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_account.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_account.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_logo.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_logo.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_tick_pressed.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_tick_pressed.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_cross_pressed.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_cross_pressed.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_assistivebutton_submit.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_assistivebutton_submit.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_priority_0_full.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_priority_0_full.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_invoker_pressed.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_invoker_pressed.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_password.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_password.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_priority_3_selected.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_priority_3_selected.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_assistivebutton_submit_pressed.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_assistivebutton_submit_pressed.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_arrow_selected.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_arrow_selected.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_bg_tag_left.9.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_bg_tag_left.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_bg_tag_right.9.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_bg_tag_right.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_arrow_normal.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_arrow_normal.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_tips_tag_1.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_tips_tag_1.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_issue_type_improve.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_issue_type_improve.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_report_normal.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_report_normal.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_priority_3_full.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_priority_3_full.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_priority_0_normal.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_priority_0_normal.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btg_icon_priority_1_selected.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btg_icon_priority_1_selected.png"
+    }
+]

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="btg_report_tag_priority_name">
+        <item>低</item>
+        <item>普通</item>
+        <item>高</item>
+        <item>紧急</item>
+    </string-array>
+    <array name="btg_tag_priority_res">
+        <item>@drawable/btg_icon_priority_0_full</item>
+        <item>@drawable/btg_icon_priority_1_full</item>
+        <item>@drawable/btg_icon_priority_2_full</item>
+        <item>@drawable/btg_icon_priority_3_full</item>
+    </array>
+    <string name="btg_global_cancel">取消</string>
+    <string name="btg_global_confirm">确定</string>
+    <string name="btg_global_error">错误请重试！</string>
+    <string name="btg_global_got_it">知道了！</string>
+    <string name="btg_guide_sub_0">标签要这么玩</string>
+    <string name="btg_guide_sub_1">单击屏幕选择标签位置</string>
+    <string name="btg_guide_sub_2">单击标签改变方向</string>
+    <string name="btg_guide_sub_3">长按标签可编辑或删除</string>
+    <string name="btg_login_captcha">验证码</string>
+    <string name="btg_login_captcha_needed">验证码不能为空</string>
+    <string name="btg_login_do">登录</string>
+    <string name="btg_login_failed">登录失败，请重试</string>
+    <string name="btg_login_password">密码</string>
+    <string name="btg_login_password_empty">密码不能为空</string>
+    <string name="btg_login_progress">正在登录​</string>
+    <string name="btg_login_succeed">登录成功！</string>
+    <string name="btg_login_username">帐号</string>
+    <string name="btg_login_username_empty">帐号不能为空</string>
+    <string name="btg_logout_confirm">确定退出吗？</string>
+    <string name="btg_logout_do">退出登录</string>
+    <string name="btg_logout_my_issue">我的问题</string>
+    <string name="btg_logout_title">选择操作</string>
+    <string name="btg_report_discard_alert">确定要放弃提交吗？</string>
+    <string name="btg_report_start">开始描述问题</string>
+    <string name="btg_report_tag_bug">错误</string>
+    <string name="btg_report_tag_hint">文字描述</string>
+    <string name="btg_report_tag_improve">改进</string>
+    <string name="btg_tag_menu_delete">删除</string>
+    <string name="btg_tag_menu_edit">编辑</string>
+    <string name="btg_tag_menu_info">标签信息</string>
+    <string name="btg_tag_num_max">最多添加3个标签</string>
+    <string name="btg_tag_num_min">至少添加1个标签</string>
+</resources>

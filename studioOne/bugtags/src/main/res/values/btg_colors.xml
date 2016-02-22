@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btg_global_translucent_white">#ccf3f3f3</color>
+    <color name="btg_global_black">#ff333333</color>
+    <color name="btg_global_gray">#ff727272</color>
+    <color name="btg_global_light_white">#ccffffff</color>
+</resources>

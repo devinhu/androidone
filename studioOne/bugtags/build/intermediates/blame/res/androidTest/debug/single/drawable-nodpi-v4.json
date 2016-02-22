@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\btg_btn_blue_rect_pressed.9.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\btg_btn_blue_rect_pressed.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\btg_btn_white_rect_normal.9.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\btg_btn_white_rect_normal.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\btg_line_horizontal.9.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\btg_line_horizontal.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\btg_line_vertical.9.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\btg_line_vertical.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\btg_btn_white_rect_pressed.9.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\btg_btn_white_rect_pressed.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\btg_btn_blue_rect_normal.9.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\btg_btn_blue_rect_normal.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\btg_bg_guide.9.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\btg_bg_guide.9.png"
+    },
+    {
+        "merged": "E:\\onesapce\\bugtags\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\btg_bg_dialog.9.png",
+        "source": "E:\\onesapce\\bugtags\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\btg_bg_dialog.9.png"
+    }
+]

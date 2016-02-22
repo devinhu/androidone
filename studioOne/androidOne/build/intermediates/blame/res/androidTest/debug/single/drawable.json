@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\pulltorefresh_bg_bottom.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable\\pulltorefresh_bg_bottom.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\slidingtab_background_tab.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable\\slidingtab_background_tab.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\wheel_bg.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable\\wheel_bg.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\sidebar_background.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable\\sidebar_background.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_menu_home.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable\\selector_menu_home.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\wheel_val.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable\\wheel_val.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_menu_member.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable\\selector_menu_member.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\pulltorefresh_bg_top.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable\\pulltorefresh_bg_top.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_menu_collection.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable\\selector_menu_collection.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_menu_cart.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable\\selector_menu_cart.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_menu_txt.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable\\selector_menu_txt.xml"
+    },
+    {
+        "merged": "E:\\onesapce\\androidOne\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_menu_category.xml",
+        "source": "E:\\onesapce\\androidOne\\src\\androidTest\\res\\drawable\\selector_menu_category.xml"
+    }
+]

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BtgAlertDialog" parent="android:Theme.Dialog">
+    </style>
+
+    <style name="btg_global_text_content">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/btg_global_black</item>
+        <item name="android:textSize">@dimen/btg_global_font_standard</item>
+    </style>
+
+    <style name="btg_global_text_btn_negative">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/btg_text_black</item>
+        <item name="android:textSize">@dimen/btg_global_font_great</item>
+    </style>
+
+    <style name="btg_global_text_btn_positive" parent="btg_global_text_btn_negative">
+        <item name="android:textColor">@drawable/btg_text_white</item>
+    </style>
+
+    <style name="btg_global_text_gray" parent="btg_global_text_content">
+        <item name="android:textColor">@color/btg_global_gray</item>
+    </style>
+
+    <style name="btg_tag_priority_text_light_content" parent="btg_global_text_content">
+        <item name="android:textColor">@color/btg_global_gray</item>
+        <item name="android:padding">@dimen/btg_global_margin_tiny</item>
+        <item name="android:drawablePadding">@dimen/btg_global_margin_tiny</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="btg_progress_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

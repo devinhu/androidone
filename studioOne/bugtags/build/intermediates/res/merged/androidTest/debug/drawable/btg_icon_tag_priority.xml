@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:maxLevel="0">
+        <bitmap android:src="@drawable/btg_icon_priority_0_full"/>
+    </item>
+    <item android:maxLevel="1">
+        <bitmap android:src="@drawable/btg_icon_priority_1_full"/>
+    </item>
+    <item android:maxLevel="2">
+        <bitmap android:src="@drawable/btg_icon_priority_2_full"/>
+    </item>
+    <item android:maxLevel="3">
+        <bitmap android:src="@drawable/btg_icon_priority_3_full"/>
+    </item>
+
+</level-list>

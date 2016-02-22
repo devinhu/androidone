@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="btg_report_tag_priority_name">
+        <item>Trivial</item>
+        <item>Minor</item>
+        <item>Major</item>
+        <item>Blocker</item>
+    </string-array>
+    <array name="btg_tag_priority_res">
+        <item>@drawable/btg_icon_priority_0_full</item>
+        <item>@drawable/btg_icon_priority_1_full</item>
+        <item>@drawable/btg_icon_priority_2_full</item>
+        <item>@drawable/btg_icon_priority_3_full</item>
+    </array>
+    <color name="btg_global_black">#ff333333</color>
+    <color name="btg_global_gray">#ff727272</color>
+    <color name="btg_global_light_white">#ccffffff</color>
+    <color name="btg_global_translucent_white">#ccf3f3f3</color>
+    <declare-styleable name="BtgHorizontalListView"><attr format="dimension" name="btg_dividerWidth"/><attr name="android:divider"/><attr name="android:requiresFadingEdge"/><attr name="android:fadingEdgeLength"/></declare-styleable>
+    <declare-styleable name="BtgRippleView"><attr format="reference" name="btg_rv_background"/><attr format="reference" name="btg_rv_foreground"/></declare-styleable>
+    <dimen name="btg_fab_action_offset">8dp</dimen>
+    <dimen name="btg_fab_action_size">56dp</dimen>
+    <dimen name="btg_fab_menu_base_size">50dp</dimen>
+    <dimen name="btg_fab_menu_item_overshoot">15dp</dimen>
+    <dimen name="btg_fab_menu_item_size">50dp</dimen>
+    <dimen name="btg_fab_menu_item_spacing">0dp</dimen>
+    <dimen name="btg_global_font_big">13sp</dimen>
+    <dimen name="btg_global_font_grand">20sp</dimen>
+    <dimen name="btg_global_font_great">17sp</dimen>
+    <dimen name="btg_global_font_large">14sp</dimen>
+    <dimen name="btg_global_font_less_big">12sp</dimen>
+    <dimen name="btg_global_font_standard">11sp</dimen>
+    <dimen name="btg_global_margin_great">20dp</dimen>
+    <dimen name="btg_global_margin_large">15dp</dimen>
+    <dimen name="btg_global_margin_standard">10dp</dimen>
+    <dimen name="btg_global_margin_tiny">5dp</dimen>
+    <dimen name="btg_guide_button_height">30dp</dimen>
+    <dimen name="btg_guide_view_width">240dp</dimen>
+    <dimen name="btg_login_captcha_width">80dp</dimen>
+    <dimen name="btg_login_dialog_width">297dp</dimen>
+    <dimen name="btg_login_logo_height">53dp</dimen>
+    <dimen name="btg_login_logo_width">105dp</dimen>
+    <dimen name="btg_login_margin_top">4dp</dimen>
+    <dimen name="btg_login_text_height">30dp</dimen>
+    <dimen name="btg_report_dialog_btn_height">35dp</dimen>
+    <dimen name="btg_report_dialog_btn_width">130dp</dimen>
+    <dimen name="btg_report_dialog_height">215dp</dimen>
+    <dimen name="btg_report_dialog_margin_top">70dp</dimen>
+    <dimen name="btg_report_dialog_picker_height">105dp</dimen>
+    <dimen name="btg_report_dialog_width">290dp</dimen>
+    <dimen name="btg_report_member_icon_size">44dp</dimen>
+    <dimen name="btg_report_member_item_height">75dp</dimen>
+    <dimen name="btg_report_member_item_width">67dp</dimen>
+    <dimen name="btg_report_tag_assignee_size">20dp</dimen>
+    <dimen name="btg_report_tag_state_text_width">35dp</dimen>
+    <dimen name="btg_report_top_height">45dp</dimen>
+    <dimen name="btg_tag_height_max">50dp</dimen>
+    <dimen name="btg_tag_ripple_foreground_size">15dp</dimen>
+    <dimen name="btg_tag_ripple_size">20dp</dimen>
+    <string name="btg_global_cancel">Cancel</string>
+    <string name="btg_global_confirm">OK</string>
+    <string name="btg_global_error">Error! Try Again!</string>
+    <string name="btg_global_got_it">Got it!</string>
+    <string name="btg_guide_sub_0">Tagging tips</string>
+    <string name="btg_guide_sub_1">Tap screen to add a tag</string>
+    <string name="btg_guide_sub_2">Tap tag to flip</string>
+    <string name="btg_guide_sub_3">Long press tag to edit or delete</string>
+    <string name="btg_login_captcha">Captcha</string>
+    <string name="btg_login_captcha_needed">Captcha needed!</string>
+    <string name="btg_login_do">Sign in</string>
+    <string name="btg_login_failed">Sign in failed!</string>
+    <string name="btg_login_password">Password</string>
+    <string name="btg_login_password_empty">Password should not be empty!</string>
+    <string name="btg_login_progress">Sign in​</string>
+    <string name="btg_login_succeed">Sign in succeed!</string>
+    <string name="btg_login_username">Account</string>
+    <string name="btg_login_username_empty">Account should not be empty!</string>
+    <string name="btg_logout_confirm">Sure to sign out?</string>
+    <string name="btg_logout_do">Sign out</string>
+    <string name="btg_logout_my_issue">My issues</string>
+    <string name="btg_logout_title">Options</string>
+    <string name="btg_report_discard_alert">Sure to discard?</string>
+    <string name="btg_report_start">Start Describe</string>
+    <string name="btg_report_tag_bug">Bug</string>
+    <string name="btg_report_tag_hint">issue description</string>
+    <string name="btg_report_tag_improve">Feature</string>
+    <string name="btg_tag_menu_delete">Delete</string>
+    <string name="btg_tag_menu_edit">Edit</string>
+    <string name="btg_tag_menu_info">Tag info</string>
+    <string name="btg_tag_num_max">Add three tags at most</string>
+    <string name="btg_tag_num_min">Add one tag at least</string>
+    <style name="BtgAlertDialog" parent="android:Theme.Dialog">
+    </style>
+    <style name="btg_global_text_btn_negative">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/btg_text_black</item>
+        <item name="android:textSize">@dimen/btg_global_font_great</item>
+    </style>
+    <style name="btg_global_text_btn_positive" parent="btg_global_text_btn_negative">
+        <item name="android:textColor">@drawable/btg_text_white</item>
+    </style>
+    <style name="btg_global_text_content">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/btg_global_black</item>
+        <item name="android:textSize">@dimen/btg_global_font_standard</item>
+    </style>
+    <style name="btg_global_text_gray" parent="btg_global_text_content">
+        <item name="android:textColor">@color/btg_global_gray</item>
+    </style>
+    <style name="btg_progress_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="btg_tag_priority_text_light_content" parent="btg_global_text_content">
+        <item name="android:textColor">@color/btg_global_gray</item>
+        <item name="android:padding">@dimen/btg_global_margin_tiny</item>
+        <item name="android:drawablePadding">@dimen/btg_global_margin_tiny</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

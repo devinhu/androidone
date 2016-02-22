@@ -1,0 +1,2 @@
+include ':bugtags'
+include ':oneCore'
