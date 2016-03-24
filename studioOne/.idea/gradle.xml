@@ -10,6 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/androidOne" />
             <option value="$PROJECT_DIR$/bugtags" />
             <option value="$PROJECT_DIR$/oneCore" />
           </set>

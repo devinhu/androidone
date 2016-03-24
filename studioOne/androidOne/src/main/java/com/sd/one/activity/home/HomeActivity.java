@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 
 import com.sd.one.R;
 import com.sd.one.activity.BaseActivity;
+import com.sd.one.widget.dialog.LoadDialog;
 
 /**
  * [A brief description]
@@ -27,6 +28,7 @@ public class HomeActivity extends BaseActivity implements OnClickListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.home_layout);
+		LoadDialog.show(mContext);
 	}
 	
 	@Override

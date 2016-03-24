@@ -32,6 +32,7 @@
         <item name="android:textColor">@drawable/selector_menu_txt</item>
         <item name="android:layout_weight">1.0</item>
         <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
     </style>
     
     <style name="NavPage">
@@ -41,6 +42,16 @@
         <item name="android:gravity">center_horizontal</item>
         <!-- <item name="android:background">@drawable/nav_page</item> -->
         <item name="android:background">@color/navpage</item>
+    </style>
+
+    <style name="load_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item><!-- 自己想要的背景 -->
+        <item name="android:backgroundDimEnabled">false</item><!-- 模糊 -->
+        <item name="android:windowFullscreen">true</item>
     </style>
     
 </resources>

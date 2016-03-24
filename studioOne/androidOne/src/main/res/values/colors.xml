@@ -5,9 +5,10 @@
     <color name="black">#000000</color>
     
     <color name="bg_color">#f3f3f3</color>
-    <color name="head_bg_color">#019199</color>
+    <color name="head_bg_color">#EB008F</color>
     <color name="bottom_line_color">#c4c7cc</color>
-    <color name="bottom_txt_select">#019199</color>
+    <color name="bottom_txt_select">#EB008F</color>
     <color name="bottom_txt_normal">#cccccc</color>
     <color name="navpage">#FFE1E8EB</color>
+    <color name="transparent">#00000000</color>
 </resources>

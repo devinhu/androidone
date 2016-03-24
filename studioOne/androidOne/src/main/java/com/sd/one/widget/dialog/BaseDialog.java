@@ -56,7 +56,7 @@ public abstract class BaseDialog extends Dialog implements OnClickListener{
      */
     private void init() {
         
-        this.getContext().setTheme(android.R.style.Theme_InputMethod);
+        this.getContext().setTheme(R.style.load_dialog);
         super.setContentView(R.layout.layout_dialog);
         
         tvTitle = (TextView) findViewById(R.id.tv_title);

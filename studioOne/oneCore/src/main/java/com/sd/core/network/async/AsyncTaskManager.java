@@ -8,11 +8,12 @@ package com.sd.core.network.async;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-
 import com.sd.core.network.http.HttpException;
 import com.sd.core.utils.NLog;
 
-import de.greenrobot1.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
 
 /**
  * [A brief description]
@@ -44,7 +45,7 @@ public class AsyncTaskManager {
 	 */
 	private AsyncTaskManager(Context context) {
 		mContext = context;
-		EventBus.getDefault().register(this);  
+		EventBus.getDefault().register(this);
 	}
 	
 	/**
@@ -93,6 +94,7 @@ public class AsyncTaskManager {
 	 * 异步线程
 	 * @param bean
 	 */
+	@Subscribe
 	public void onEventAsync(AsyncRequest bean) {
 		AsyncResult result = new AsyncResult(bean.getRequestCode(), bean.isCheckNetwork(), bean.getListener());
 		try {
@@ -120,6 +122,7 @@ public class AsyncTaskManager {
 	 * 在数据返回到UI线程中处理
 	 * @param bean
 	 */
+	@Subscribe
 	public void onEventMainThread(AsyncResult bean){
 		switch(bean.getState()){
 			case REQUEST_SUCCESS_CODE:

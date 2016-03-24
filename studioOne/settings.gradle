@@ -1,2 +1,3 @@
 include ':bugtags'
 include ':oneCore'
+include ':androidOne'

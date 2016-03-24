@@ -18,5 +18,7 @@ android {
 }
 
 dependencies {
+    compile 'com.alibaba:fastjson:1.2.8'
+    compile 'org.greenrobot:eventbus:3.0.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
