@@ -23,11 +23,11 @@
 
 * 建议一般在BaseActivity、BaseFragment中实现
 
-	*  实现参考类 [AsyncTaskManager.java](https://github.com/devinhu/androidone/blob/master/oneCore/src/com/sd/core/network/async/AsyncTaskManager.java)
+	*  实现参考类 [AsyncTaskManager.java](https://github.com/devinhu/androidone/blob/master/studioOne/oneCore/src/main/java/com/sd/core/network/async/AsyncTaskManager.java)
 
-	*  使用参考类 [BaseActivity.java](https://github.com/devinhu/androidone/blob/master/androidOne/src/com/sd/one/activity/BaseActivity.java)
+	*  使用参考类 [BaseActivity.java](https://github.com/devinhu/androidone/blob/master/studioOne/androidOne/src/main/java/com/sd/one/activity/BaseActivity.java)
 
-	*  使用参考类 [BaseFragment.java](https://github.com/devinhu/androidone/blob/master/androidOne/src/com/sd/one/activity/BaseFragment.java)
+	*  使用参考类 [BaseFragment.java](https://github.com/devinhu/androidone/blob/master/studioOne/androidOne/src/main/java/com/sd/one/activity/BaseFragment.java)
 
 
 ##HTTP请求模块 
@@ -36,7 +36,7 @@
 
 * 改造实现SyncHttpClient，支持同步，并支持RESTFUL风格，调接口时可直接单元测试
 
-	*  实现参考类 [SyncHttpClient.java](https://github.com/devinhu/androidone/blob/master/oneCore/src/com/sd/core/network/http/SyncHttpClient.java)
+	*  实现参考类 [SyncHttpClient.java](https://github.com/devinhu/androidone/blob/master/studioOne/oneCore/src/main/java/com/sd/core/network/http/SyncHttpClient.java)
 
 
 ##DownloadManager资源下载模块
