@@ -389,8 +389,11 @@ debug=true
 
 ##常用网址推荐
 [Android开发技术周报](http://www.androidweekly.cn/)
+
 [http://www.androiddevtools.cn/](http://www.androiddevtools.cn/)
+
 [android-studio中文站](http://www.android-studio.org/index.php)
+
 
 ##结语
 
