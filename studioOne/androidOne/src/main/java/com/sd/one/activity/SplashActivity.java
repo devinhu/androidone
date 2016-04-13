@@ -14,6 +14,7 @@ import com.sd.core.common.PreferencesManager;
 import com.sd.core.network.http.HttpException;
 import com.sd.one.R;
 import com.sd.one.common.Constants;
+import com.sd.one.model.base.BaseResponse;
 import com.sd.one.model.response.GetAreaResponse;
 import com.sd.one.service.DemoAction;
 
@@ -95,8 +96,8 @@ public class SplashActivity extends BaseActivity {
 		setContentView(R.layout.layout_splash);
 		setHeadVisibility(View.GONE);
 		
-//		request(TEST_CODE_1);
-		intoMainPage();
+		request(TEST_CODE_1);
+//		intoMainPage();
 	}
 
 	@Override
@@ -108,13 +109,13 @@ public class SplashActivity extends BaseActivity {
 	@Override
 	public Object doInBackground(int requsetCode) throws HttpException {
 		DemoAction action = new DemoAction(mContext);
-		return action.getArea();
+		return action.getLastedVersion();
 	}
 
 	@Override
 	public void onSuccess(int requestCode, Object result) {
 		if(result != null){
-			GetAreaResponse res = (GetAreaResponse)result;
+			BaseResponse res = (BaseResponse)result;
 			if(res.isSucces()){
 				intoMainPage();
 			}

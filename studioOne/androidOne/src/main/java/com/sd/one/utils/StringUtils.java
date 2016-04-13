@@ -50,7 +50,23 @@ public class StringUtils {
 		}
 		return false;
 	}
-	
+
+	/**
+	 * 二行制转字符串
+	 */
+	public static String byte2hex(byte[] b) {
+		StringBuffer hs = new StringBuffer();
+		String stmp = "";
+		for (int n = 0; n < b.length; n++) {
+			stmp = (java.lang.Integer.toHexString(b[n] & 0XFF));
+			if (stmp.length() == 1)
+				hs.append("0").append(stmp);
+			else
+				hs.append(stmp);
+		}
+		return hs.toString();
+	}
+
 	/**
 	 * 产生一个随机数
 	 * @param size

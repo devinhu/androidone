@@ -11,6 +11,8 @@ import android.text.TextUtils;
 import com.sd.core.common.CacheManager;
 import com.sd.core.network.http.HttpException;
 import com.sd.core.network.http.RequestParams;
+import com.sd.one.common.Constants;
+import com.sd.one.model.base.BaseResponse;
 import com.sd.one.model.response.GetAreaResponse;
 
 /**
@@ -29,6 +31,28 @@ public class DemoAction extends BaseAction {
 	 */
 	public DemoAction(Context mContext) {
 		super(mContext);
+	}
+
+	/**
+	 * 获取版本信息接口
+	 *
+	 * @param pageNo
+	 * @return
+	 * @throws HttpException
+	 */
+	public BaseResponse getLastedVersion() throws HttpException {
+		BaseResponse response = null;
+
+		RequestParams params = getRequestParams();
+		params.put("method", "fmms.getLastedVersion");
+		params.put("data",  "{}");
+
+		String result = httpManager.post(mContext, Constants.DOMAIN, getFinalParams(params), ContentType);
+		if(!TextUtils.isEmpty(result)){
+			response = jsonToBean(result, BaseResponse.class);
+		}
+
+		return response;
 	}
 
 	/**

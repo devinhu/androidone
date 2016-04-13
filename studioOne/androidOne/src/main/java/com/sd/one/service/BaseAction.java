@@ -7,6 +7,9 @@ package com.sd.one.service;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 import android.content.Context;
@@ -17,7 +20,9 @@ import com.sd.core.common.parse.XmlMananger;
 import com.sd.core.network.http.HttpException;
 import com.sd.core.network.http.RequestParams;
 import com.sd.core.network.http.SyncHttpClient;
+import com.sd.core.utils.NLog;
 import com.sd.one.common.Constants;
+import com.sd.one.utils.StringUtils;
 
 /**
  * [业务逻辑基础类，实现xml、json直接与JAVA对象互转，初始化网络请求类]
@@ -29,6 +34,7 @@ import com.sd.one.common.Constants;
 public abstract class BaseAction {
 
     protected Context mContext;
+	protected String ContentType = "text/html";
     protected SyncHttpClient httpManager;
     
     protected int pageSize = 20;
@@ -152,6 +158,20 @@ public abstract class BaseAction {
 	 */
 	public RequestParams getFinalParams(RequestParams params, boolean isSign){
 		//TODO 这里处理公共参数，如签名、加密等操作
+		try {
+
+			String paramsStr = params.getParamString(true);
+			MessageDigest md = MessageDigest.getInstance("MD5");
+			String firstMd = StringUtils.byte2hex(md.digest(paramsStr.getBytes("utf-8"))).toUpperCase();
+			firstMd += Constants.TOKEN;
+			String sign = StringUtils.byte2hex(md.digest(firstMd.getBytes("utf-8"))).toUpperCase();
+			params.put("sign", sign);
+			NLog.e("getSignParams", params.toString());
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 		return params;
 	}
 	

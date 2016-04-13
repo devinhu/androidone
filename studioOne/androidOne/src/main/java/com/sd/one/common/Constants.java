@@ -23,7 +23,15 @@ public class Constants {
 	
     public static final String THEME = "Theme";
     public static final String LANG = "Lang";
+
+    //系统参数
+    public static final String APP_ID = "iPhone_Android";
+    public static final String CERTI_ID = "2356221002";
+    public static final String VERSION = "1.0";
+    public static final String TOKEN = "4d01a4c48ffaa2114c5c3745e6edfd3b2fbbade6d43c219298af6386169e0a47";
     
     public static final String WEIXIN_APP_ID = "wxb4754ef83e822c2b";
-    public static final String DOMAIN = "http://192.168.3.7:8091/";
+    public static final String DOMAIN = "http://119.29.116.107:8088/fmms/rest.xhtml";
+
+
 }
