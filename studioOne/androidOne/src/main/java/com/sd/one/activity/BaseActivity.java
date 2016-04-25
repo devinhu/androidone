@@ -123,8 +123,14 @@ public class BaseActivity extends FragmentActivity implements OnDataListener{
 	}
 
 	@Override
+	public boolean onIntercept(int requestCode, Object result) {
+		//TODO 返回true表示打断，false表示继续执行onSuccess方法
+		return false;
+	}
+
+	@Override
 	public void onSuccess(int requestCode, Object result) {
-		
+		//TODO 处理成功的逻辑
 	}
 
 	@Override

@@ -127,7 +127,10 @@ public class AsyncTaskManager {
 	public void onMainThreadEvent(AsyncResult bean){
 		switch(bean.getState()){
 			case REQUEST_SUCCESS_CODE:
-				bean.getListener().onSuccess(bean.getRequestCode(), bean.getResult());
+				boolean flag = bean.getListener().onIntercept(bean.getRequestCode(), bean.getResult());
+				if(flag == false){
+					bean.getListener().onSuccess(bean.getRequestCode(), bean.getResult());
+				}
 				break;
 				
 			case REQUEST_ERROR_CODE:

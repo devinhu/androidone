@@ -24,7 +24,14 @@ public interface OnDataListener {
 	 * @throws HttpException
 	 */
 	public Object doInBackground(int requsetCode) throws HttpException;
-	
+
+	/**
+	 * 打断方法
+	 * @param requestCode 请求码
+	 * @param result 返回结果 true表示打断，false表示继续执行onSuccess方法
+	 */
+	public boolean onIntercept(int requestCode, Object result);
+
 	/**
 	 * 成功方法（可直接更新UI）
 	 * @param requestCode 请求码
