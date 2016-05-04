@@ -404,3 +404,5 @@ debug=true
 * 如果任何问题或者建议，欢迎沟通。
 
 * QQ群：195104825
+* AndroidOne GitHub地址：https://github.com/devinhu/androidone 
+
