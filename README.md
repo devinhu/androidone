@@ -251,7 +251,7 @@
 
 ##DB模块
 
-* 采用[GreenDao](http://greendao-orm.com/)ORM方案，直接实现Java Object的CURD方法就可以操作数据库，非常好用，极力推荐。 
+* 采用[GreenDao详见](http://greendao-orm.com/)ORM方案，直接实现Java Object的CURD方法就可以操作数据库，非常好用，极力推荐。 
 
 * 实现DBManager，连获取Dao的代码都不用写了，不管通过DaoGenerator生成的对象如何变化，通过DBManager可以让你拿到任何Dao对象，从而实现数据库操作。
 
@@ -299,7 +299,7 @@
 
 ##注解模块
 
-* 集成[butterknife](http://jakewharton.github.io/butterknife/)注解框架，一个No Magic的Android注入框架，用过的人都说好，极力推荐。
+* 集成[butterknife详见](http://jakewharton.github.io/butterknife/)注解框架，一个No Magic的Android注入框架，用过的人都说好，极力推荐。
 
 
 ##支付模块
@@ -366,12 +366,10 @@
 
 ##图片下载模块
 
-* 采用universal-image-loader解决方案，有关使用情况请参见[universal-image-loader](https://github.com/nostra13/Android-Universal-Image-Loader)
+* 采用Fresco解决方案，有关使用情况请参见[Fresco详见](https://github.com/facebook/fresco)
 
-* 为了提供用户体验，建议在listview或者gridview在滑动的时候不加载图片
-```javascript
-refreshlistview.setOnScrollListener(new PauseOnScrollListener(ImageLoader.getInstance(), true, true));
-```
+* 内存管理、图片的渐进式呈现、Gif图和WebP格式强大的特性让你不能自拔！[特性详见](http://www.fresco-cn.org/)
+
 
 ##日志
 
