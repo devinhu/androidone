@@ -17,6 +17,8 @@ import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.sd.core.utils.NLog;
+
 /**
  * [A brief description]
  *	
@@ -27,6 +29,7 @@ import android.widget.ListView;
  **/
 public class ActivityPageManager {
 
+	private final String tag = ActivityPageManager.class.getSimpleName();
 	private static Stack<Activity> activityStack;
 	private static ActivityPageManager instance;
 
@@ -54,6 +57,7 @@ public class ActivityPageManager {
 		if (activityStack == null) {
 			activityStack = new Stack<Activity>();
 		}
+		NLog.e(tag, "app into activity: "+ activity.getLocalClassName());
 		activityStack.add(activity);
 	}
 
@@ -215,7 +219,15 @@ public class ActivityPageManager {
 	public void exit(Context context) {
 		exit(context, true);
 	}
-	
+
+	/**
+	 * logout System
+	 */
+	public void logout() {
+		LruCacheManager.getInstance().evictAll();
+		CacheManager.clearAll();
+	}
+
 	/**
 	 * exit System
 	 * @param context
@@ -237,6 +249,20 @@ public class ActivityPageManager {
 			android.os.Process.killProcess(android.os.Process.myPid());
 		} catch (Exception e) {
 			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * 显示指定的Activity（把指定Activity至于栈顶）
+	 */
+	public void showActivity(Class<?> cls){
+		int size = activityStack.size();
+		for(int i= size -1; i>=0; i--){
+			Activity activity = activityStack.get(i);
+			if(activity.getClass().equals(cls) ){
+				break;
+			}
+			finishActivity(activity);
 		}
 	}
 }

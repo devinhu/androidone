@@ -5,19 +5,15 @@
 
 package com.sd.core.common;
 
-import java.io.File;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.Set;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.text.TextUtils;
 
-import com.sd.core.utils.NLog;
+import com.sd.core.common.parse.JsonMananger;
+
+import java.io.File;
 
 /**
  * [PreferencesManager管理类，提供get和put方法来重写SharedPreferences所提供的方法，更为实用和便捷]
@@ -136,13 +132,6 @@ public class PreferencesManager {
 		}
 	}
 
-	public void put(String key, Set<String> value) {
-		Editor edit = preferences.edit();
-		if (edit != null) {
-			edit.putStringSet(key, value);
-			edit.commit();
-		}
-	}
 
 	/**
 	 * 直接存放对象，反射将根据对象的属性作为key，并将对应的值保存。
@@ -152,41 +141,11 @@ public class PreferencesManager {
 	@SuppressWarnings("rawtypes")
 	public <T> void put(T t) {
 		try {
-			String methodName = "";
-			String saveValue = "";
-			String fieldName = "";
 			Editor edit = preferences.edit();
-			Class cls = t.getClass();
-
-			if (edit != null) {
-				
-				Method[] methods = cls.getDeclaredMethods();
-				Field[] fields = cls.getDeclaredFields();
-				
-				for (Method method : methods) {
-					methodName = method.getName();
-					for (Field f : fields) {
-						fieldName = f.getName();
-						if (methodName.toLowerCase().contains(fieldName.toLowerCase())) {
-
-							Object value = method.invoke(t);
-							if (value != null && !TextUtils.isEmpty(String.valueOf(value))) {
-								saveValue = String.valueOf(value);
-							}
-
-							NLog.e(tag, "key: " + fieldName + " value: " + saveValue);
-							edit.putString(fieldName, String.valueOf(saveValue));
-							break;
-						}
-					}
-				}
-				edit.commit();
-			}
-		} catch (IllegalAccessException e) {
-			e.printStackTrace();
-		} catch (IllegalArgumentException e) {
-			e.printStackTrace();
-		} catch (InvocationTargetException e) {
+			String json = JsonMananger.beanToJson(t);
+			edit.putString(t.getClass().getSimpleName(), json);
+			edit.commit();
+		}catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
@@ -215,34 +174,21 @@ public class PreferencesManager {
 		return preferences.getLong(key, defValue);
 	}
 
-	public Set<String> get(String key, Set<String> defValue) {
-		return preferences.getStringSet(key, defValue);
-	}
 
 	/**
-	 * 获取整个对象，跟put(T t)对应使用， 利用反射得到对象的属性，然后从preferences获取
+	 * 获取整个对象，跟put(T t)对应使用
 	 * 
 	 * @param cls
 	 * @return
 	 */
 	public <T> Object get(Class<T> cls) {
 		Object obj = null;
-		String fieldName = "";
 		try {
-			obj = cls.newInstance();
-			Field[] fields = cls.getDeclaredFields();
-			for (Field f : fields) {
-				fieldName = f.getName();
-				if (!"serialVersionUID".equals(fieldName)) {
-					f.setAccessible(true);
-					f.set(obj, get(f.getName()));
-				}
+			String json = preferences.getString(cls.getClass().getSimpleName(), "");
+			if(!TextUtils.isEmpty(json)){
+				obj = JsonMananger.jsonToBean(json, cls);
 			}
-		} catch (InstantiationException e) {
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			e.printStackTrace();
-		} catch (IllegalArgumentException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return obj;
