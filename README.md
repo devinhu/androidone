@@ -392,6 +392,7 @@ debug=true
 
 [android-studio中文站](http://www.android-studio.org/index.php)
 
+[android-开源项目](http://www.23code.com/page/3/)
 
 ##结语
 
