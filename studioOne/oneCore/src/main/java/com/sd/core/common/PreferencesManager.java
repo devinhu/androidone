@@ -178,7 +178,7 @@ public class PreferencesManager {
 	public <T> Object get(Class<T> cls) {
 		Object obj = null;
 		try {
-			String json = preferences.getString(cls.getClass().getSimpleName(), "");
+			String json = preferences.getString(cls.getSimpleName(), "");
 			if(!TextUtils.isEmpty(json)){
 				obj = JsonMananger.jsonToBean(json, cls);
 			}
