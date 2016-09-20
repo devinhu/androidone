@@ -30,13 +30,7 @@ public class PreferencesManager {
 
 	private Context mContext;
 	private SharedPreferences preferences;
-	private String DATA_URL = "/data/data/";  
-	private String SHARED_PREFS = "/shared_prefs";  
-	
 	private static String shareName = "SHARE_DATA";
-	public static final String THEME = "Theme";
-	public static final String LANG = "Lang";
-	
 	private static PreferencesManager instance;
 
 	/**
@@ -133,23 +127,6 @@ public class PreferencesManager {
 	}
 
 
-	/**
-	 * 直接存放对象，反射将根据对象的属性作为key，并将对应的值保存。
-	 * 
-	 * @param t
-	 */
-	@SuppressWarnings("rawtypes")
-	public <T> void put(T t) {
-		try {
-			Editor edit = preferences.edit();
-			String json = JsonMananger.beanToJson(t);
-			edit.putString(t.getClass().getSimpleName(), json);
-			edit.commit();
-		}catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
 	public String get(String key) {
 		return preferences.getString(key, "");
 	}
@@ -176,6 +153,23 @@ public class PreferencesManager {
 
 
 	/**
+	 * 直接存放对象，将对象转JSON，key为对象的classname
+	 * @param t
+	 */
+	@SuppressWarnings("rawtypes")
+	public <T> void put(T t) {
+		try {
+			Editor edit = preferences.edit();
+			String json = JsonMananger.beanToJson(t);
+			edit.putString(t.getClass().getSimpleName(), json);
+			edit.commit();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+
+	/**
 	 * 获取整个对象，跟put(T t)对应使用
 	 * 
 	 * @param cls
@@ -194,29 +188,13 @@ public class PreferencesManager {
 		return obj;
 	}
 
-	public int getTheme(int defThemeId) {
-		return instance.get(THEME, defThemeId);
-	}
-
-	public void setTheme(int themeId) {
-		instance.put(THEME, themeId);
-	}
-
-	public String getLanguage(String defLang) {
-		return instance.get(LANG, defLang);
-	}
-
-	public void setLang(String Language) {
-		instance.put(LANG, Language);
-	}
-
 	public void clearAll() {
 		try {
 			String fileName = shareName+".xml";
-			StringBuilder path = new StringBuilder(DATA_URL).append(mContext.getPackageName()).append(SHARED_PREFS);
+			StringBuilder path = new StringBuilder("/data/data/").append(mContext.getPackageName()).append("/shared_prefs");
 			File file = new File(path.toString(), fileName);
 			if (file.exists()) {
-				file.delete();
+				file.deleteOnExit();
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
