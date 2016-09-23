@@ -71,7 +71,10 @@
 		</receiver>
 		<service android:name="com.bugtags.library.BugtagsService"/>
 		 <!-- 集成bugtags end -->
-		
+
+        <!-- 版本更新服务 -->
+        <service android:name=".utils.VersionUpdateService" />
+
     </application>
 
 </manifest>
