@@ -7,6 +7,7 @@ package com.sd.one.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 
@@ -15,8 +16,22 @@ import com.sd.core.network.http.HttpException;
 import com.sd.one.R;
 import com.sd.one.common.Constants;
 import com.sd.one.model.base.BaseResponse;
+import com.sd.one.model.response.ConfigData;
+import com.sd.one.model.response.ConfigResponse;
 import com.sd.one.model.response.GetAreaResponse;
+import com.sd.one.service.ApiService;
 import com.sd.one.service.DemoAction;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+import retrofit2.converter.fastjson.FastJsonConverterFactory;
+import rx.Observable;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
+import rx.schedulers.Schedulers;
 
 /**
  * [预加载页面]
@@ -98,6 +113,37 @@ public class SplashActivity extends BaseActivity {
 		
 		request(TEST_CODE_1);
 //		intoMainPage();
+
+		Retrofit retrofit = new Retrofit.Builder()
+				.baseUrl("http://www.qulover.com/")
+				.addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+				.addConverterFactory(FastJsonConverterFactory.create())
+				.build();
+		ApiService apiService = retrofit.create(ApiService.class);
+		Call<ConfigResponse> call = apiService.getConfig();
+		call.enqueue(new Callback<ConfigResponse>() {
+			@Override
+			public void onResponse(Call<ConfigResponse> call, Response<ConfigResponse> response) {
+				for(ConfigData bean : response.body().getData()){
+					Log.e(tag, bean.getConfigName());
+				}
+			}
+
+			@Override
+			public void onFailure(Call<ConfigResponse> call, Throwable t) {
+
+			}
+		});
+
+		Observable.just(1, 2, 3, 4)
+				.subscribeOn(Schedulers.io())              // 指定 subscribe() 发生在 IO 线程
+				.observeOn(AndroidSchedulers.mainThread()) // 指定 Subscriber 的回调发生在主线程
+				.subscribe(new Action1<Integer>() {
+					@Override
+					public void call(Integer number) {
+						Log.d(tag, "number:" + number);
+					}
+				});
 	}
 
 	@Override
