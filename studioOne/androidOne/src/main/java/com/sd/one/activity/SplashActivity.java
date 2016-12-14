@@ -21,6 +21,7 @@ import com.sd.one.model.response.ConfigResponse;
 import com.sd.one.model.response.GetAreaResponse;
 import com.sd.one.service.ApiService;
 import com.sd.one.service.DemoAction;
+import com.sd.one.service.RetrofitAction;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -29,8 +30,10 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.fastjson.FastJsonConverterFactory;
 import rx.Observable;
+import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
+import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
 /**
@@ -114,36 +117,91 @@ public class SplashActivity extends BaseActivity {
 		request(TEST_CODE_1);
 //		intoMainPage();
 
-		Retrofit retrofit = new Retrofit.Builder()
-				.baseUrl("http://www.qulover.com/")
-				.addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-				.addConverterFactory(FastJsonConverterFactory.create())
-				.build();
-		ApiService apiService = retrofit.create(ApiService.class);
-		Call<ConfigResponse> call = apiService.getConfig();
-		call.enqueue(new Callback<ConfigResponse>() {
-			@Override
-			public void onResponse(Call<ConfigResponse> call, Response<ConfigResponse> response) {
-				for(ConfigData bean : response.body().getData()){
-					Log.e(tag, bean.getConfigName());
-				}
-			}
+//		RetrofitAction action = new RetrofitAction(this);
+//		action.getConfig(new Subscriber<ConfigResponse>() {
+//			@Override
+//			public void onCompleted() {
+//
+//			}
+//
+//			@Override
+//			public void onError(Throwable throwable) {
+//
+//			}
+//
+//			@Override
+//			public void onNext(ConfigResponse configResponse) {
+//				Log.e("ssss", "configResponse:"+ configResponse.getData().get(0).toString());
+//			}
+//		});
+//
+//
+//		action.getALL(new Subscriber<ConfigResponse>() {
+//			@Override
+//			public void onCompleted() {
+//
+//			}
+//
+//			@Override
+//			public void onError(Throwable throwable) {
+//
+//			}
+//
+//			@Override
+//			public void onNext(ConfigResponse configResponse) {
+//
+//			}
+//
+//		}, "0");
 
-			@Override
-			public void onFailure(Call<ConfigResponse> call, Throwable t) {
-
-			}
-		});
-
-		Observable.just(1, 2, 3, 4)
-				.subscribeOn(Schedulers.io())              // 指定 subscribe() 发生在 IO 线程
-				.observeOn(AndroidSchedulers.mainThread()) // 指定 Subscriber 的回调发生在主线程
-				.subscribe(new Action1<Integer>() {
-					@Override
-					public void call(Integer number) {
-						Log.d(tag, "number:" + number);
-					}
-				});
+//		Retrofit retrofit = new Retrofit.Builder()
+//				.baseUrl("http://www.qulover.com/")
+//				.addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+//				.addConverterFactory(FastJsonConverterFactory.create())
+//				.build();
+//
+//		ApiService apiService = retrofit.create(ApiService.class);
+//
+//		apiService.getConfig()
+//				.subscribeOn(Schedulers.io())
+//				.observeOn(AndroidSchedulers.mainThread())
+//				.subscribe(new Subscriber<ConfigResponse>() {
+//					@Override
+//					public void onCompleted() {
+//
+//					}
+//
+//					@Override
+//					public void onError(Throwable e) {
+//
+//					}
+//
+//					@Override
+//					public void onNext(ConfigResponse configResponse) {
+//
+//					}
+//				});
+//
+//
+//		Observable.just(apiService)
+//				.subscribeOn(Schedulers.io())              // 指定 subscribe() 发生在 IO 线程
+//				.observeOn(AndroidSchedulers.mainThread()) // 指定 Subscriber 的回调发生在主线程
+//				.subscribe(new Subscriber<ApiService>() {
+//					@Override
+//					public void onCompleted() {
+//
+//					}
+//
+//					@Override
+//					public void onError(Throwable throwable) {
+//
+//					}
+//
+//					@Override
+//					public void onNext(ApiService apiService) {
+//
+//					}
+//				});
 	}
 
 	@Override
