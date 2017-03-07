@@ -10,9 +10,6 @@ import android.net.Uri;
 import android.os.Environment;
 import android.os.IBinder;
 import android.text.TextUtils;
-
-import com.sd.core.utils.NLog;
-
 import java.io.File;
 
 /**

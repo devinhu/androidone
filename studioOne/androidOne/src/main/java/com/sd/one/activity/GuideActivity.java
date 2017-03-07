@@ -18,10 +18,10 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 
-import com.sd.core.common.PreferencesManager;
 import com.sd.one.R;
 import com.sd.one.activity.adapter.ViewPagerAdapter;
 import com.sd.one.common.Constants;
+import com.sd.one.common.manager.PreferencesManager;
 
 /**
  * [新手指引页面]

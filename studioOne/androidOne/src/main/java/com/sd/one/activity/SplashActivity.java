@@ -7,34 +7,20 @@ package com.sd.one.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
-
-import com.sd.core.common.PreferencesManager;
-import com.sd.core.network.http.HttpException;
 import com.sd.one.R;
 import com.sd.one.common.Constants;
+import com.sd.one.common.async.HttpException;
+import com.sd.one.common.manager.PreferencesManager;
 import com.sd.one.model.base.BaseResponse;
 import com.sd.one.model.response.ConfigData;
-import com.sd.one.model.response.ConfigResponse;
-import com.sd.one.model.response.GetAreaResponse;
-import com.sd.one.service.ApiService;
-import com.sd.one.service.DemoAction;
 import com.sd.one.service.RetrofitAction;
+import com.sd.one.utils.NLog;
 
+import java.io.IOException;
+import java.util.List;
 import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
-import retrofit2.converter.fastjson.FastJsonConverterFactory;
-import rx.Observable;
-import rx.Subscriber;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action1;
-import rx.functions.Func1;
-import rx.schedulers.Schedulers;
 
 /**
  * [预加载页面]
@@ -47,63 +33,12 @@ import rx.schedulers.Schedulers;
 public class SplashActivity extends BaseActivity {
 
 	private final String tag = SplashActivity.class.getSimpleName();
+
 	private final int TEST_CODE_1 = 100;
+	private final int TEST_CODE_2 = 200;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		/*
-		 * What is happening:
-		 * 
-		 * (This refers to an application that has not set any launchMode
-		 * settings and so is using the defaults)
-		 * 
-		 * You launch an app from the Market or from the Installer. This
-		 * launches the root/main activity of the application with the
-		 * FLAG_ACTIVITY_NEW_TASK flag and no categories. Right now the
-		 * applications stack is [ A ]
-		 * 
-		 * Then you proceed to the next activity in the application. Now the
-		 * stack in this task is [ A > B ]
-		 * 
-		 * Then you press the home key and then relaunch the same application by
-		 * pressing it's icon from either the home screen or the app tray.
-		 * 
-		 * What is expected at this point is that activity B will show, since
-		 * that is where you left off. However A is shown and the tasks stack is
-		 * [ A > B > A ] This second instance of A is launched with the
-		 * following flags: FLAG_ACTIVITY_NEW_TASK,
-		 * FLAG_ACTIVITY_RESET_IF_NEEDED, and FLAG_ACTIVITY_BROUGHT_TO_FRONT. It
-		 * also has the android.intent.category.LAUNCHER category.
-		 * 
-		 * At this point, if you hit the back key, it will return you to B, as
-		 * it was when you left it.
-		 * 
-		 * Looking at the documentation it seems as if
-		 * FLAG_ACTIVITY_BROUGHT_TO_FRONT should only be set for activities that
-		 * use the singleTask or singleTop launchModes. However, this
-		 * application has not set any launchModes and is therefore using the
-		 * default standard launchMode.
-		 * 
-		 * I assume this is not suppose to happen in this case?
-		 * 
-		 * I should also note, that once it gets into this weird state, then it
-		 * happens everytime the app is launched from the home screen or app
-		 * tray. If the task is finished (restarting the phone, force stopping
-		 * the app, or hitting back all the way through the stack) will fix this
-		 * issue and will no longer launch it incorrectly. It only happens if
-		 * you launch the app from the installer or market and then try to
-		 * launch it from the launcher.
-		 * 
-		 * So in summary, why is this happening? Is there a way to prevent it?
-		 * 
-		 * Workaround
-		 * 
-		 * In the main/root activity's onCreate method, check if the intent has
-		 * the FLAG_ACTIVITY_BROUGHT_TO_FRONT set and if so, call finish(). This
-		 * then pops the extra instance of A off the stack [ A > B > A ] becomes
-		 * [ A > B ] and from the users perspective, it launches into the
-		 * activity they were expecting.
-		 */
 		if ((getIntent().getFlags() & Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) == Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) {
 		    super.onCreate(savedInstanceState);
 			finish();
@@ -115,93 +50,7 @@ public class SplashActivity extends BaseActivity {
 		setHeadVisibility(View.GONE);
 		
 		request(TEST_CODE_1);
-//		intoMainPage();
-
-//		RetrofitAction action = new RetrofitAction(this);
-//		action.getConfig(new Subscriber<ConfigResponse>() {
-//			@Override
-//			public void onCompleted() {
-//
-//			}
-//
-//			@Override
-//			public void onError(Throwable throwable) {
-//
-//			}
-//
-//			@Override
-//			public void onNext(ConfigResponse configResponse) {
-//				Log.e("ssss", "configResponse:"+ configResponse.getData().get(0).toString());
-//			}
-//		});
-//
-//
-//		action.getALL(new Subscriber<ConfigResponse>() {
-//			@Override
-//			public void onCompleted() {
-//
-//			}
-//
-//			@Override
-//			public void onError(Throwable throwable) {
-//
-//			}
-//
-//			@Override
-//			public void onNext(ConfigResponse configResponse) {
-//
-//			}
-//
-//		}, "0");
-
-//		Retrofit retrofit = new Retrofit.Builder()
-//				.baseUrl("http://www.qulover.com/")
-//				.addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-//				.addConverterFactory(FastJsonConverterFactory.create())
-//				.build();
-//
-//		ApiService apiService = retrofit.create(ApiService.class);
-//
-//		apiService.getConfig()
-//				.subscribeOn(Schedulers.io())
-//				.observeOn(AndroidSchedulers.mainThread())
-//				.subscribe(new Subscriber<ConfigResponse>() {
-//					@Override
-//					public void onCompleted() {
-//
-//					}
-//
-//					@Override
-//					public void onError(Throwable e) {
-//
-//					}
-//
-//					@Override
-//					public void onNext(ConfigResponse configResponse) {
-//
-//					}
-//				});
-//
-//
-//		Observable.just(apiService)
-//				.subscribeOn(Schedulers.io())              // 指定 subscribe() 发生在 IO 线程
-//				.observeOn(AndroidSchedulers.mainThread()) // 指定 Subscriber 的回调发生在主线程
-//				.subscribe(new Subscriber<ApiService>() {
-//					@Override
-//					public void onCompleted() {
-//
-//					}
-//
-//					@Override
-//					public void onError(Throwable throwable) {
-//
-//					}
-//
-//					@Override
-//					public void onNext(ApiService apiService) {
-//
-//					}
-//				});
+		request(TEST_CODE_2);
 	}
 
 	@Override
@@ -211,17 +60,44 @@ public class SplashActivity extends BaseActivity {
 	}
 
 	@Override
-	public Object doInBackground(int requsetCode) throws HttpException {
-		DemoAction action = new DemoAction(mContext);
-		return action.getLastedVersion();
+	public Object doInBackground(int requestCode) throws HttpException {
+		try {
+			RetrofitAction action = new RetrofitAction(mContext.getApplicationContext());
+			switch (requestCode){
+				case TEST_CODE_1:{
+					Call<BaseResponse<List<ConfigData>>> call = action.getConfig();
+					return call.execute().body();
+				}
+				case TEST_CODE_2:{
+					Call<BaseResponse<List<ConfigData>>> call = action.getCircleTypeList("0");
+					return call.execute().body();
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+			throw new HttpException(e);
+		}
+		return null;
 	}
 
 	@Override
 	public void onSuccess(int requestCode, Object result) {
 		if(result != null){
-			BaseResponse res = (BaseResponse)result;
-			if(res.isSucces()){
-				intoMainPage();
+			switch (requestCode){
+				case TEST_CODE_1:{
+					BaseResponse<List<ConfigData>> res = (BaseResponse<List<ConfigData>>)result;
+					if(res.isSucces()){
+						NLog.e("ss", res.getData().size()+"");
+						intoMainPage();
+					}
+				}
+				case TEST_CODE_2:{
+					BaseResponse<List<ConfigData>> res = (BaseResponse<List<ConfigData>>)result;
+					if(res.isSucces()){
+						NLog.e("ss", res.getData().size()+"");
+						intoMainPage();
+					}
+				}
 			}
 		}
 	}

@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/androidOne/androidOne.iml" filepath="$PROJECT_DIR$/androidOne/androidOne.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bugtags/bugtags.iml" filepath="$PROJECT_DIR$/bugtags/bugtags.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oneCore/oneCore.iml" filepath="$PROJECT_DIR$/oneCore/oneCore.iml" />
       <module fileurl="file://$PROJECT_DIR$/studioOne.iml" filepath="$PROJECT_DIR$/studioOne.iml" />
     </modules>
   </component>

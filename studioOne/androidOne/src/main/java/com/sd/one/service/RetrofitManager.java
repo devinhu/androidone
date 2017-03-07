@@ -1,5 +1,9 @@
 package com.sd.one.service;
 
+import android.content.Context;
+
+import com.sd.one.common.Constants;
+import com.sd.one.common.okhttp.OkHttpUtils;
 import com.sd.one.model.response.ConfigResponse;
 
 import java.util.concurrent.TimeUnit;
@@ -22,20 +26,17 @@ import rx.schedulers.Schedulers;
  */
 public abstract class RetrofitManager {
 
-    private static final int DEFAULT_TIMEOUT = 10 * 1000;
     protected Retrofit retrofit;
 
     /**
      * 构造方法
      */
-    public RetrofitManager() {
-        OkHttpClient.Builder httpClientBuilder = new OkHttpClient.Builder();
-        httpClientBuilder.connectTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS);
+    public RetrofitManager(Context context) {
         retrofit = new Retrofit.Builder()
-                .client(httpClientBuilder.build())
+                .client(OkHttpUtils.getInstance(context).getOkHttpClient())
                 .addConverterFactory(FastJsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-                .baseUrl("http://www.qulover.com/")
+                .baseUrl(Constants.DOMAIN)
                 .build();
     }
 

@@ -9,18 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/androidOne" />
-            <option value="$PROJECT_DIR$/bugtags" />
-            <option value="$PROJECT_DIR$/oneCore" />
           </set>
         </option>
-        <option name="myModules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/androidOne" />
-            <option value="$PROJECT_DIR$/bugtags" />
-            <option value="$PROJECT_DIR$/oneCore" />
-          </set>
-        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

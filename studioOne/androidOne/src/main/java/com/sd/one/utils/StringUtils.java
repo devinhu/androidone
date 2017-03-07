@@ -12,8 +12,7 @@ import java.util.regex.Pattern;
 import android.net.Uri;
 import android.text.TextUtils;
 
-import com.sd.core.utils.NLog;
-import com.sd.core.utils.encrypt.MD5;
+import com.sd.one.utils.encrypt.MD5;
 
 /**
  * [字符串工具类]
@@ -116,7 +115,7 @@ public class StringUtils {
 	/**
 	 * 验证是否是邮箱格式
 	 * 
-	 * @param mobiles
+	 * @param email
 	 * @return
 	 */
 	public static boolean isEmail(String email) {
@@ -129,7 +128,7 @@ public class StringUtils {
 	/**
 	 * 验证手机号码格式
 	 * 
-	 * @param mobiles
+	 * @param mobile
 	 * @return
 	 */
 	public static boolean isMobile(String mobile) {

@@ -12,12 +12,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.sd.core.common.ActivityPageManager;
-import com.sd.core.network.async.AsyncTaskManager;
-import com.sd.core.network.async.OnDataListener;
-import com.sd.core.network.http.HttpException;
-import com.sd.core.utils.NToast;
 import com.sd.one.R;
+import com.sd.one.common.async.AsyncTaskManager;
+import com.sd.one.common.async.HttpException;
+import com.sd.one.common.async.OnDataListener;
+import com.sd.one.common.manager.ActivityPageManager;
+import com.sd.one.utils.NToast;
 
 /**
  * [Fragment基础类，实现异步框架，Activity堆栈的管理，destroy时候销毁所有资源]
@@ -27,7 +27,7 @@ import com.sd.one.R;
  * @date 2014-11-6
  * 
  **/
-public abstract class BaseFragment extends Fragment implements OnDataListener{
+public abstract class BaseFragment extends Fragment implements OnDataListener {
 
 	protected Context mContext;
 	private View mContentView = null;
@@ -38,7 +38,7 @@ public abstract class BaseFragment extends Fragment implements OnDataListener{
 		super.onCreate(savedInstanceState);
 		mContext = getActivity();
 		//初始化异步框架
-		mAsyncTaskManager = AsyncTaskManager.getInstance(mContext);
+		mAsyncTaskManager = AsyncTaskManager.getInstance(mContext.getApplicationContext());
 	}
 	  
 	@Override
@@ -66,30 +66,25 @@ public abstract class BaseFragment extends Fragment implements OnDataListener{
 	
     /**
 	 * 发送请求（需要检查网络）
-	 * @param requsetCode 请求码
+	 * @param requestCode 请求码
 	 */
-	public void request(int requsetCode){
-		mAsyncTaskManager.request(requsetCode, this);
+	public void request(int requestCode){
+		mAsyncTaskManager.request(requestCode, this);
 	}
 	
 	/**
 	 * 发送请求
-	 * @param requsetCode 请求码
-	 * @param isCheckNetwork 是否需检查网络，true检查，false不检查
+	 * @param requestCode 请求码
+	 * @param isCheckNetwork 是否需检查网络，true检查，false不检查，主要是用于有时候网络请求从缓存里面取的
 	 */
-	public void request(int requsetCode, boolean isCheckNetwork){
-		mAsyncTaskManager.request(requsetCode, isCheckNetwork, this);
+	public void request(int requestCode, boolean isCheckNetwork){
+		mAsyncTaskManager.request(requestCode, isCheckNetwork, this);
 	}
 	
-	/**
-	 * 取消所有请求
-	 */
-	public void cancelRequest(){
-        mAsyncTaskManager.cancelRequest();
-    }
-	
+
 	@Override
-	public Object doInBackground(int requestCode) throws HttpException{
+	public Object doInBackground(int requestCode) throws HttpException {
+		//TODO 处理异步方法
 		return null;
 	}
 

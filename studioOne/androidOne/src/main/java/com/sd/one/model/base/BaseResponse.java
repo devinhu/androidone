@@ -15,7 +15,7 @@ import android.text.TextUtils;
  * @date 2014-11-6
  * 
  **/
-public class BaseResponse extends BaseModel {
+public class BaseResponse<T> extends BaseModel {
 
 	/**
 	 * serialVersionUID
@@ -25,6 +25,16 @@ public class BaseResponse extends BaseModel {
 	private String resultCode;
 
 	private String errorMsg;
+
+	private T data;
+
+	public T getData() {
+		return data;
+	}
+
+	public void setData(T data) {
+		this.data = data;
+	}
 
 	public String getResultCode() {
 		return resultCode;

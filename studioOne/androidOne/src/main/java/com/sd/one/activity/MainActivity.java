@@ -10,43 +10,41 @@ import android.app.ActivityGroup;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
-
-import com.bugtags.library.Bugtags;
-import com.sd.core.common.ActivityPageManager;
-import com.sd.core.common.LruCacheManager;
 import com.sd.one.R;
 import com.sd.one.activity.cart.CartActivity;
 import com.sd.one.activity.category.CategoryActivity;
 import com.sd.one.activity.collection.CollectionActivity;
 import com.sd.one.activity.home.HomeActivity;
 import com.sd.one.activity.more.MoerActivity;
+import com.sd.one.common.manager.ActivityPageManager;
+import com.sd.one.common.manager.LruCacheManager;
 import com.sd.one.widget.dialog.MessageDialog;
 
 /**
  * [主页框架]
- * 
+ *
  * @author huxinwu
  * @version 1.0
  * @date 2014-3-1
- * 
+ *
  **/
 @SuppressWarnings("deprecation")
 public class MainActivity extends ActivityGroup implements OnCheckedChangeListener {
 
+
 	private TabHost tabHost;
 	private RadioGroup radioGroup;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.layout_main);
-		
+
 		Intent homeIntent = new Intent(this, HomeActivity.class);
 		Intent categoryIntent = new Intent(this, CategoryActivity.class);
 		Intent collectionIntent = new Intent(this, CollectionActivity.class);
@@ -64,45 +62,45 @@ public class MainActivity extends ActivityGroup implements OnCheckedChangeListen
 		radioGroup = (RadioGroup) super.findViewById(R.id.radioGroup_menu);
 		radioGroup.setOnCheckedChangeListener(this);
 	}
-	
+
 	@Override
 	public void onCheckedChanged(RadioGroup arg0, int checkedId) {
 		switch (checkedId) {
 			case R.id.radio_home:
 				tabHost.setCurrentTab(0);
 				break;
-	
+
 			case R.id.radio_category:
 				tabHost.setCurrentTab(1);
 				break;
-	
+
 			case R.id.radio_collection:
 				tabHost.setCurrentTab(2);
 				break;
-				
+
 			case R.id.radio_cart:
 				tabHost.setCurrentTab(3);
 				break;
-	
+
 			case R.id.radio_member:
 				tabHost.setCurrentTab(4);
 				break;
 		}
 	}
-	
+
 	/**
 	 * 切换tab
-	 * @param checkid
+	 * @param checkedId
 	 */
 	public void switchTab(int checkedId){
 		radioGroup.check(checkedId);
 	}
-	
-	@Override  
-	protected void onNewIntent(Intent intent) {  
+
+	@Override
+	protected void onNewIntent(Intent intent) {
 		//TODO 接受intent
-	}  
-	
+	}
+
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		Activity currentActivity = getLocalActivityManager().getCurrentActivity();
@@ -113,11 +111,11 @@ public class MainActivity extends ActivityGroup implements OnCheckedChangeListen
 
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
-	    if(keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN){  
-	    	MessageDialog dialog = new MessageDialog(MainActivity.this, 
-					getString(R.string.common_title_tips), 
-					getString(R.string.common_confirm), 
-					getString(R.string.common_cancel), 
+	    if(keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN){
+	    	MessageDialog dialog = new MessageDialog(MainActivity.this,
+					getString(R.string.common_title_tips),
+					getString(R.string.common_confirm),
+					getString(R.string.common_cancel),
 					getString(R.string.common_exit));
 			dialog.setBtn1ClickListener(new OnClickListener() {
 				@Override
@@ -127,26 +125,8 @@ public class MainActivity extends ActivityGroup implements OnCheckedChangeListen
 				}
 			});
 			dialog.show();
-	        return true;   
+	        return true;
 	    }
 	    return super.onKeyDown(keyCode, event);
 	}
-	
-	@Override
-    protected void onResume() {            
-		super.onResume();            
-        Bugtags.onResume(this);
-    }        
-     
-    @Override
-    protected void onPause() {            
-         super.onPause();            
-         Bugtags.onPause(this);
-    }        
-     
-     @Override
-     public boolean dispatchTouchEvent(MotionEvent event) {            
-         Bugtags.onDispatchTouchEvent(this, event);            
-         return super.dispatchTouchEvent(event);
-     }
 }

@@ -1,15 +1,10 @@
 package com.sd.one.service;
 
 import android.content.Context;
-
-import com.sd.core.network.http.HttpException;
-import com.sd.one.model.response.ConfigResponse;
-
-import rx.Observable;
-import rx.Subscriber;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Func2;
-import rx.schedulers.Schedulers;
+import com.sd.one.model.base.BaseResponse;
+import com.sd.one.model.response.ConfigData;
+import java.util.List;
+import retrofit2.Call;
 
 /**
  * [一句话简单描述]
@@ -27,7 +22,7 @@ public class RetrofitAction extends RetrofitManager {
      * @param mContext
      */
     public RetrofitAction(Context mContext) {
-        super();
+        super(mContext);
         apiService = retrofit.create(ApiService.class);
     }
 
@@ -39,38 +34,23 @@ public class RetrofitAction extends RetrofitManager {
         this.apiService = apiService;
     }
 
+
+
     /**
      * 获取配置信息接口
      * @return
-     * @throws HttpException
      */
-    public void getConfig(Subscriber<ConfigResponse> subscriber) {
-        Observable observable = apiService.getConfig();
-        toSubscribe(observable, subscriber);
+    public Call<BaseResponse<List<ConfigData>>> getConfig() {
+        return apiService.getConfig();
     }
 
     /**
      * 获取圈子列表接口
      * @return
-     * @throws HttpException
      */
-    public void getCircleTypeList(Subscriber<ConfigResponse> subscriber, String patientId) {
-        Observable observable = apiService.getCircleTypeList(patientId);
-        toSubscribe(observable, subscriber);
+    public Call<BaseResponse<List<ConfigData>>> getCircleTypeList(String patientId) {
+        return apiService.getCircleTypeList(patientId);
     }
 
-    public void getALL(Subscriber<ConfigResponse> subscriber, String patientId) {
-        Observable observable = apiService.getCircleTypeList(patientId);
-        Observable configObservable = apiService.getConfig();
 
-        Observable.zip(configObservable, observable, new Func2() {
-            @Override
-            public Object call(Object o, Object o2) {
-                return null;
-            }
-            }).subscribeOn(Schedulers.io())
-                .unsubscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(subscriber);
-    }
 }

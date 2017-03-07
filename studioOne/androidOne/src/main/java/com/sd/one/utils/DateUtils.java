@@ -14,8 +14,7 @@ import java.util.TimeZone;
 import android.annotation.SuppressLint;
 import android.content.Context;
 
-import com.sd.core.common.PreferencesManager;
-import com.sd.core.utils.NLog;
+import com.sd.one.common.manager.PreferencesManager;
 
 /**
  * [时间工具类, 使用的date4j包来build各种时间处理的方法]

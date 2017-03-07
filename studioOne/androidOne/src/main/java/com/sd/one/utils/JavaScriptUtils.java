@@ -5,11 +5,10 @@
 
 package com.sd.one.utils;
 
-import org.apache.cordova.CordovaWebView;
+import com.sd.one.common.async.HttpException;
+import com.sd.one.common.parse.JsonMananger;
 
-import com.sd.core.common.parse.JsonMananger;
-import com.sd.core.network.http.HttpException;
-import com.sd.core.utils.NLog;
+import org.apache.cordova.CordovaWebView;
 
 /**
  * [A brief description]
@@ -36,7 +35,7 @@ public class JavaScriptUtils {
 	 * Java发送js封装方法
 	 * @param webview
 	 * @param jsMethod
-	 * @param params
+	 * @param obj
 	 */
 	public static void sendJavascript(final CordovaWebView webview, String jsMethod, Object obj){
 		try {

@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="17"
         android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -56,21 +56,6 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!-- 集成alipay end -->
-        
-        
-        <!-- 集成bugtags start -->
-        <activity
-			android:name="com.bugtags.library.BugtagsActivity"
-			android:configChanges="keyboardHidden|orientation|screenSize"
-			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-		<receiver
-			android:name="com.bugtags.library.BugtagsReceiver">
-			<intent-filter>
-				<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
-			</intent-filter>
-		</receiver>
-		<service android:name="com.bugtags.library.BugtagsService"/>
-		 <!-- 集成bugtags end -->
 
         <!-- 版本更新服务 -->
         <service android:name=".utils.VersionUpdateService" />
