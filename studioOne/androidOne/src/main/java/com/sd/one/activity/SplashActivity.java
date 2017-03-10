@@ -35,8 +35,7 @@ public class SplashActivity extends BaseActivity {
 	private final String tag = SplashActivity.class.getSimpleName();
 
 	private final int TEST_CODE_1 = 100;
-	private final int TEST_CODE_2 = 200;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		if ((getIntent().getFlags() & Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) == Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) {
@@ -50,7 +49,6 @@ public class SplashActivity extends BaseActivity {
 		setHeadVisibility(View.GONE);
 		
 		request(TEST_CODE_1);
-		request(TEST_CODE_2);
 	}
 
 	@Override
@@ -68,10 +66,6 @@ public class SplashActivity extends BaseActivity {
 					Call<BaseResponse<List<ConfigData>>> call = action.getConfig();
 					return call.execute().body();
 				}
-				case TEST_CODE_2:{
-					Call<BaseResponse<List<ConfigData>>> call = action.getCircleTypeList("0");
-					return call.execute().body();
-				}
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -87,14 +81,6 @@ public class SplashActivity extends BaseActivity {
 				case TEST_CODE_1:{
 					BaseResponse<List<ConfigData>> res = (BaseResponse<List<ConfigData>>)result;
 					if(res.isSucces()){
-						NLog.e("ss", res.getData().size()+"");
-						intoMainPage();
-					}
-				}
-				case TEST_CODE_2:{
-					BaseResponse<List<ConfigData>> res = (BaseResponse<List<ConfigData>>)result;
-					if(res.isSucces()){
-						NLog.e("ss", res.getData().size()+"");
 						intoMainPage();
 					}
 				}

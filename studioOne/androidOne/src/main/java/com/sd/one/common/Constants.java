@@ -28,7 +28,7 @@ public class Constants {
     public static final String TOKEN = "4d01a4c48ffaa2114c5c3745e6edfd3b2fbbade6d43c219298af6386169e0a47";
     
     public static final String WEIXIN_APP_ID = "wxb4754ef83e822c2b";
-    public static final String DOMAIN = "http://119.29.116.107:8088/fmms/rest.xhtml";
+    public static final String DOMAIN = "https://www.qulover.com/";
 
 
 

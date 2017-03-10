@@ -3,6 +3,8 @@ package com.sd.one.service;
 import android.content.Context;
 import com.sd.one.model.base.BaseResponse;
 import com.sd.one.model.response.ConfigData;
+
+import java.util.HashMap;
 import java.util.List;
 import retrofit2.Call;
 
@@ -35,22 +37,13 @@ public class RetrofitAction extends RetrofitManager {
     }
 
 
-
     /**
      * 获取配置信息接口
      * @return
      */
     public Call<BaseResponse<List<ConfigData>>> getConfig() {
-        return apiService.getConfig();
+        HashMap params = getRequestParams();
+        return apiService.getConfig(params);
     }
-
-    /**
-     * 获取圈子列表接口
-     * @return
-     */
-    public Call<BaseResponse<List<ConfigData>>> getCircleTypeList(String patientId) {
-        return apiService.getCircleTypeList(patientId);
-    }
-
 
 }

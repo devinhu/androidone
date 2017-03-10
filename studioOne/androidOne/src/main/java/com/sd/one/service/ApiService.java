@@ -3,9 +3,12 @@ package com.sd.one.service;
 import com.sd.one.model.base.BaseResponse;
 import com.sd.one.model.response.ConfigData;
 import java.util.List;
+import java.util.Map;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
+import retrofit2.http.QueryMap;
 
 /**
  * [retrofit实现接口部分；
@@ -20,7 +23,7 @@ public interface ApiService {
 
     //为什么返回call，因为call支持同步和异步方法，在
     @GET("/app/sys/getConfig")
-    Call<BaseResponse<List<ConfigData>>> getConfig();
+    Call<BaseResponse<List<ConfigData>>> getConfig(@QueryMap Map<String, String> options);
 
 
     @GET("/app/circle/getCircleTypeList")

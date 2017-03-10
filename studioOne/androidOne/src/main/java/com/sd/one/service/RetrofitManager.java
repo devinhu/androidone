@@ -1,14 +1,13 @@
 package com.sd.one.service;
 
 import android.content.Context;
+import android.text.TextUtils;
 
 import com.sd.one.common.Constants;
 import com.sd.one.common.okhttp.OkHttpUtils;
-import com.sd.one.model.response.ConfigResponse;
 
-import java.util.concurrent.TimeUnit;
+import java.util.HashMap;
 
-import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.fastjson.FastJsonConverterFactory;
@@ -39,6 +38,20 @@ public abstract class RetrofitManager {
                 .baseUrl(Constants.DOMAIN)
                 .build();
     }
+
+
+    /**
+     * 获取处理后的RequestParams对象
+     * @return
+     */
+    public HashMap getRequestParams(){
+        HashMap params = new HashMap();
+        params.put("app_id", "2016789168");
+        params.put("model", "android");
+        params.put("version", "1.0");
+        return params;
+    }
+
 
     public void toSubscribe(Observable observable, Subscriber subscriber){
         observable.subscribeOn(Schedulers.io())
