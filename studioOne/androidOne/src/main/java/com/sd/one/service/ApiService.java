@@ -21,7 +21,6 @@ import retrofit2.http.QueryMap;
  */
 public interface ApiService {
 
-    //为什么返回call，因为call支持同步和异步方法，在
     @GET("/app/sys/getConfig")
     Call<BaseResponse<List<ConfigData>>> getConfig(@QueryMap Map<String, String> options);
 
