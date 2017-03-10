@@ -7,9 +7,8 @@ import android.view.KeyEvent;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout.LayoutParams;
-
-import com.sd.core.utils.NToast;
 import com.sd.one.R;
+import com.sd.one.utils.NToast;
 
 /**   
  * [LoadDialog]

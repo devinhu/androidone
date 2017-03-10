@@ -6,7 +6,7 @@ package com.sd.one.widget.downtime;
 
 import android.os.CountDownTimer;
 
-import com.sd.core.utils.NLog;
+import com.sd.one.utils.NLog;
 
 /**
  * [倒计时类]
@@ -38,6 +38,7 @@ public class DownTimer {
 	 * @param mills
 	 */
 	public void startDown(long time, long mills){
+		stopDown();
 		mCountDownTimer = new CountDownTimer(time, mills){
 			@Override
 			public void onTick(long millisUntilFinished) {
@@ -55,7 +56,7 @@ public class DownTimer {
 				}else{
 					NLog.e(TAG, "DownTimerListener 监听不能为空");
 				}
-				if(mCountDownTimer != null)mCountDownTimer.cancel();
+				stopDown();
 			}
 			
 		}.start();
@@ -65,7 +66,11 @@ public class DownTimer {
 	 * [停止倒计时功能]<BR>
 	 */
 	public void stopDown(){
-		if(mCountDownTimer != null)mCountDownTimer.cancel();
+		if(mCountDownTimer != null){
+			mCountDownTimer.cancel();
+			listener = null;
+			mCountDownTimer = null;
+		}
 	}
 	
 	/**

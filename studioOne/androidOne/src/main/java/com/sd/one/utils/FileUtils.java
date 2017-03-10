@@ -25,8 +25,6 @@ import android.graphics.Bitmap.CompressFormat;
 import android.os.Environment;
 import android.text.TextUtils;
 
-import com.sd.core.utils.NLog;
-
 /**
  * [文件处理工具类]
  * 
@@ -184,7 +182,7 @@ public class FileUtils {
 	
 	/**
 	 * 保存字符串到本地
-	 * @param content 字符串内容
+	 * @param bytes 字符串内容
 	 * @param fileName 文件名
 	 * @return
 	 */
@@ -318,7 +316,7 @@ public class FileUtils {
 	/**
 	 * InputStream转换成byte[]
 	 * 
-	 * @param is
+	 * @param instream
 	 * @return
 	 */
 	public byte[] InputStream2Bytes(InputStream instream) {
@@ -347,7 +345,7 @@ public class FileUtils {
 	
 	/**
 	 * 数据流转字符串
-	 * @param in
+	 * @param instream
 	 * @return
 	 * @throws IOException
 	 */
