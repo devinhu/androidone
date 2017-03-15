@@ -38,5 +38,7 @@ public class BaseApplication extends Application {
             NLog.setDebug(isDebug);
             NLog.e(tag, "isDebug: " + isDebug);
         }
+
+//        IMSSdk
     }
 }
