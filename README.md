@@ -1,6 +1,6 @@
 一个牛逼哄哄的Android框架One
 
-##One框架能帮您带来什么？
+## One框架能帮您带来什么？
 
 * One框架分为两个项目，OneCore为核心工程，androidOne为演示项目，依赖oneCore
 
@@ -11,7 +11,7 @@
 * 以“复杂的世界里，一个就够了”为理念，励志帮助Android开发人员快速搭建一个简单高效的android开发框架!
 
 
-##异步模块 
+## 异步模块 
 
 * 封装EventBus类，将异步框架单独抽出来，任何耗时操作（不仅仅是网络请求）都可以放到异步模块里
 
@@ -30,7 +30,7 @@
 	*  使用参考类 [BaseFragment.java](https://github.com/devinhu/androidone/blob/master/studioOne/androidOne/src/main/java/com/sd/one/activity/BaseFragment.java)
 
 
-##HTTP请求模块 
+## HTTP请求模块 
 
 * 采用第三方AsyncHttpClient方案，支持http、https方式，支持get、post、put、delete方法，支持GZIP、File格式，支持Retry、Cacel策略，堪称完美！ 
 
@@ -39,7 +39,7 @@
 	*  实现参考类 [SyncHttpClient.java](https://github.com/devinhu/androidone/blob/master/studioOne/oneCore/src/main/java/com/sd/core/network/http/SyncHttpClient.java)
 
 
-##DownloadManager资源下载模块
+## DownloadManager资源下载模块
 
 * 改造实现BreakpointHttpResponseHandler支持多并发、多文件上传、断点续传、暂停、继续、删除下载任务
 
@@ -72,7 +72,7 @@
 	**/
 ```
 
-##BluetoothManager蓝牙处理模块
+## BluetoothManager蓝牙处理模块
 
 ```javascript
 	/**
@@ -125,7 +125,7 @@
 
 ```
 
-##Common模块
+## Common模块
 
 * 页面堆栈管理ActivityPageManager
 
@@ -138,22 +138,22 @@
 * 各种动画效果
 
 
-##SharedPreferences管理
+## SharedPreferences管理
 
 * 支持直接put、get对象。
 
 
-##LruCache管理
+## LruCache管理
 
 * 封装LruCache，只缓存CACHE_SIZE大小的数量，超过CACHE_SIZE自动释放前面的对象，建议页面间传参使用。
 
 
-##Exception系统异常处理
+## Exception系统异常处理
 
 * Bugtags是新一代的、专为移动测试而生的缺陷发现及管理工具。移动App集成Bugtags SDK后，测试人员就可以直接在App里所见即所得的提交 bug，SDK会自动截屏、收集App运行时数据，如：设备信息，控制台数据，用户的操作步骤等，团队人员在Bugtags云端高效的跟踪及管理bug。
 
 
-##Parse解析管理
+## Parse解析管理
 
 * 支持XML、JSON、JSOAP解析
 
@@ -166,7 +166,7 @@
 	*  自主封装，支持soapObject转Java对象
 
 
-##CacheManager缓存管理
+## CacheManager缓存管理
 
 * 磁盘缓存，缓存对象需实现序列化接口，提供读取、失效，清除方法。一般用于对接口数据的缓存。
 
@@ -217,7 +217,7 @@
     }
 ```
 
-##BroadcastManager广播管理
+## BroadcastManager广播管理
 
 * 为了发送广播更加方便，自主封装了BroadcastManager，方便好用。
 
@@ -249,7 +249,7 @@
 	**/
 ```
 
-##DB模块
+## DB模块
 
 * 采用[GreenDao详见](http://greendao-orm.com/)ORM方案，直接实现Java Object的CURD方法就可以操作数据库，非常好用，极力推荐。 
 
@@ -297,12 +297,12 @@
 
 ```
 
-##注解模块
+## 注解模块
 
 * 集成[butterknife详见](http://jakewharton.github.io/butterknife/)注解框架，一个No Magic的Android注入框架，用过的人都说好，极力推荐。
 
 
-##支付模块
+## 支付模块
 
 * 集成支付宝支付和微信支付
 
@@ -364,14 +364,14 @@
 		msgApi.sendReq(payReq);
 	```
 
-##图片下载模块
+## 图片下载模块
 
 * 采用Fresco解决方案，有关使用情况请参见[Fresco详见](https://github.com/facebook/fresco)
 
 * 内存管理、图片的渐进式呈现、Gif图和WebP格式强大的特性让你不能自拔！[特性详见](http://www.fresco-cn.org/)
 
 
-##日志
+## 日志
 
 * NLog日志输出类
 * config.properties文件(assets文件夹下)配置日志开关
@@ -381,11 +381,11 @@ debug=true
 ```
 
 
-##教程
+## 教程
 * [优酷视频教程地址](http://v.youku.com/v_show/id_XMTQwNTU3NjI4NA==.html?qq-pf-to=pcqq.c2c)，非常感谢[融云阿明](https://github.com/devinhu/SeaStar)的辛苦录制！
 * [PPT手把手教程地址](https://github.com/devinhu/androidone/tree/master/androidOne%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6ppt)
 
-##常用网址推荐
+## 常用网址推荐
 [Android开发技术周报](http://www.androidweekly.cn/)
 
 [http://www.androiddevtools.cn/](http://www.androiddevtools.cn/)
@@ -394,7 +394,7 @@ debug=true
 
 [android-开源项目](http://www.23code.com/page/3/)
 
-##结语
+## 结语
 
 * 看到这里，估计您和您的小伙伴们都惊呆了吧！赶快动手试试吧！
 
