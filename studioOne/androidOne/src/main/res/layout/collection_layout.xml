@@ -3,11 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
+    <WebView
+        android:id="@+id/webview2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:text="collection" /> 
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>

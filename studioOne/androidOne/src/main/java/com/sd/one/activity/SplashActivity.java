@@ -48,7 +48,7 @@ public class SplashActivity extends BaseActivity {
 		setContentView(R.layout.layout_splash);
 		setHeadVisibility(View.GONE);
 
-		request(TEST_CODE_1);request(TEST_CODE_1);
+		request(TEST_CODE_1);
 	}
 
 	@Override

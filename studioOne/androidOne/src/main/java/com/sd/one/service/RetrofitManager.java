@@ -26,6 +26,7 @@ import rx.schedulers.Schedulers;
 public abstract class RetrofitManager {
 
     protected Retrofit retrofit;
+    protected ApiService apiService;
 
     /**
      * 构造方法
@@ -37,6 +38,9 @@ public abstract class RetrofitManager {
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .baseUrl(Constants.DOMAIN)
                 .build();
+
+        //初始化接口类
+        apiService = retrofit.create(ApiService.class);
     }
 
 

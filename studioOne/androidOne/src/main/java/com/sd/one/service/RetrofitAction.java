@@ -17,25 +17,13 @@ import retrofit2.Call;
  */
 public class RetrofitAction extends RetrofitManager {
 
-    private ApiService apiService;
-
     /**
      * 构造方法
      * @param mContext
      */
     public RetrofitAction(Context mContext) {
         super(mContext);
-        apiService = retrofit.create(ApiService.class);
     }
-
-    public ApiService getApiService() {
-        return apiService;
-    }
-
-    public void setApiService(ApiService apiService) {
-        this.apiService = apiService;
-    }
-
 
     /**
      * 获取配置信息接口
